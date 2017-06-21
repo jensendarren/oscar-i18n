@@ -349,7 +349,7 @@ en:
       note: Note
       ongoing_partner: Ongoing Partner
       province: Province
-      start_date: Start Date
+      start_date: Case Start Date
       support_amount: Support Amount
       support_note: Support Note
     index:
@@ -2168,6 +2168,8 @@ en:
       log_out: Log out
       test_another_key: Test Another Key Updated on Localeapp
       test_new_key: Test New Key
+      test_third_key: Test Third Key
+      test_fourth_key: Test Fourth Key
   leave_programs:
     create:
       successfully_created: Client has successfully exited from the program.
