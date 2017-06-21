@@ -2619,7 +2619,7 @@ en:
       client_amount: Client Amounts
       csi_domain_scores: CSI Domain Scores
       domain_score: Domain Scores
-  review_problem: 'Please review the problems below:'
+  review_problem: 'Please review the problems as shown below:'
   save: Save
   shared:
     per_page_form:
