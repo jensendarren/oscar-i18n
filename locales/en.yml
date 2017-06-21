@@ -2166,8 +2166,8 @@ en:
     top_navbar:
       edit_profile: Edit Profile
       log_out: Log out
+      test_another_key: Test Another Key Updated on Localeapp
       test_new_key: Test New Key
-      test_another_key: Test Another Key
   leave_programs:
     create:
       successfully_created: Client has successfully exited from the program.
