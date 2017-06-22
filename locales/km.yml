@@ -1242,11 +1242,11 @@ km:
     to: ដល់
   date:
     formats:
-      long: "''"
-      short: "''"
+      long: ""
+      short: ""
   datetime:
     distance_in_words:
-      about_x_hours: "''"
+      about_x_hours: ""
   default_able_screening_question_fields:
     alert_manager: ជូនដំណឹងអ្នកគ្រប់គ្រង
     mode: ម៉ូដ
@@ -3083,8 +3083,8 @@ km:
       user_started_topic_html: "%{user_link} បានបង្កើត %{topic_link}"
   time:
     formats:
-      long: "''"
-      short: "''"
+      long: ""
+      short: ""
   trackings:
     create:
       successfully_created: ការតាមដានត្រូវបានរក្សាទុកដោយជោគជ័យ
