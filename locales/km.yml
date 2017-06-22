@@ -562,14 +562,14 @@ km:
     action:
       new_tracking: បន្ថែមការតាមដានថ្មី
     create:
-      successfully_created: ការ​តាមដានត្រូវបានរក្សាទុកដោយជោគជ័យ
+      successfully_created: ការតាមដានត្រូវបានរក្សាទុកដោយជោគជ័យ
     destroy:
-      successfully_deleted: ការ​តាមដានត្រូវបានលុបដោយជោគជ័យ
+      successfully_deleted: ការតាមដានត្រូវបានលុបដោយជោគជ័យ
     form:
       cancel: ទុកជាមោឃៈ
       save: រក្សាទុក
     index:
-      programs_list: តារាងកម្មវិធី​
+      programs_list: តារាងកម្មវិធី
       tracking_lists: តារាងការតាមដាន
     new:
       new_tracking: បន្ថែមការតាមដានថ្មី
@@ -582,14 +582,14 @@ km:
       back: ត្រលប់ក្រោយ
       trackings_list: តារាងការតាមដាន
     update:
-      successfully_updated: ការ​តាមដានត្រូវបានកែសម្រួលដោយជោគជ័យ
+      successfully_updated: ការតាមដានត្រូវបានកែសម្រួលដោយជោគជ័យ
   client_enrollments:
     create:
       successfully_created: ការចុះឈ្មោះត្រូវបានរក្សាទុកដោយជោគជ័យ
     destroy:
       successfully_deleted: ការចុះឈ្មោះត្រូវបានលុបដោយជោគជ័យ
     edit:
-      enrollment: ទម្រង់បែបបទ​នៃ​ចុះឈ្មោះ
+      enrollment: ទម្រង់បែបបទនៃចុះឈ្មោះ
     form:
       cancel: ទុកជាមោឃៈ
       save: រក្សាទុក
@@ -598,7 +598,7 @@ km:
       back: ត្រលប់ក្រោយ
       domain: កត្តា
       name: ឈ្មោះកម្មវិធី
-      program_lists: តារាងកម្មវិធី​បន្ទាប់បន្សំ
+      program_lists: តារាងកម្មវិធីបន្ទាប់បន្សំ
       quantity: ចំនួនកន្លែងដែលនៅទំនេរ
       report: របាយការណ៍
       status: ស្ថានភាព
@@ -616,7 +616,7 @@ km:
       enrollment: ចុះឈ្មោះ
       exit: ចាកចេញ
       forms: ទម្រង់បែបបទ
-      programs_list: តារាងកម្មវិធី​បន្ទាប់បន្សំ
+      programs_list: តារាងកម្មវិធីបន្ទាប់បន្សំ
       report: របាយការណ៏
       tracking: ការតាមដាន
       view: មើល
@@ -861,7 +861,7 @@ km:
         start_date: ថ្ងៃចាប់ផ្តើម
         support_amount: ប្រាក់ឧបត្ថម្ភ
         support_note: ពត៌មានពីប្រាក់ឧប្ថម្ភ
-      program_streams: កម្មវិធី​បន្ទាប់បន្សំ
+      program_streams: កម្មវិធីបន្ទាប់បន្សំ
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
       received_by: បុគ្គលិកដែលទទួលករណី
@@ -956,7 +956,7 @@ km:
       case_notes: កំណត់ត្រាករណី
       cases: ករណី
       client_custom_fields: ទម្រង់បែបបទរបស់អតិថិជន
-      client_enrollments: ទម្រង់បែបបទ​នៃ​ចុះឈ្មោះ
+      client_enrollments: ទម្រង់បែបបទនៃចុះឈ្មោះ
       clients: អតិថិជន
       custom_fields: ទម្រង់បែបបទ
       departments: កម្មវិធី
@@ -971,7 +971,7 @@ km:
       materials: របស់របរ/សំភារៈ
       partner_custom_fields: ទម្រង់បែបបទរបស់ដៃគូ
       partners: ដៃគូ
-      program_streams: កម្មវិធី​បន្ទាប់បន្សំ
+      program_streams: កម្មវិធីបន្ទាប់បន្សំ
       progress_note_types: កំណត់សំគាល់
       progress_notes: កំណត់សំគាល់ការរីកចំរើន
       provinces: ខេត្ត
@@ -1153,7 +1153,7 @@ km:
         action: សកម្មភាព
         description: ការបរិយាយ
         domain: កត្តា
-        name: ឈ្មោះកម្មវិធី​បន្ទាប់បន្សំ
+        name: ឈ្មោះកម្មវិធីបន្ទាប់បន្សំ
         quantity: បរិមាណ
       progress_notes:
         additional_notes: កំណត់បន្ថែម
@@ -1504,7 +1504,7 @@ km:
     support_amount: ប្រាក់ឧបត្ថម្ភ
     support_note: ពត៌មានពីប្រាក់ឧប្ថម្ភ
   default_program_stream_fields:
-    program_streams: កម្មវិធី​បន្ទាប់បន្សំ
+    program_streams: កម្មវិធីបន្ទាប់បន្សំ
   default_progress_note_fields:
     additional_notes: កំណត់បន្ថែម
     child: កុមារ
@@ -2255,7 +2255,7 @@ km:
       manage: គ្រប់គ្រង
       materials: របស់របរ/សំភារៈ
       partners: ដៃគូ
-      program_streams: កម្មវិធី​បន្ទាប់បន្សំ
+      program_streams: កម្មវិធីបន្ទាប់បន្សំ
       progress_note: កត់សំគាល់ការរីកចំរើន
       progress_note_types: កំណត់សំគាល់
       provinces: ខេត្ត
@@ -2423,7 +2423,7 @@ km:
     current_program_streams_tab:
       actions: សកម្មភាព
       domain: កត្តា
-      name: ឈ្មោះកម្មវិធី​បន្ទាប់បន្សំ
+      name: ឈ្មោះកម្មវិធីបន្ទាប់បន្សំ
       quantity: បរិមាណ
     destroy:
       alert: កម្មវិធីមិនអាចលុបបានទេ
@@ -2440,10 +2440,10 @@ km:
       next: ទំព័របន្ទាប់
       previous: ទំព័រមុន
     index:
-      current_ngo: កម្មវិធី​បន្ទាប់បន្សំរបស់អង្គការខ្ញុំ
+      current_ngo: កម្មវិធីបន្ទាប់បន្សំរបស់អង្គការខ្ញុំ
       new_program: បន្ថែមកម្មវិធីថ្មី
-      ngo_programs: កម្មវិធី​បន្ទាប់បន្សំរបស់អង្គការទាំងអស់
-      program_list: បញ្ជីកម្មវិធី​បន្ទាប់បន្សំ
+      ngo_programs: កម្មវិធីបន្ទាប់បន្សំរបស់អង្គការទាំងអស់
+      program_list: បញ្ជីកម្មវិធីបន្ទាប់បន្សំ
     new:
       back: ត្រលប់ក្រោយ
       new_program_stream: បន្ថែមកម្មវិធីថ្មី
@@ -2451,7 +2451,7 @@ km:
       actions: សកម្មភាព
       copy: ចម្លងជូន
       domain: កត្តា
-      name: ឈ្មោះកម្មវិធី​បន្ទាប់បន្សំ
+      name: ឈ្មោះកម្មវិធីបន្ទាប់បន្សំ
       organization: អង្គការ
       preview: មើលជាមុន
       quantity: បរិមាណ
@@ -2462,7 +2462,7 @@ km:
       delete_group: លុបបណ្ដុំនៃការស្វែងរក
       description: ការបរិយាយ
       domain: កត្តា
-      name: ឈ្មោះកម្មវិធី​បន្ទាប់បន្សំ
+      name: ឈ្មោះកម្មវិធីបន្ទាប់បន្សំ
       quantity: បរិមាណ
       rule: លក្ខខណ្ឌ
     show:
@@ -2750,7 +2750,7 @@ km:
         after: ក្រោយកំណែ
         before: មុនកំណែ
         change: បានធ្វើកំណែប្រែខាងក្រោម
-        client_enrollment: ទម្រង់បែបបទ​នៃ​ចុះឈ្មោះ
+        client_enrollment: ទម្រង់បែបបទនៃចុះឈ្មោះ
         date_deleted: កាលបរិច្ឆេទនៃការលុប
         no_modification: មិនមានកំណែប្រែ
         'on': របស់
@@ -2808,10 +2808,10 @@ km:
         before: មុនកំណែ
         change: បានធ្វើកំណែប្រែខាងក្រោម
         date_deleted: កាលបរិច្ឆេទនៃការលុប
-        more_detail: ពត៌មាន​បន្ថែម
+        more_detail: ពត៌មានបន្ថែម
         no_modification: មិនមានកំណែប្រែ
         'on': របស់
-        program_stream: កម្មវិធី​បន្ទាប់បន្សំ
+        program_stream: កម្មវិធីបន្ទាប់បន្សំ
         value_of: តម្លៃនៃ
   signed_in_with_google: ចូលបានជោគជ័យជាមួយនឹង Google Calendar
   stages:
@@ -3087,12 +3087,12 @@ km:
       short: "''"
   trackings:
     create:
-      successfully_created: ការ​តាមដានត្រូវបានរក្សាទុកដោយជោគជ័យ
+      successfully_created: ការតាមដានត្រូវបានរក្សាទុកដោយជោគជ័យ
     form:
       cancel: ទុកជាមោឃៈ
       save: រក្សាទុក
     new:
-      new_tracking: បន្ថែមការ​តាមដានថ្មី
+      new_tracking: បន្ថែមការតាមដានថ្មី
     show:
       back: ត្រលប់ក្រោយ
   unauthorized:
