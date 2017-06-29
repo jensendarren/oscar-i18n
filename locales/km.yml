@@ -3307,3 +3307,13 @@ km:
         one: "កំហុស ១  បានហាមឃាត់  %{resource} ពីការរក្សាទុក"
         other: "%{count} កំហុស បានហាមឃាត់ %{resource} ពីការរក្សាទុក"
       not_email: "មិនមែនជាឣុីម៉ែល"
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    save: Save
+    cancel: Cancel
+    error_notification:
+      default_message: "Please review the problems below:"
