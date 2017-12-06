@@ -109,6 +109,11 @@ my-MM:
               blank: ကြက္လပ္ခ်န္ထား၍မရပါ။
             question_group:
               blank: ကြက္လပ္ခ်န္ထား၍မရပါ။
+        advanced_search:
+          attributes:
+            name:
+              blank: 
+              taken: 
         agency:
           attributes:
             name:
@@ -142,6 +147,10 @@ my-MM:
         client:
           attributes:
             user_ids:
+              blank: 
+        client_enrollment:
+          attributes:
+            enrollment_date:
               blank: 
         custom_field:
           attributes:
@@ -182,6 +191,10 @@ my-MM:
             action:
               blank: ကြက္လပ္ခ်န္ထား၍မရပါ။
               taken: ယူထားၿပီးျဖစ္ပါသည္။
+        leave_program:
+          attributes:
+            exit_date:
+              blank: 
         location:
           attributes:
             name:
@@ -337,6 +350,18 @@ my-MM:
       type: အမ်ိဳးအစား
       user_id: အမႈျခင္းရာကိုလိုက္လံေဆာင္ရြက္ေပးသူ
       village: ေက်းရြာ
+  advanced_search_save_queries:
+    create:
+      failed_create: 
+      successfully_created: 
+    destroy:
+      successfully_deleted: 
+    edit:
+      description: 
+      edit_search_setting: 
+      name: 
+    update:
+      successfully_updated: 
   agencies:
     create:
       failed_create: ေအဂ်င္စီျပဳလုပ္၍မရပါ။
@@ -647,6 +672,16 @@ my-MM:
         one: သင့္တြင္ လုပ္ရန္ သတ္မွတ္ခ်ိန္ လြန္သြားေသာ စိစစ္အကဲျဖတ္မႈ ၁ ခု ရွိပါသည္။
         other: သင့္တြင္ လုပ္ရန္ သတ္မွတ္ခ်ိန္ လြန္သြားေသာ စိစစ္အကဲျဖတ္မႈ %{count} ရွိပါသည္။
   client:
+    form_option:
+      basic_fields: 
+      csi_domain_scores: 
+      custom_form: 
+      enrollment: 
+      exit_program: 
+      filter_option: 
+      program_stream: 
+      quantitative: 
+      tracking: 
     tasks:
       create:
         successfully_created: လုပ္ငန္းကို ေအာင္ျမင္စြာ ဖန္တီးၿပီးပါၿပီ
@@ -865,6 +900,53 @@ my-MM:
     answer_fields:
       answer: အေျဖ
       yes_no: ဟုတ္တယ္/ မဟုတ္ဘူး
+    client_advanced_searches:
+      advanced_search:
+        add_new_filter: 
+        add_new_group: 
+        advanced_search: 
+        assessments: 
+        client_column: 
+        csi_domain_scores: 
+        custom_form_column: 
+        delete_group: 
+        export_to_xls: 
+        no_results: 
+        program_stream_column: 
+        reset: 
+        results: 
+        search: 
+      form_option:
+        basic_fields: 
+        csi_domain_scores: 
+        custom_form: 
+        enrollment: 
+        exit_program: 
+        filter_option: 
+        program_stream: 
+        quantitative: 
+        tracking: 
+      load_save_search:
+        my_saved_search: 
+        other_saved_search: 
+        search_settings_list: 
+      my_saved_searches:
+        action: 
+        date: 
+        description: 
+        load: 
+        name: 
+      other_saved_searches:
+        action: 
+        date: 
+        description: 
+        load: 
+        name: 
+        owner: 
+      save_search_setting:
+        description: 
+        name: 
+        new_search_setting: 
     client_answers:
       answer: A
       client_able_answers: အမႈသည္ Able အေျဖမ်ား
@@ -949,6 +1031,33 @@ my-MM:
       gender: က်ား မ
       general_question: အေထြေထြ ေမးခြန္း
       given_name: ေမြးနာမည္
+      gov_caseworker_comment: 
+      gov_caseworker_comment_section: 
+      gov_caseworker_name: 
+      gov_city: 
+      gov_client_basic_info: 
+      gov_client_carer: 
+      gov_client_carer_name: 
+      gov_client_carer_relationship: 
+      gov_client_code: 
+      gov_client_need: 
+      gov_client_problem: 
+      gov_client_types: 
+      gov_commune: 
+      gov_date: 
+      gov_district: 
+      gov_government_form: 
+      gov_guardian_comment: 
+      gov_home: 
+      gov_information_source: 
+      gov_interviewees: 
+      gov_phone: 
+      gov_place_of_interview_client: 
+      gov_reason_of_referral_and_need: 
+      gov_street: 
+      gov_summary_reason_of_referral: 
+      gov_village: 
+      gov_village_code: 
       has_been_in_government_care: အစိုးရေစာင့္ေရွာက္မႈေအာက္ ေရာက္ဖူးသည္
       has_been_in_orphanage: မိဘမဲ့ျဖစ္ဖူးသည္
       house_number: အိမ္နံပါတ္
@@ -997,8 +1106,10 @@ my-MM:
       support_amount: ေထာက္ပံ့သည့္ ပမာဏ
       support_note: ေထာက္ပံ့သည့္ မွတ္စု
     index:
+      active_programs: 
       add_new_client: အမႈသည္သစ္ ထည့္သြင္းသည္
       advanced_search: အဆင့္ျမင့္ ရွာေဖြမႈ
+      all_csi_assessments: 
       assessments: စိစစ္အကဲျဖတ္မႈမ်ား
       case_statistics: အမႈျခင္းရာ ကိန္းဂဏန္း
       client_amount: အမႈသည္ ပမာဏမ်ား
@@ -1007,11 +1118,14 @@ my-MM:
       end: လုပ္ေဆာင္ၿပီး ၿပီးဆံုးၿပီ
       export_to_xls: XLS အျဖစ္ ထုတ္သည္
       load: ဆက္လက္ လုပ္ေဆာင္ေနသည္
+      load_save_search: 
+      report_builder: 
       reports: အစီရင္ခံစာမ်ား
       results: ရလဒ္မ်ား
       sInfoShow: မွ ရလဒ္မ်ားကို ျပသပါ
       sInfoTo: သို႔
       sInfoTotal: "၏"
+      save_search_settings: 
       view_all_active_tasks: အသက္၀င္ေသာ လုပ္ငန္းမ်ားအားလံုးကို ၾကည့္ရန္
     kinship_case:
       carer_address: ေစာင့္ေရွာက္သူ လိပ္စာ
@@ -1088,6 +1202,12 @@ my-MM:
       gender: က်ားမ
       general_info: အမႈသည္၏ အေၾကာင္း
       given_name: ေမြးနာမည္
+      government_form_five: 
+      government_form_four: 
+      government_form_one: 
+      government_form_six: 
+      government_form_three: 
+      government_form_two: 
       government_report: အစိုးရ အစီရင္ခံစာမ်ား
       has_been_in_government_care: အစိုးရ၏ ေစာင့္ေရွာက္မႈ ခံယူဖူး
       has_been_in_orphanage: မိဘမဲ့ျဖစ္ဖူး
@@ -1186,6 +1306,14 @@ my-MM:
     update:
       successfully_updated: ေနရာပိုင္ဆုိင္မႈ သတ္မွတ္ပံုစံကို ေအာင္ျမင္စြာ အသစ္ထည့္သြင္းၿပီးပါၿပီ
   dashboards:
+    active_tasks:
+      all_active_tasks: 
+      domain: 
+      overdue_tasks: 
+      today_tasks: 
+      upcoming_tasks: 
+    active_tasks_side:
+      active_tasks: 
     client:
       ables: Ables
       clients: လုပ္ေဆာင္မႈရွိေသးေသာ အမႈသည္မ်ား
@@ -1210,6 +1338,9 @@ my-MM:
       partners: မိတ္ဖက္မ်ား
       referral_sources: လႊဲေျပာင္းရန္ ရင္းျမစ္မ်ား
       staffs: ၀န္ထမ္းအဖြဲ႕၀င္မ်ား
+    users_filter:
+      filter_by_user: 
+      select_user: 
   data_trackers:
     index:
       able_screening_questions: Able Screening ေမးခြန္းမ်ား
@@ -1252,6 +1383,7 @@ my-MM:
       show: ျပရန္
   datagrid:
     columns:
+      all_csi_assessments: 
       carer_address: ေစာင့္ေရွာက္သူ လိပ္စာ
       carer_names: ေစာင့္ေရွာက္သူ နာမည္မ်ား
       carer_phone_number: ေစာင့္ေရွာက္သူ ဖုန္းနံပါတ္
@@ -1275,6 +1407,7 @@ my-MM:
         age: အသက္
         agencies_involved: ပါ၀င္ေသာ ေအဂ်င္စီမ်ား
         agency_names: ေအဂ်င္စီနာမည္
+        all_csi_assessments: 
         any_assessments: စိစစ္အကဲျဖတ္မႈရွိသည္
         assessments: စိစစ္အကဲျဖတ္မႈမ်ား
         assessments_due_to: လုပ္ရေတာ့မည္ စိစစ္အကဲျဖတ္မႈမ်ား
@@ -1318,10 +1451,12 @@ my-MM:
         id_poor: လူဆင္းရဲ မွတ္ပံုတင္
         initial_referral_date: ကနဦးလြဲေျပာင္းမႈ ရက္စြဲ
         kid_id: ကေလး မွတ္ပံုတင္
+        lesotho: 
         live_with: အတူေန
         local_family_name: မိသားစုနာမည္ (ေဒသသံုးျဖင့့္)
         local_given_name: ေမြးနာမည္ (ေဒသသံုးျဖင့္)
         manage: စီမံသည္
+        myanmar: 
         name: နာမည္
         ngo_accepted_date: NGO က လက္ခံသည့္ ရက္စြဲ
         ngo_exit_date: NGO မွ ထြက္သည့္ ရက္စြဲ
@@ -1362,6 +1497,7 @@ my-MM:
         state: လက္ခံသည္/ ျငင္းပယ္သည္
         status: အေနအထား
         street_number: လမ္း
+        thailand: 
         time_of_frequency: အႀကိမ္ အေရအတြက္
         total: စုစုေပါင္း
         type: အမ်ိဳးအစား
@@ -1503,6 +1639,7 @@ my-MM:
     form:
       csi_domain_scores: CSI ဒိုမိန္း အမွတ္မ်ား
       filter_domains: စိစစ္မႈ ဒိုမိန္း
+      has_overdue_assessment: 
       reset: အကုန္ျပင္ဆင္သည္
       search: ရွာေဖြသည္
     from: မွ
@@ -1514,8 +1651,8 @@ my-MM:
       view: ျမင္ကြင္း
     table:
       order:
-        asc: 
-        desc: 
+        asc: "↑"
+        desc: "↓"
     to: သို႔
   date:
     formats:
@@ -2552,6 +2689,8 @@ my-MM:
     version:
       back: ေနာက္သို႔
       modification_of: "၏ ေျပာင္းလဲမႈ မွတ္တမ္း"
+  invalid_program_enrollment_date: 
+  invalid_program_exit_date: 
   is_not_email: အီးေမးလ္မဟုတ္ပါ
   layouts:
     notification:
@@ -2657,11 +2796,16 @@ my-MM:
       quantitative_types: ပမာဏအမ်ိဳးအစား
       referral_sources: လႊဲေျပာင္းရမည့္ ရင္းျမစ္မ်ား
       release_logs: လႊတ္ေပးသည့္ မွတ္တမ္းမ်ား
+      settings: 
       users: အသံုးျပဳသူမ်ား
       view_calendar: ျပကၡဒိန္ကို ၾကည့္ရန္
     top_navbar:
+      burmese: 
       edit_profile: ပ႐ိုဖိုင္ျပင္ဆင္ရန္
+      english: 
+      khmer: 
       log_out: ထြက္ရန္
+      thai: 
   leave_enrolled_programs:
     create:
       successfully_created: အမႈသည္သည္ အစိအစဥ္မွ ေအာင္ျမင္စြာ ထြက္ၿပီးပါၿပီ။
@@ -3210,6 +3354,15 @@ my-MM:
       domain_score: ဒိုမိန္း ရမွတ္မ်ား
   review_problem: ေက်းဇူးျပဳ၍ ေအာက္တြင္ေဖာ္ျပထားသည့္ ျပႆနာကို ျပန္လည္သံုးသပ္ေပးပါ
   save: သိမ္းဆည္းရန္
+  settings:
+    country:
+      settings: 
+      switched_country_cambodia: 
+      switched_country_lesotho: 
+      switched_country_myanmar: 
+      switched_country_thailand: 
+    navigation:
+      country: 
   shared:
     form_builder:
       file_field:
@@ -3610,10 +3763,24 @@ my-MM:
   users:
     actions:
       are_you_sure: ဖ်က္လိုသည္မွာ ေသခ်ာပါသလား
+    assessment_permission:
+      assessments: 
+      can_edit: 
+      can_view: 
+    case_note_permission:
+      can_edit: 
+      can_view: 
+      case_notes: 
     clients:
       clients: အမႈသည္မ်ား
     create:
       successfully_created: အသံုးျပဳသူကို ေအာင္ျမင္စြာ ဖန္တီးၿပီးျဖစ္ပါသည္
+    custom_form_permission:
+      can_edit: 
+      can_view: 
+    custom_program_permission:
+      can_edit: 
+      can_view: 
     destroy:
       alert: အသံုးျပဳသူကုိ ဖ်က္လို႔ မရပါ
       successfully_deleted: အသံုးျပဳသူကို ေအာင္ျမင္စြာ ဖ်က္ၿပီးပါၿပီ
@@ -3690,6 +3857,13 @@ my-MM:
       province: ျပည္နယ္
       roles: ခြင့္ျပဳခ်က္ ျပဳလုပ္သည္
       start_date: စတင္သည့္ ရက္စြဲ
+    permissions:
+      assessments: 
+      assessmets: 
+      case_notes: 
+      custom_forms: 
+      custom_programs: 
+      permissions_selector: 
     show:
       add_form: ပံုစံ ထည့္သည္
       additional_forms: ထပ္ေဆာင္းပံုစံမ်ား
@@ -3712,6 +3886,7 @@ my-MM:
       password: စကား၀ွက္
       password_confirmation: စကား၀ွက္အတည္ျပဳခ်က္
       password_hint: စကား၀ွက္ကို မေျပာင္းလဲလိုလွ်င္ ကြက္လပ္ခ်န္ခဲ့ပါ
+      permissions: 
       pin_number: ပင္နံပါတ္
       province: ျပည္နယ္
       roles: ခြင့္ျပဳခ်က္ ျပဳလုပ္သည္
