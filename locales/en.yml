@@ -1,78 +1,105 @@
 en:
+  able_screening_questions:
+    able_screening_question_field:
+      alert_manager: Alert Manager
+      group: Group
+      mode: Mode
+      question: Question
+    attachment_fields:
+      browse: Browse
+    create:
+      successfully_created: Able Screening has been successfully created.
+    destroy:
+      alert: Able Screening cannot be deleted.
+      successfully_deleted: Able Screening has been successfully deleted.
+    edit:
+      general_question: General Question
+    form:
+      alert_manager: Alert Manager
+      cancel: Cancel
+      general_question: General Question
+      group: Group
+      mode: Mode
+      question: Question
+      questions: Questions
+      save: Save
+    new:
+      general_question: General Question
+    update:
+      successfully_updated: Able Screening has been successfully updated.
   able_screens:
     answer_submissions:
       able_screening_answers:
-        form:
-          stage: Stage
-          general_question: General Question
-          year: Year
-          from: From
-          to: To
-          answer: Answer
         create:
           successfully_created: Able Screening Answers has been successfully created.
+        form:
+          answer: Answer
+          from: From
+          general_question: General Question
+          stage: Stage
+          to: To
+          year: Year
     question_submissions:
       able_screening_questions:
-        new:
-          general_question: New General Question
+        attachment_fields:
+          browse: Browse
+        create:
+          successfully_created: Successfully created
+        destroy:
+          successfully_deleted: Successfully deleted
         edit:
           general_question: Edit General Question
         form:
-          question: Question
-          mode: Mode
           alert_manager: Alert Manager
+          mode: Mode
+          question: Question
+        new:
+          general_question: New General Question
+        update:
+          successfully_updated: Successfully updated
+      stages:
+        able_screening_question_fields:
+          alert_manager: Alert Manager
+          are_you_sure: Are you sure ?
+          group: Group
+          mode: Mode
+          question: Question
+          questions: Questions
         attachment_fields:
           browse: Browse
         create:
           successfully_created: Successfully created
-        update:
-          successfully_updated: Successfully updated
         destroy:
           successfully_deleted: Successfully deleted
-      stages:
-        stage: Stage
-        questions: Question
-        attachment_fields:
-          browse: Browse
-        index:
-          stage: Stage
-          able_screening_questions: Able Screening Question
-          new_stage_question: New Stage Question
-          new_general_question: New General Question
-          general_question: General Question
-          stage_question: Stage Question
-          question: Question
-          from: From
-          to: To
-          year: Year
-          question:
-            one: 1 question
-            other: '%{count} question'
-        form:
-          question: Question
-          mode: Mode
-          alert_manager: Alert Manager
-          from_age: From Age (As Year)
-          to_age: To Age (As Year)
-          questions: Questions
-          add_question: Add Question
-        new:
-          new_stage: New Stage
         edit:
           edit_stage: Edit Stage
-        able_screening_question_fields:
-          question: Question
-          mode: Mode
+        form:
+          add_question: Add Question
           alert_manager: Alert Manager
-          group: Group
-          are_you_sure: Are you sure ?
+          from_age: From Age (As Year)
+          mode: Mode
+          question: Question
           questions: Questions
-        create:
-          successfully_created: Successfully created
+          to_age: To Age (As Year)
+        index:
+          able_screening_questions: Able Screening Question
+          from: From
+          general_question: General Question
+          new_general_question: New General Question
+          new_stage_question: New Stage Question
+          question:
+            one: 1 question
+            other: "%{count} question"
+          stage: Stage
+          stage_question: Stage Question
+          to: To
+          year: Year
+        new:
+          new_stage: New Stage
+        questions: Question
+        stage: Stage
         update:
           successfully_updated: Successfully updated
-        destroy:
-          successfully_deleted: Successfully deleted
   activerecord:
     errors:
       models:
@@ -124,7 +151,7 @@ en:
             time_of_frequency:
               blank: can't be blank
               greater_than_or_equal_to: must be greater than or equal to 1
-              not_an_integer: not an integer
+              not_an_integer: must be an integer
         department:
           attributes:
             name:
@@ -236,18 +263,25 @@ en:
       birth_province: Birth Province
       birth_province_id: Birth Province
       cambodia: Cambodia
+      case_note_date: Case Note Date
+      case_note_type: Case Note Type
       case_type: Case Type
       case_worker: Case Worker
       case_worker_or_staff: Case Worker / Staff
       code: Code
       commune: Commune/Sangkat
       completed: Completed
+      csi_domain_scores: CSI Domain Scores
       current_address: Current Address
       current_province: Current Province
+      date_of_assessments: Date of Assessments
       date_of_birth: Date of Birth
       district: District/Khan
       donor: Donor
       donor_id: Donor
+      exit_ec_date: Exit EC Date
+      exit_fc_date: Exit FC Date
+      exit_kc_date: Exit KC Date
       family: Family
       family_id: Family ID
       family_name: Family Name
@@ -268,10 +302,13 @@ en:
       initial_referral_date: Initial Referral Date
       kid_id: Kid ID
       live_with: Who to live with
-      local_family_name: Family Name (Local)
-      local_given_name: Given Name (Local)
+      local_family_name: Family Name (kh)
+      local_given_name: Given Name (kh)
       name: Name
+      ngo_accepted_date: NGO Accept Date
+      ngo_exit_date: NGO Exit Date
       placement_start_date: Placement Start Date
+      program_stream: Program Stream
       province: Birth Province
       province_id: Current Province
       received_by: Received By
@@ -294,6 +331,24 @@ en:
       type: Type
       user_id: Case Worker
       village: Village
+      enrollment: Enrollment
+      tracking: Tracking
+      exit_program: Exit Program
+      basic_fields: Client Basic Fields
+      custom_form: Custom Form
+      quantitative: Quantitative Type
+  advanced_search_save_queries:
+    create:
+      failed_create: Search setting has already been taken.
+      successfully_created: Search setting has been successfully created.
+    destroy:
+      successfully_deleted: Search setting has been successfully deleted.
+    edit:
+      description: Description
+      edit_search_setting: Edit Search Setting
+      name: Name
+    update:
+      successfully_updated: Search setting has been successfully updated.
   agencies:
     create:
       failed_create: Failed to create an agency
@@ -329,47 +384,73 @@ en:
       modification_of: Changelog of
   are_you_sure: Are you sure you want to delete?
   assessments:
-    index:
-      assessment_history: Assessment History
-      initial_assessment: Initial Assessment
-      six_month_assessment: 6 Monthly Assessment
-      begin_now: Begin now
-      view_report: View Report
-      next_six_monthly_review: Next 6 Monthly Review
-      back: Back
-    form:
+    add_task_form:
+      completion_date: Completion Date
       domain: Domain
-      back: Back
-      reason: Reason
-      goal: Goal
+      enter_task_detail: Enter task details
+      save: Save
+      title: New Task
+    create:
+      successfully_created: Assessment has been successfully created.
+    form:
       add_task: Add Task
       at_least_one_task_required: At least one task is required
-      tasks_arising: 'Tasks arising:'
+      back: Back
+      domain: Domain
+      finish: Done
+      goal: Goal
       next: Next
       previous: Previous
-      finish: Done
-    add_task_form:
-      domain: Domain
-      enter_task_detail:  Enter task details
-      completion_date: Completion Date
-      title: New Task
-      save: Save
-    show:
-      initial_assessment_of: Initial Assessment Of
-      six_month_assessment_report: 6 Monthly Assessment Report
-      assessment_completed_by: Assessment completed by
-      on_date: On Date
-      back_to_assessment_history:  Back to assessment history
-      edit: Edit
-      domain: Domain
-      score: Score
-      goal: Goal
       reason: Reason
+      save: Save
+      tasks_arising: 'Tasks arising:'
+    index:
+      assessment_history: Assessment History
+      back: Back
+      begin_now: Begin now
+      initial_assessment: Initial Assessment
+      next_six_monthly_review: Next 6 Monthly Review
+      six_month_assessment: 6 Monthly Assessment
+      view_report: View Report
+    show:
+      assessment_completed_by: Assessment completed by
+      back_to_assessment_history: Back to assessment history
+      domain: Domain
+      edit: Edit
+      goal: Goal
+      initial_assessment_of: Initial Assessment Of
+      on_date: On Date
+      reason: Reason
+      score: Score
+      six_month_assessment_report: 6 Monthly Assessment Report
       task: Task
+      show_attachment: Show Attachments
     create:
       successfully_created: Assessment has been successfully created.
     update:
       successfully_updated: Assessment has been successfully updated.
+    destroy:
+      successfully_deleted: Attachment has been successfully deleted.
+      fail_delete_attachment: Failed deleting attachment
+    attachment:
+      attachments: Attachments
+      download: Download
+      preview_download: Preview & Download
+    attachment_fields:
+      allow_file_size: Allowed file types
+      are_you_sure: Are you sure you want to delete??
+      attachments: Attachments
+      download: Download
+      max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
+      preview_download: Preview & Download
+  api:
+    form_builder_attachments:
+      destroy:
+        successfully_deleted: Attachment has been successfully deleted.
+  back: Back
+  calendars:
+    index:
+      sync_with_google: Sync with Google Calendar
   cancel: Cancel
   cannot_be_blank: can't be blank
   cannot_be_greater: can't be greater than %{count}
@@ -403,55 +484,71 @@ en:
         what_is_my_plan_for_the_next_visit_to_the_client: What is my plan for the next visit to the client?
         with_id: With ID
   case_notes:
-    index:
-      case_note_lists: Case note lists
-      back: Back
+    add_task_form:
+      completion_date: Completion Date
       domain: Domain
-      you_need_to_create_assessment: You need to create assessment
-      new_case_note: New case note
-      case_note_on: Case note on
-      present: Who was there during the visit or conversation?
-      completed_tasks: Completed Tasks
-      note: Note
-      goal: Goal
-    form_with_assessment_domains:
-      domain: Domain
-      note: Note
-      add_task: Add Task
-      goal: Goal
-    form_without_assessment_domains:
-      domain: Domain
-      note: Note
-      add_task: Add Task
-      goal: Goal
+      enter_task_detail: Enter task details
+      save: Save
+      title: New Task
+    attachment:
+      download: Download
+      preview_download: Preview & Download
+    attachment_fields:
+      allow_file_size: Allowed file types
+      are_you_sure: Are you sure you want to delete?
+      attachments: Attachments
+      download: Download
+      max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
+      preview_download: Preview & Download
+    create:
+      successfully_created: Case Note has successfully been created.
     form:
+      add_task: Add Task
+      back: Back
+      completed_tasks: Completed Tasks
+      domain: Domain
       label_note: Note
       meeting_detail: Meeting detail
       meeting_with: Meeting with
-      on_date: On Date
-      present: Who was there during the visit or conversation?
-      domain: Domain
       note: Note
-      tasks: Tasks
-      back: Back
-      save: Save
+      on_date: On Date
       on_going_tasks: On Going Tasks
-      completed_tasks: Completed Tasks
-      tasks_arising: Tasks Arising
-      add_task: Add Task
-    add_task_form:
-      domain: Domain
-      enter_task_detail:  Enter task details
-      completion_date: Completion Date
-      title: New Task
+      present: Who was there during the visit or conversation?
       save: Save
+      tasks: Tasks
+      tasks_arising: Tasks Arising
+      type: Type
+    form_with_assessment_domains:
+      add_task: Add Task
+      domain: Domain
+      goal: Goal
+      note: Note
+    form_without_assessment_domains:
+      add_task: Add Task
+      domain: Domain
+      goal: Goal
+      note: Note
+    index:
+      attachments: Attachments
+      back: Back
+      case_note_lists: Case note lists of
+      case_note_on: Case note on
+      completed_tasks: Completed Tasks
+      domain: Domain
+      goal: Goal
+      new_case_note: New case note
+      note: Note
+      present: Who was there during the visit or conversation?
+      type: Type
+      you_need_to_create_assessment: You need to create assessment
     show:
       case_note_on: Case note on
       present: Who was there during the visit or conversation?
-    create:
-      successfully_created: Case Note has successfully been created.
     update:
       successfully_updated: Case Note has successfully been updated.
+    destroy:
+      successfully_deleted: Attachment has been successfully deleted.
+      fail_delete_attachment: Failed deleting attachment
   cases:
     create:
       already_have_a_case: Client is already have a case.
@@ -593,65 +690,16 @@ en:
         enter_task_detail: Enter task details
       update:
         successfully_updated: Task has successfully been updated.
-  client_advanced_searches:
-    index:
-      add_new_filter: Add New Filter
-      add_new_group: Add Group
-      advanced_search: Advanced Search
-      assessments: Assessments
+    form_option:
+      basic_fields: Client Basic Fields
       csi_domain_scores: CSI Domain Scores
-      delete_group: Delete
-      export_to_xls: Export to XLS
-      no_results: No Result Found
-      reset: Reset
-      results: Results
-      search: Search
-  client_enrollments:
-    create:
-      successfully_create: Enrollment has been successfully created.
-    edit:
-      enrollment: Edit Enrollment
-    show:
-      enrollment_date: Enroll Date
-      back: Back
-      are_you_sure: Are you sure you want to delete?
-    report:
+      custom_form: Custom Form
       enrollment: Enrollment
-      report: Reports
+      exit_program: Exit Program
+      filter_option: Please choose your query options below
+      program_stream: Program Stream
       tracking: Tracking
-      exit: Exit
-      date: Date
-      forms: Forms
-      actions: Actions
-      programs_list: Programs List
-      view: View
-    manage:
-      enroll: Enroll
-      tracking: Trackings
-      exit: Exit
-      full_program: This Program is full
-    destroy:
-      successfully_deleted: Enrollment has been successfully deleted.
-    update:
-      successfully_updated: Enrollment has been successfully updated.
-    new:
-      new_enrollment: New Enrollment
-      client_not_valid: Client doesn't match with this program rules.
-    index:
-      view: View
-      quantity: Number of Place Available
-      status: Status
-      domain: Domain
-      name: Program Name
-      report: Report
-      actions: Actions
-      program_lists: Programs List
-      back: Back
-    create:
-      successfully_created: Enrollment has been successfully created.
-    form:
-      save: Save
-      cancel: Cancel
+      quantitative: Quantitative Type
   client_enrollment_trackings:
     action:
       new_tracking: New Tracking
@@ -659,6 +707,54 @@ en:
       successfully_created: Tracking Program has been successfully created.
     destroy:
       successfully_deleted: Tracking Program has been successfully deleted.
+      delete_attachment_successfully: Attachment has been successfully deleted.
+    edit:
+      edit_tracking: Edit Tracking
+    form:
+      allow_file_size: Allowed file types
+      cancel: Cancel
+      save: Save
+      max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
+    index:
+      programs_list: Programs List
+      tracking_lists: Trackings List
+    new:
+      new_tracking: New Tracking
+    report:
+      are_you_sure: Are you sure you want to delete?
+      back: Back
+      created_at: Created Date
+      new_tracking: New Tracking
+    show:
+      back: Back
+      trackings_list: Client Trackings List
+    update:
+      successfully_updated: Tracking Program has been successfully updated.
+  leave_enrolled_programs:
+    create:
+      successfully_created: Client has been successfully exited from the program.
+    edit:
+      leave_program: Edit Leave Program
+    form:
+      cancel: Cancel
+      exit_date: Exit Date
+      save: Save
+    new:
+      new_exit_program: New Exit Program
+    show:
+      back: Back
+      exit_date: Exited on
+    update:
+      successfully_updated: Exit Program has been successfully updated.
+  client_enrolled_program_trackings:
+    action:
+      new_tracking: New Tracking
+    create:
+      successfully_created: Tracking Program has been successfully created.
+    destroy:
+      successfully_deleted: Tracking Program has been successfully deleted.
+    edit:
+      edit_tracking: Edit Tracking
     form:
       cancel: Cancel
       save: Save
@@ -677,12 +773,155 @@ en:
       trackings_list: Client Trackings List
     update:
       successfully_updated: Tracking Program has been successfully updated.
+  client_enrolled_programs:
+    create:
+      successfully_created: Enrollment has been successfully created.
+    destroy:
+      successfully_deleted: Enrollment has been successfully deleted.
+    edit:
+      enrollment: Edit Enrollment
+    form:
+      cancel: Cancel
+      enrollment_date: Enrollment Date
+      save: Save
+    index:
+      actions: Actions
+      back: Back
+      domain: Domain
+      name: Program Name
+      program_lists: Programs List
+      quantity: Number of Place Available
+      report: Report
+      status: Status
+      view: View
+    manage:
+      enroll: Enroll
+      exit: Exit
+      full_program: This Program is full.
+      tracking: Trackings
+    new:
+      client_not_valid: Client doesn't match with this program rules.
+      new_enrollment: New Enrollment
+    report:
+      actions: Actions
+      date: Date
+      enrollment: Enrollment
+      exit: Exit
+      forms: Forms
+      programs_list: Programs List
+      report: Reports
+      tracking: Tracking
+      view: View
+    show:
+      are_you_sure: Are you sure you want to delete?
+      back: Back
+      enrollment_date: Enrolled on
+    update:
+      successfully_updated: Enrollment has been successfully updated.
+  client_enrollments:
+    create:
+      successfully_created: Enrollment has been successfully created.
+    destroy:
+      successfully_deleted: Enrollment has been successfully deleted.
+      delete_attachment_successfully: Attachment has been successfully deleted.
+    edit:
+      enrollment: Edit Enrollment
+    form:
+      allow_file_size: Allowed file types
+      cancel: Cancel
+      enrollment_date: Enrollment Date
+      not_an_email: not an email
+      save: Save
+      max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
+    index:
+      actions: Actions
+      back: Back
+      domain: Domain
+      name: Program Name
+      program_lists: Programs List
+      quantity: Number of Place Available
+      report: Report
+      status: Status
+      view: View
+    manage:
+      enroll: Enroll
+      exit: Exit
+      full_program: This Program is full
+      tracking: Trackings
+    new:
+      client_not_valid: Client doesn't match with this program rules.
+      new_enrollment: New Enrollment
+    report:
+      actions: Actions
+      date: Date
+      enrollment: Enrollment
+      exit: Exit
+      forms: Forms
+      programs_list: Programs List
+      report: Reports
+      tracking: Tracking
+      view: View
+    show:
+      are_you_sure: Are you sure you want to delete?
+      back: Back
+      enrollment_date: Enrolled on
+    update:
+      successfully_updated: Enrollment has been successfully updated.
   clients:
     actions:
       are_you_sure: Are you sure you want to delete?
     answer_fields:
       answer: Answer
       yes_no: Yes/No
+    client_advanced_searches:
+      advanced_search:
+        add_new_filter: Add New Filter
+        add_new_group: Add Group
+        advanced_search: Advanced Search
+        assessments: Assessments
+        client_column: Client basic columns
+        csi_domain_scores: CSI Domain Scores
+        custom_form_column: Custom form columns
+        delete_group: Delete
+        export_to_xls: Export to XLS
+        # load_save_search: Load Saved Search
+        no_results: No Result Found
+        program_stream_column: Program stream columns
+        reset: Reset
+        results: Results
+        # save_search_settings: Save Search Settings
+        search: Search
+      form_option:
+        basic_fields: Basic Fields
+        csi_domain_scores: Csi Domain Scores
+        custom_form: Custom Form
+        enrollment: Enrollment
+        exit_program: Exit Program
+        filter_option: Please choose your query options below
+        program_stream: Program Stream
+        quantitative: Quantitative Type
+        tracking: Tracking
+      load_save_search:
+        my_saved_search: My Saved Search
+        other_saved_search: Other Saved Search
+        search_settings_list: Search Settings List
+      my_saved_searches:
+        action: Action
+        date: Date
+        description: Description
+        load: Load
+        name: Name
+      other_saved_searches:
+        action: Action
+        date: Date
+        description: Description
+        load: Load
+        name: Name
+        owner: Owner
+      save_search_setting:
+        description: Description
+        name: Name
+        new_search_setting: New Search Setting
     client_answers:
       answer: A
       client_able_answers: Client Able Answers
@@ -705,10 +944,11 @@ en:
       carer_address: Carer Address
       carer_names: Carer Names
       carer_phone_number: Carer Phone Number
+      edit_btn: Edit
       emergency_care: Emergency Care
       emergency_case:
         emergency_care: Emergency Care
-      exit_btn: Exit
+      exit_btn: Remove Client from Program
       exit_date: Exit Date
       exit_note: Exit Note
       exit_status: Exit Status
@@ -720,6 +960,12 @@ en:
       start_date: Start Date
       support_amount: Support Amount
       support_note: Support Note
+    exit_ngo_form:
+      exit_btn: Exit
+      exit_date: Exit Date
+      exit_ngo: Exit NGO
+      exit_note: Exit Note
+      exit_status: Status
     exit_case_form:
       exit_btn: Exit
       exit_date: Exit Date
@@ -749,6 +995,9 @@ en:
       date_of_birth: Date of Birth
       district: District/Khan
       donor: Donor
+      exit_date: NGO Exit Date
+      exit_note: Exit Note
+      exit_status: Exit Status
       family_name: Family Name
       follow_up_by: Followed Up By
       follow_up_date: Follow Up Date
@@ -757,6 +1006,33 @@ en:
       gender: Gender
       general_question: General Question
       given_name: Given Name
+      gov_caseworker_comment: Caseworker comment
+      gov_caseworker_comment_section: Caseworker comment on needs and challenges of the client
+      gov_caseworker_name: Caseworker name
+      gov_city: City/Province
+      gov_client_basic_info: Primary information from the client
+      gov_client_carer: Client carer
+      gov_client_carer_name: Name
+      gov_client_carer_relationship: Relationship
+      gov_client_code: Client code
+      gov_client_need: Please indicate the type of need (priority numbering)
+      gov_client_problem: Please highlight key challenges (priority numbering)
+      gov_client_types: Client type
+      gov_commune: Commune/Sangkat
+      gov_date: Date
+      gov_district: District/Khan
+      gov_government_form: Government Form
+      gov_guardian_comment: Comments from the client/guardians about issues and needs
+      gov_home: Home
+      gov_information_source: Information source
+      gov_interviewees: Interviewees
+      gov_phone: Phone number
+      gov_place_of_interview_client: Place of interview
+      gov_reason_of_referral_and_need: Reasons of transmission and needs
+      gov_street: Street
+      gov_summary_reason_of_referral: Brief information on the reasons for client transmission
+      gov_village: Village
+      gov_village_code: Village code
       has_been_in_government_care: Has Been In Government Care
       has_been_in_orphanage: Has Been In Orphanage
       house_number: House
@@ -765,8 +1041,8 @@ en:
       initial_referral_date: Initial Referral Date
       kid_id: Kid ID
       live_with: Who to live with
-      local_family_name: Family Name (Local)
-      local_given_name: Given Name (Local)
+      local_family_name: Family Name (kh)
+      local_given_name: Given Name (kh)
       name: Name
       province: Birth Province
       received_by: Received By
@@ -788,7 +1064,8 @@ en:
       carer_address: Carer Address
       carer_names: Carer Names
       carer_phone_number: Carer Phone Number
-      exit_btn: Exit
+      edit_btn: Edit
+      exit_btn: Remove Client from Program
       exit_date: Exit Date
       exit_note: Exit Note
       exit_status: Exit Status
@@ -804,18 +1081,21 @@ en:
       support_amount: Support Amount
       support_note: Support Note
     index:
+      active_programs: Active Programs
       add_new_client: Add New Client
-      advanced_search: Advanced Search
+      all_csi_assessments: All CSI Assessments
       assessments: Assessments
-      case_statistics: Case Statistics
-      client_amount: Client Amounts
+      client_amount: Clients
       csi_domain_scores: CSI Domain Scores
       domain_score: Domain Scores
       end: Loading end!
       export_to_xls: Export to XLS
       load: Loading more...
-      reports: Reports
+      load_save_search: Load Saved Search
+      reports: Quick Graph
+      report_builder: Report Builder
       results: Results
+      save_search_settings: Save Search Settings
       sInfoShow: show results from
       sInfoTo: to
       sInfoTotal: of
@@ -824,7 +1104,8 @@ en:
       carer_address: Carer Address
       carer_names: Carer Names
       carer_phone_number: Carer Phone Number
-      exit_btn: Exit
+      edit_btn: Edit
+      exit_btn: Remove Client from Program
       exit_date: Exit Date
       exit_note: Exit Note
       exit_status: Exit Status
@@ -843,11 +1124,15 @@ en:
       new_client_title: New Client
     placement:
       view_legacy_quarterly_reports: View Legacy Quarterly Reports
+    remaining_programs:
+      close: Close
+      warning: Warning
     show:
       able: Able
       able_screening_questions: Able Screening Questions
       able_state: Able State
       accept: Accept
+      accepted_date: NGO Accept Date
       add_client_to_case: Add Client to Case
       add_ec_btn: Add to EC
       add_fc_btn: Add to FC
@@ -875,7 +1160,14 @@ en:
       date_of_birth: Date of Birth
       district: District/Khan
       donor: Donor
-      exit_ngo_btn: Exit NGO
+      enrolled_program_streams: Enrolled Program Streams
+      exit_date: NGO Exit Date
+      exit_from_ec: Exit From EC
+      exit_from_fc: Exit From FC
+      exit_from_kc: Exit From KC
+      exit_ngo_btn: Exit From NGO
+      exit_note: Exit Note
+      families: Families
       family_name: Family Name
       follow_up_by: Followed Up By
       follow_up_date: Follow Up Date
@@ -883,7 +1175,13 @@ en:
       gender: Gender
       general_info: About Client
       given_name: Given Name
-      government_report: Government Reports
+      government_form_five: Follow up the Child in Alternative Care Form
+      government_form_four: Placement-Reintegration Form
+      government_form_one: Initial Information Form
+      government_form_six: Case closure Form
+      government_form_three: Family Service Plan Form
+      government_form_two: Assessment for Family Preservation Form
+      government_report: Government Report
       has_been_in_government_care: Has Been In Government Care
       has_been_in_orphanage: Has Been In Orphanage
       house_number: House
@@ -892,8 +1190,8 @@ en:
       initial_referral_date: Initial Referral Date
       kid_id: Kid ID
       live_with: Who to live with
-      local_family_name: Family Name (Local)
-      local_given_name: Given Name (Local)
+      local_family_name: Family Name (kh)
+      local_given_name: Given Name (kh)
       name: Name
       note: Note
       placements:
@@ -964,6 +1262,7 @@ en:
     create:
       successfully_created: Custom Field Property has been successfully created.
     destroy:
+      delete_attachment_successfully: Attachment has been successfully deleted.
       successfully_deleted: Custom Field Property has been successfully deleted.
     form:
       cancel: Cancel
@@ -979,6 +1278,14 @@ en:
     update:
       successfully_updated: Custom Field Property has been successfully updated.
   dashboards:
+    active_tasks:
+      all_active_tasks: All Active Tasks
+      domain: Domain
+      overdue_tasks: Overdue tasks
+      today_tasks: Today tasks
+      upcoming_tasks: Upcoming tasks
+    active_tasks_side:
+      active_tasks: Active Tasks
     client:
       ables: Ables
       clients: Active Clients
@@ -987,16 +1294,25 @@ en:
       foster_cares_html: Foster <br/>Cares
       kinship_cares_html: Kinship <br/>Cares
       males: Males
+    client_program_stream_by_gender:
+      active_program_streams: Active Program Streams
+      active_progarm_streams_by_gender: Active Program Streams by client gender
+      client_active_in_programs: Active Program Streams
     family:
       families: Families
       foster: Foster
       kinship: Kinship
+    program_stream:
+      program_stream: Program Streams
     third_party:
       ables: Ables
       agencies: Agencies
       partners: Partners
       referral_sources: Referral Sources
       staffs: Staff Members
+    users_filter:
+      filter_by_user: Filter by user
+      select_user: Select user
   data_trackers:
     index:
       able_screening_questions: Able Screening Questions
@@ -1039,9 +1355,12 @@ en:
       show: Show
   datagrid:
     columns:
+      all_csi_assessments: All CSI Assessments
       carer_address: Carer Address
       carer_names: Carer Names
       carer_phone_number: Carer Phone Number
+      case_note_date: Case Note Date
+      case_note_type: Case Note Type
       case_start_date: Case Start Date
       cases:
         case_type: Case Type
@@ -1060,11 +1379,14 @@ en:
         age: Age
         agencies_involved: Agencies Involved
         agency_names: Agency Name
+        all_csi_assessments: All CSI Assessments
         any_assessments: Has Assessments
         assessments: Assessments
         assessments_due_to: Assessments Due To
         birth_province: Birth Province
         cambodia: Cambodia
+        case_note_date: Case Note Date
+        case_note_type: Case Note Type
         case_type: Case Type
         case_worker: Case Worker
         case_worker_or_staff: Case Worker / Staff
@@ -1074,6 +1396,7 @@ en:
         completed: Completed
         current_address: Current Address
         current_province: Current Province
+        date_of_assessments: Date of Assessments
         date_of_birth: Date of Birth
         district: District/Khan
         domain: Domain
@@ -1100,11 +1423,15 @@ en:
         id_poor: ID Poor
         initial_referral_date: Initial Referral Date
         kid_id: Kid ID
+        lesotho: Lesotho
         live_with: Who to live with
-        local_family_name: Family Name (Local)
-        local_given_name: Given Name (Local)
+        local_family_name: Family Name (kh)
+        local_given_name: Given Name (kh)
         manage: Manage
+        myanmar: Myanmar
         name: Name
+        ngo_accepted_date: NGO Accept Date
+        ngo_exit_date: NGO Exit Date
         no_dob: 'No'
         placement_case_type: Placement Case Type
         placement_start_date: Placement Start Date
@@ -1124,6 +1451,9 @@ en:
           start_date: Start Date
           support_amount: Support Amount
           support_note: Support Note
+        program_enrollment_date: Program Enrollment Date
+        program_exit_date: Program Exit Date
+        program_streams: Program Streams
         province: Birth Province
         quantitative_case_values: Quantitative Case
         quantitative_types: Quantitative Types
@@ -1139,11 +1469,13 @@ en:
         state: Accept/Reject
         status: Status
         street_number: Street
+        thailand: Thailand
         time_of_frequency: Time of Frequency
         total: Total
         type: Type
         view: View
         village: Village
+      date_of_assessments: Date of Assessments
       families:
         address: Address
         caregiver_information: Caregiver Information
@@ -1177,6 +1509,7 @@ en:
       family: Family
       family_id: Family ID
       family_preservation: Family Preservation
+      form_title: Form Title
       history_of_disability_and_or_illness: History of disability and/or illness
       history_of_harm: History of Harm
       history_of_high_risk_behaviours: History of high-risk behaviours
@@ -1276,7 +1609,9 @@ en:
         'no': 'No'
         'yes': 'Yes'
     form:
+      csi_domain_scores: CSI Domain Scores
       filter_domains: Filter Domains
+      has_overdue_assessment: Has Overdue Assessment
       reset: Reset
       search: Search
     from: From
@@ -1293,11 +1628,11 @@ en:
     to: To
   date:
     formats:
-      long: ""
-      short: ""
+      long: '""'
+      short: '""'
   datetime:
     distance_in_words:
-      about_x_hours: ""
+      about_x_hours: '""'
   default_able_screening_question_fields:
     alert_manager: Alert Manager
     mode: Mode
@@ -1334,8 +1669,8 @@ en:
     initial_referral_date: Initial Referral Date
     kid_id: Kid ID
     live_with: Who to live with
-    local_family_name: Family Name (Local)
-    local_given_name: Given Name (Local)
+    local_family_name: Family Name (kh)
+    local_given_name: Given Name (kh)
     name: Name
     province: Birth Province
     received_by: Received By
@@ -1625,12 +1960,12 @@ en:
       save: Save
     index:
       add_new_department: Add New Department
-      departments: Departments
-      department_names: Department Name
-      description: Description
-      manage: Manage
       are_you_sure: Are you sure you want to delete?
       changelogs: Changelog
+      department_names: Department Name
+      departments: Departments
+      description: Description
+      manage: Manage
       view: View
     new:
       title: New Department
@@ -1640,6 +1975,97 @@ en:
     version:
       back: Back
       modification_of: Changelog of
+  devise:
+    confirmations:
+      confirmed: Your email address has been successfully confirmed.
+      send_instructions: You will receive an email with instructions for how to confirm your email address in a few minutes.
+      send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes.
+    failure:
+      already_authenticated: You are already signed in.
+      inactive: Your account is not activated yet.
+      invalid: Invalid %{authentication_keys} or password.
+      last_attempt: You have one more attempt before your account is locked.
+      locked: Your account is locked.
+      not_found_in_database: Invalid %{authentication_keys} or password.
+      timeout: Your session expired. Please sign in again to continue.
+      unauthenticated: You need to sign in or sign up before continuing.
+      unconfirmed: You have to confirm your email address before continuing.
+    mailer:
+      confirmation_instructions:
+        subject: Confirmation instructions
+      password_change:
+        subject: Password Changed
+      reset_password_instructions:
+        subject: Reset password instructions
+      unlock_instructions:
+        subject: Unlock instructions
+    omniauth_callbacks:
+      failure: Could not authenticate you from %{kind} because "%{reason}".
+      success: Successfully authenticated from %{kind} account.
+    passwords:
+      edit:
+        change_my_password: Change my password
+        change_your_password: Change your password
+        confirm_your_new_password: Confirm your new password
+        new_password: New password
+      new:
+        email: Email
+        forget_password: Forgot your password?
+        send_reset_password: Send me reset password instructions
+      no_token: You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+      send_instructions: You will receive an email with instructions on how to reset your password in a few minutes.
+      send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
+      updated: Your password has been changed successfully. You are now signed in.
+      updated_not_active: Your password has been changed successfully.
+    registrations:
+      destroyed: Bye! Your account has been successfully cancelled. We hope to see you again soon.
+      edit:
+        are_you_sure: Are you sure?
+        calendar_integration: Calendar Integration
+        current_password: Current Password
+        date_of_birth: Date of Birth
+        delete_my_account: Delete My Account
+        department: Department
+        email: Email
+        first_name: First Name
+        header: Edit Personal Information
+        job_title: Job Title
+        last_name: Last Name
+        leave_blank_if_you_dont_want_to_change: Leave this blank if you do not want to change
+        mobile: Mobile
+        overdue_task_summary_notify: Send me overdue task summary
+        password: Password
+        password_confirmation: Confirm Password
+        province: Province
+        save: Save
+        staff_performance_notification: Send me staff performance report
+        start_date: Start Date
+        we_need_your_current_password_to_confirm_your_changes: We need your current password to confirm your changes
+      signed_up: Welcome! You have signed up successfully.
+      signed_up_but_inactive: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+      signed_up_but_locked: You have signed up successfully. However, we could not sign you in because your account is locked.
+      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.
+      update_needs_confirmation: You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address.
+      updated: Your account has been updated successfully.
+    sessions:
+      already_signed_out: Signed out successfully.
+      new:
+        email: Email
+        login: Log in
+        password: Password
+        remember_me: Remember Me
+      signed_in: Signed in successfully.
+      signed_out: Signed out successfully.
+    shared:
+      links:
+        back: Back
+        forget_password: Forgot your password?
+        receive_confirm_instruction: Didn't receive confirmation instructions?
+        receive_unlock_instruction: Didn't receive unlock instructions?
+    unlocks:
+      send_instructions: You will receive an email with instructions for how to unlock your account in a few minutes.
+      send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
+      unlocked: Your account has been unlocked successfully. Please sign in to continue.
   domain_groups:
     create:
       failed_create: Failed to create a domain group.
@@ -1748,6 +2174,19 @@ en:
     version:
       back: Back
       modification_of: Changelog of
+  errors:
+    messages:
+      already_confirmed: was already confirmed, please try signing in
+      already_in_use: already in use
+      confirmation_period_expired: needs to be confirmed within %{period}, please request a new one
+      expired: has expired, please request a new one
+      not_email: Not an email
+      not_found: not found
+      not_locked: was not locked
+      not_saved:
+        one: '1 error prohibited this %{resource} from being saved:'
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+  existed_event: Event already exsits in calendar.
   families:
     actions:
       are_you_sure: Are you sure you want to delete?
@@ -1762,6 +2201,7 @@ en:
       address: Address
       caregiver_information: Caregiver Information
       case_history: Case History
+      clients: Clients
       code: Family ID
       contract_date: Contract Date
       custom_forms: Custom Forms
@@ -1813,6 +2253,7 @@ en:
       significant_family_member_count: Significant Family Member Count
       'yes': 'Yes'
     update:
+      not_allowed_to_detach_clients: You're not allowed to detach clients from the family through this form!
       successfully_updated: Family has been successfully updated.
     version:
       back: Back
@@ -1849,6 +2290,18 @@ en:
       destroy:
         failed_to_delete: Custom Form cannot be deleted.
         successfully_deleted: Custom Form has been successfully deleted.
+      demo_custom_form_tab:
+        are_you_sure: Are you sure you want to delete?
+        close: Close
+        copy: Copy
+        form_title: Form Title
+        frequency: Frequency
+        manage: Manage
+        organization: Organization
+        preview: Preview
+        search_custom_form: Search Custom Form
+        time_of_frequency: Time of Frequency
+        type: Type
       edit:
         form_builder: Form Builder
       form:
@@ -1860,6 +2313,7 @@ en:
         type: Type
       index:
         all_ngo: All NGOs' Custom Forms
+        demo_ngo: Demo NGO's Custom Forms
         form_title: Form Title
         frequency: Frequency
         my_ngo: My NGO's Custom Forms
@@ -1887,6 +2341,9 @@ en:
       show:
         back: Back
         copy: Copy
+        copy_to_enrollment: Copy to Enrollment
+        copy_to_exit_program: Copy to Exit Program
+        copy_to_tracking: Copy to Tracking
         edit: Edit
       update:
         successfully_updated: Custom Form has been successfully updated.
@@ -2203,6 +2660,8 @@ en:
     version:
       back: Back
       modification_of: Changelog of
+  invalid_program_enrollment_date: The enrollment date you have selected is invalid. Please select a date prior to your program exit date.
+  invalid_program_exit_date: The exit date you have selected is invalid. Please select a date after your program enrollment date.
   is_not_email: is not an email
   layouts:
     notification:
@@ -2214,6 +2673,9 @@ en:
       client_is_end_ec_today:
         one: There is a client is about to exit EC program today.
         other: There are %{count} clients are about to exit EC program today.
+      client_quantity:
+        one: (1 client)
+        other: (%{count} clients)
       due_today_assessments_count:
         one: You have 1 assessment due today.
         other: You have %{count} assessments due today.
@@ -2232,6 +2694,9 @@ en:
       due_today_user_custom_field_count:
         one: There is 1 user custom form due today.
         other: There are %{count} user custom forms due today.
+      due_today_client_enrollment_tracking:
+        one: There is 1 client enrollment tracking form due today.
+        other: There are %{count} client enrollment trackings form due today.
       no_task: Nothing to notify.
       overdue_assessments_count:
         one: You have 1 assessment overdue.
@@ -2251,6 +2716,10 @@ en:
       overdue_user_custom_field_count:
         one: There is 1 user custom form overdue.
         other: There are %{count} user custom forms overdue.
+      overdue_client_enrollment_tracking:
+        one: There is 1 client enrollment tracking form overdue.
+        other: There are %{count} client enrollment trackings form overdue.
+      review_client: Review your clients enrollment in
     side_menu:
       able_screening_questions: Able Screening Questions
       account: Account
@@ -2274,13 +2743,14 @@ en:
       manage: Manage
       materials: Equipment/Materials
       partners: Partners
-      program_streams: Programs Stream
+      program_streams: Program Streams
       progress_note: Progress Note
       progress_note_types: Types of Note
       provinces: Provinces
       quantitative_types: Quantitative Types
       referral_sources: Referral Sources
       release_logs: Release logs
+      settings: Settings
       users: Users
       view_calendar: View Calendar
     top_navbar:
@@ -2288,19 +2758,24 @@ en:
       log_out: Log out
   leave_programs:
     create:
-      successfully_created: Client has successfully exited from the program.
+      successfully_created: Client has been successfully exited from the program.
     edit:
       leave_program: Edit Leave Program
+    destroy:
+      delete_attachment_successfully: Attachment has been successfully deleted.
     form:
+      allow_file_size: Allowed file types
       cancel: Cancel
+      exit_date: Exit Date
       save: Save
+      max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
     new:
       new_exit_program: New Exit Program
     show:
       back: Back
-      exit_date: Exit Date
+      exit_date: Exited on
     update:
-      successfully_updated: Exit Program has successfully updated.
+      successfully_updated: Exit Program has been successfully updated.
   locations:
     create:
       failed_create: Failed to create a location.
@@ -2380,6 +2855,15 @@ en:
       form: Form
       partners: Partner
       users: User
+    client_enrollment_tracking_due_today:
+      clients: Client
+      client_enrollment_tracking_notification: Client Enrollment Tracking Notification
+    client_enrollment_tracking_overdue:
+      clients: Client
+      client_enrollment_tracking_notification: Client Enrollment Tracking Notification
+    program_stream_notify:
+      review_client: Clients need to be reviewed
+  ok: OK
   partners:
     actions:
       are_you_sure: Are you sure you want to delete?
@@ -2436,16 +2920,51 @@ en:
   program_streams:
     actions:
       are_you_sure: Are you sure you want to delete?
+    all_ngos_custom_fields:
+      next: Next
+      previous: Previous
+    all_ngos_program_streams_tab:
+      actions: Action
+      copy: Copy
+      domain: Domains
+      maximum: Maximum Program Enrollment
+      name: Name
+      organization: Organization
+      preview: Preview
+      status: Status
     create:
       alert: Name of Tracking has already been taken.
       successfully_created: Program Stream has been successfully created.
     current_program_streams_tab:
-      name: Name
+      actions: Action
       domain: Domains
-      status: Status
       enrolled: Enrolled
       maximum: Maximum Program Enrollment
+      name: Name
+      quantity: Quantity
+      status: Status
+    custom_forms:
+      all_ngos_custom_fields: All NGOs' Custom Forms
+      custom_fields: Custom Forms
+      demo_ngo_custom_fields: Demo NGO's Custom Forms
+      my_ngo_custom_fields: My NGO's Custom Forms
+    custom_form_table:
+      copy: Copy
+      entity_type: Type
+      form_title: Form Title
+      organization: Organization
+    demo_ngo_custom_fields:
+      next: Next
+      previous: Previous
+    demo_program_streams_tab:
       actions: Action
+      copy: Copy
+      domain: Domains
+      maximum: Maximum Program Enrollment
+      name: Name
+      organization: Organization
+      preview: Preview
+      status: Status
     destroy:
       alert: Program Stream cannot be deleted.
       successfully_deleted: Program Stream has been successfully deleted.
@@ -2453,9 +2972,13 @@ en:
       back: Back
       edit_program_stream: Edit Program Stream
     enrollment:
+      custom_fields: Custom Forms
       enrollment_form: Enrollment
+      note: 'Note: The Date of Enrollment field is added automatically to this enrollment form.'
     exit_field:
+      custom_fields: Custom Forms
       exit_form: Exit Form
+      note: 'Note: The Date of Program Exit field is added automatically to the Exit Program form.'
     form:
       finish: Save
       next: Next
@@ -2463,49 +2986,63 @@ en:
       save: Save
     index:
       current_ngo: My NGO's Program Streams
+      demo_programs: Demo NGO's Program Streams
       new_program: Add New Program
-      ngo_programs: All NGO's Program Streams
-      program_list: Programs Stream Listing
+      ngo_programs: All NGOs' Program Streams
+      program_list: Program Streams Listing
+    my_ngo_custom_fields:
+      next: Next
+      previous: Previous
     new:
       back: Back
       new_program_stream: New Program Stream
-    all_ngos_program_streams_tab:
+    others_ngo_program_streams_tab:
       actions: Action
-      quantity: Quantity
       copy: Copy
       domain: Domains
       name: Name
       organization: Organization
       preview: Preview
       quantity: Quantity
-      copy: Copy
-      preview: Preview
+    program_detail:
+      description: Description
+      detail: Program Details
+      domain: Domain
+      name: Name
     program_rule:
       add_new_filter: Add New Filter
       add_new_group: Add Group
-      add_rule: Add rule
+      add_rule: Rules
+      cannot_be_lower: Maximum program enrollment cannot be lower than active enrolled
       delete_group: Delete
       description: Description
-      domain: Domain
-      name: Name
       maximum: Maximum Program Enrollment
+      mutual_dependence: Mutual Dependence
+      name: Name
+      program_exclusive: Program Exclusive
       rule: Rules
     show:
-      enrolled: Enrolled
-      maximum: Maximum Program Enrollment
       back: Back
       copy: Copy
       description: Description
+      detail: Program Detail
       domain: Domain
+      enrolled: Enrolled
       enrollment: Enrollment
       exit_program: Exit Program
+      maximum: Maximum Program Enrollment
+      mutual_dependence: Mutual Dependence
+      program_exclusive: Program Exclusive
       quantity: Quantity
       rules: Rules
       tracking: Tracking
+      not_require_tracking: This Program Stream does not require any tracking form.
     tracking:
       add_tracking: Add Tracking
       tracking_form: Progress Tracking
+      not_require_tracking: This Program Stream does not require any tracking form.
     tracking_fields:
+      custom_fields: Custom Forms
       frequency: Frequency
       name: Name
       remove_tracking: Remove Tracking
@@ -2742,12 +3279,28 @@ en:
       start_date: Start Date
     index:
       case_statistics: Case Statistics
-      client_amount: Client Amounts
+      client_amount: Clients
       csi_domain_scores: CSI Domain Scores
       domain_score: Domain Scores
   review_problem: 'Please review the problems below:'
   save: Save
+  settings:
+    country:
+      settings: Settings
+      switched_country_cambodia: You’ve switched your country setting to Cambodia.
+      switched_country_lesotho: You’ve switched your country setting to Lesotho.
+      switched_country_myanmar: You’ve switched your country setting to Myanmar.
+      switched_country_thailand: You’ve switched your country setting to Thailand.
+    navigation:
+      country: Country
   shared:
+    form_builder:
+      list_attachment:
+        are_you_sure: Are you sure you want to delete?
+        preview_download: Preview & Download
+      file_field:
+        allow_file_size: Allowed file types
+        max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
     per_page_form:
       show: Show
     version_type:
@@ -2841,6 +3394,62 @@ en:
         program_stream: Program Stream
         value_of: Value of
   signed_in_with_google: Signed in with google calendar successfully.
+  simple_form:
+    cancel: បោះបង់
+    error_notification:
+      default_message: 'Please review the problems below:'
+    'no': 'No'
+    required:
+      mark: "*"
+      text: required
+    save: រក្សាទុកy
+    'yes': 'Yes'
+  stages:
+    able_screening_question_fields:
+      alert_manager: Alert Manager
+      are_you_sure: Remove question with have sigificant affect to client answers, Are you sure you want to delete?
+      group: Group
+      mode: Mode
+      question: Question
+      questions: Questions
+    attachment_fields:
+      browse: Browse
+    create:
+      successfully_created: Stage has been successfully created.
+    destroy:
+      alert: Stage cannot be deleted.
+      successfully_deleted: Stage has been successfully deleted.
+    edit:
+      edit_stage: Edit Stage
+    form:
+      add_question: Add Question
+      alert_manager: Alert Manager
+      from_age: From Age (As Year)
+      group: Group
+      mode: Mode
+      questions: Questions
+      to_age: To Age (As Year)
+    index:
+      able_screening_questions: Able Screening Question
+      edit_and_add_question: Edit/Add Question
+      from: From
+      general_question: General Question
+      new_general_question: New General Question
+      new_stage_question: New Stage Question
+      question:
+        one: 1 Question
+        other: "%{count} Questions"
+      stage: Stage
+      stage_question: Stage Question
+      to: To
+      year: year
+    new:
+      new_stage: New Stage
+    non_stage: Non Stage
+    questions: Questions
+    stage: Stage
+    update:
+      successfully_updated: Stage has been successfully updated.
   surveys:
     create:
       successfully_created: Survey has been successfully created.
@@ -2920,7 +3529,7 @@ en:
         no_group: No Group
       index:
         page_title: Page title
-      last_updated_by_html: 'Updated %{time_ago} <cite>by %{user}</cite>'
+      last_updated_by_html: Updated %{time_ago} <cite>by %{user}</cite>
       topics_and_posts_counts: "%{topics_count} topics / %{posts_count} replies"
       update: Update
       updated_notice: Messageboard has been updated
@@ -2979,11 +3588,11 @@ en:
       form:
         global_preferences_label: Global Settings
         messageboard_notify_on_mention:
-          hint: "When someone mentions you by your username (eg: @sam) in this messageboard you will follow the topic. You will receive emails with the contents of that post and any replies."
+          hint: 'When someone mentions you by your username (eg: @sam) in this messageboard you will follow the topic. You will receive emails with the contents of that post and any replies.'
           label: Follow topics you are mentioned in
         messageboard_preferences_label_html: Notification Settings for <em>%{messageboard}</em>
         notify_on_mention:
-          hint: "When someone mentions you by your username (eg: @sam) you will follow the topic. You will receive emails with the contents of that post and any replies."
+          hint: 'When someone mentions you by your username (eg: @sam) you will follow the topic. You will receive emails with the contents of that post and any replies.'
           label: Follow topics you are mentioned in
         notify_on_message:
           hint: When you are added to a private conversation you will receive an email with its content.
@@ -3066,8 +3675,8 @@ en:
       user_started_topic_html: "%{user_link} started %{topic_link}"
   time:
     formats:
-      long: ""
-      short: ""
+      long: '""'
+      short: '""'
   trackings:
     create:
       successfully_created: Tracking has been successfully created.
@@ -3083,10 +3692,24 @@ en:
   users:
     actions:
       are_you_sure: Are you sure you want to delete?
+    assessment_permission:
+      assessments: CSI Assessments
+      can_edit: Can Edit
+      can_view: Can View
+    case_note_permission:
+      can_edit: Can Edit
+      can_view: Can View
+      case_notes: Case Notes
     clients:
       clients: Clients
     create:
       successfully_created: User has been successfully created.
+    custom_form_permission:
+      can_edit: Can Edit
+      can_view: Can View
+    custom_program_permission:
+      can_edit: Can Edit
+      can_view: Can View
     destroy:
       alert: User cannot be deleted.
       successfully_deleted: User has been successfully deleted.
@@ -3185,10 +3808,17 @@ en:
       password: Password
       password_confirmation: Password Confirmation
       password_hint: Leave it blank if you don't want to change password
+      permissions: Permissions
       pin_number: Pin Number
       province: Province
       roles: Permission Set
       start_date: Start Date
+    permissions:
+      assessmets: CSI Assessments
+      case_notes: Case Notes
+      custom_forms: Custom Forms
+      custom_programs: Custom Programs
+      permissions_selector: Permissions Selector
     update:
       successfully_updated: User has been successfully updated.
     version:
@@ -3197,123 +3827,12 @@ en:
   views:
     pagination:
       first: "&laquo; First"
-      last: "Last &raquo;"
-      next: "Next &rsaquo;"
+      last: Last &raquo;
+      next: Next &rsaquo;
       previous: "&lsaquo; Previous"
       truncate: "&hellip;"
+  warning: Warning
   will_paginate:
     next_label: Next Page
     page_gap: "..."
     previous_label: Previous Page
-  devise:
-    confirmations:
-      confirmed: "Your email address has been successfully confirmed."
-      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
-    failure:
-      already_authenticated: "You are already signed in."
-      inactive: "Your account is not activated yet."
-      invalid: "Invalid %{authentication_keys} or password."
-      locked: "Your account is locked."
-      last_attempt: "You have one more attempt before your account is locked."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
-      timeout: "Your session expired. Please sign in again to continue."
-      unauthenticated: "You need to sign in or sign up before continuing."
-      unconfirmed: "You have to confirm your email address before continuing."
-    mailer:
-      confirmation_instructions:
-        subject: "Confirmation instructions"
-      reset_password_instructions:
-        subject: "Reset password instructions"
-      unlock_instructions:
-        subject: "Unlock instructions"
-      password_change:
-        subject: "Password Changed"
-    omniauth_callbacks:
-      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
-      success: "Successfully authenticated from %{kind} account."
-    passwords:
-      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
-      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
-      updated: "Your password has been changed successfully. You are now signed in."
-      updated_not_active: "Your password has been changed successfully."
-      new:
-        email: "Email"
-        send_reset_password: "Send me reset password instructions"
-        forget_password: "Forgot your password?"
-      edit:
-        change_your_password: Change your password
-        new_password: New password
-        confirm_your_new_password: Confirm your new password
-        change_my_password: Change my password
-    registrations:
-      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
-      signed_up: "Welcome! You have signed up successfully."
-      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
-      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
-      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
-      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
-      updated: "Your account has been updated successfully."
-      edit:
-        header: Edit Personal Information
-        first_name: First Name
-        last_name: Last Name
-        date_of_birth: Date of Birth
-        job_title: Job Title
-        department: Department
-        start_date: Start Date
-        province: Province
-        mobile: Mobile
-        email: Email
-        leave_blank_if_you_dont_want_to_change: Leave this blank if you do not want to change
-        password: Password
-        password_confirmation: Confirm Password
-        we_need_your_current_password_to_confirm_your_changes: We need your current password to confirm your changes
-        current_password: Current Password
-        save: Save
-        delete_my_account: Delete My Account
-        are_you_sure: Are you sure?
-        calendar_integration: Calendar Integration
-        overdue_task_summary_notify: Send me overdue task summary
-    sessions:
-      signed_in: "Signed in successfully."
-      signed_out: "Signed out successfully."
-      already_signed_out: "Signed out successfully."
-      new:
-        login: "Log in"
-        email: "Email"
-        password: "Password"
-        remember_me: "Remember Me"
-    unlocks:
-      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
-      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
-      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
-    shared:
-      links:
-        back: Back
-        forget_password: "Forgot your password?"
-        receive_confirm_instruction: "Didn't receive confirmation instructions?"
-        receive_unlock_instruction: "Didn't receive unlock instructions?"
-  errors:
-    messages:
-      already_confirmed: "was already confirmed, please try signing in"
-      already_in_use: already in use
-      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
-      expired: "has expired, please request a new one"
-      not_found: "not found"
-      not_locked: "was not locked"
-      not_saved:
-        one: "1 error prohibited this %{resource} from being saved:"
-        other: "%{count} errors prohibited this %{resource} from being saved:"
-      not_email: Not an email
-  simple_form:
-    "yes": 'Yes'
-    "no": 'No'
-    required:
-      text: 'required'
-      mark: '*'
-    save: រក្សាទុកy
-    cancel: បោះបង់
-    error_notification:
-      default_message: "Please review the problems below:"
