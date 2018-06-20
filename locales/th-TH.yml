@@ -146,6 +146,16 @@ th-TH:
               blank: 
         client:
           attributes:
+            client_users:
+              blank: 
+            initial_referral_date:
+              blank: 
+            name_of_referee:
+              blank: 
+            received_by_id:
+              blank: 
+            referral_source:
+              blank: 
             user_ids:
               blank: 
         client_enrollment:
@@ -243,6 +253,16 @@ th-TH:
             name:
               blank: 
               taken: 
+        setting:
+          attributes:
+            max_assessment:
+              blank: 
+              greater_than: 
+            max_case_note:
+              blank: 
+            min_assessment:
+              blank: 
+              less_than: 
         stage:
           attributes:
             from_age:
@@ -277,6 +297,7 @@ th-TH:
     fields:
       able: 
       able_state: 
+      active_program_stream: 
       address: 
       age: 
       agencies_involved: 
@@ -300,14 +321,20 @@ th-TH:
       custom_form: 
       date_of_assessments: 
       date_of_birth: 
+      description_house_landmark: 
+      directions: 
       district: 
       donor: 
       donor_id: 
+      enrolled_program_stream: 
       enrollment: 
+      exit_circumstance: 
       exit_ec_date: 
       exit_fc_date: 
       exit_kc_date: 
+      exit_note: 
       exit_program: 
+      exit_reasons: 
       family: 
       family_id: 
       family_name: 
@@ -330,14 +357,20 @@ th-TH:
       live_with: 
       local_family_name: 
       local_given_name: 
+      main_school_contact: 
       name: 
+      name_of_referee: 
       ngo_accepted_date: 
       ngo_exit_date: 
+      other_info_of_exit: 
       placement_start_date: 
+      plot: 
+      postal_code: 
       program_stream: 
       province: 
       province_id: 
       quantitative: 
+      rated_for_id_poor: 
       received_by: 
       received_by_id: 
       referral_phone: 
@@ -348,18 +381,25 @@ th-TH:
       referred_to_kc: 
       reject_note: 
       relevant_referral_information: 
+      road: 
       school_grade: 
       school_name: 
       slug: 
       state: 
       status: 
+      street_line1: 
+      street_line2: 
       street_number: 
+      subdistrict: 
+      suburb: 
       telephone_number: 
       time_of_frequency: 
+      township: 
       tracking: 
       type: 
       user_id: 
       village: 
+      what3words: 
   advanced_search_save_queries:
     create:
       failed_create: 
@@ -453,8 +493,6 @@ th-TH:
       begin_now: 
       initial_assessment: 
       next_review: 
-      next_six_monthly_review: 
-      six_month_assessment: 
       three_month_assessment: 
       view_report: 
     show:
@@ -469,7 +507,6 @@ th-TH:
       reason: 
       score: 
       show_attachment: 
-      six_month_assessment_report: 
       task: 
       three_month_assessment_report: 
     update:
@@ -678,6 +715,54 @@ th-TH:
       males: 
       overdue_assessments_count: 
   client:
+    enter_ngos:
+      create:
+        failed_create: 
+        successfully_created: 
+      edit_form:
+        accept: 
+        accept_ngo_form: 
+        accepted_date: 
+        case_worker_or_staff: 
+      form:
+        accept: 
+        accept_ngo_form: 
+        accepted_date: 
+        case_worker_or_staff: 
+      update:
+        failed_update: 
+        successfully_updated: 
+    exit_ngos:
+      create:
+        failed_create: 
+        successfully_created: 
+      edit_form:
+        case_worker_or_staff: 
+        exit_btn: 
+        exit_circumstance: 
+        exit_date: 
+        exit_ngo: 
+        exit_note: 
+        exit_reasons: 
+        exit_status: 
+        other_info_of_exit: 
+        reject_client: 
+        rejected_note: 
+      form:
+        case_worker_or_staff: 
+        exit_btn: 
+        exit_circumstance: 
+        exit_date: 
+        exit_ngo: 
+        exit_note: 
+        exit_reasons: 
+        exit_status: 
+        other_info_of_exit: 
+        reject_client: 
+        rejected_note: 
+      update:
+        failed_update: 
+        successfully_updated: 
     form_option:
       basic_fields: 
       csi_domain_scores: 
@@ -903,6 +988,30 @@ th-TH:
   clients:
     actions:
       are_you_sure: 
+    address_forms:
+      cambodia_address_form:
+        commune: 
+        current_province: 
+        district: 
+        house_number: 
+        street_number: 
+        village: 
+      lesotho_address_form:
+        description_house_landmark: 
+        directions: 
+        suburb: 
+      myanmar_address_form:
+        state: 
+        street_line1: 
+        street_line2: 
+        township: 
+      thailand_address_form:
+        district: 
+        plot: 
+        postal_code: 
+        province: 
+        road: 
+        subdistrict: 
     answer_fields:
       answer: 
       yes_no: 
@@ -991,6 +1100,11 @@ th-TH:
       start_date: 
       support_amount: 
       support_note: 
+    enter_ngo_form:
+      accept: 
+      accept_ngo_form: 
+      accepted_date: 
+      case_worker_or_staff: 
     exit_case_form:
       exit_btn: 
       exit_date: 
@@ -1001,11 +1115,17 @@ th-TH:
       exit_note: 
       exit_status: 
     exit_ngo_form:
+      case_worker_or_staff: 
       exit_btn: 
+      exit_circumstance: 
       exit_date: 
       exit_ngo: 
       exit_note: 
+      exit_reasons: 
       exit_status: 
+      other_info_of_exit: 
+      reject_client: 
+      rejected_note: 
     form:
       able: 
       able_state: 
@@ -1014,6 +1134,7 @@ th-TH:
       agency_names: 
       answer: 
       birth_province: 
+      blank: 
       cambodia: 
       case_worker: 
       case_worker_or_staff: 
@@ -1025,17 +1146,20 @@ th-TH:
       custom_forms: 
       date_of_birth: 
       district: 
+      done: 
       donor: 
       exit_date: 
       exit_note: 
       exit_status: 
       family_name: 
+      finish: 
       follow_up_by: 
       follow_up_date: 
       followed_up_by: 
       from: 
       gender: 
       general_question: 
+      getting_started: 
       given_name: 
       gov_caseworker_comment: 
       gov_caseworker_comment_section: 
@@ -1070,11 +1194,14 @@ th-TH:
       id: 
       id_poor: 
       initial_referral_date: 
+      is_the_client_rated_for_id_poor: 
       kid_id: 
       live_with: 
       local_family_name: 
       local_given_name: 
       name: 
+      next: 
+      previous: 
       province: 
       received_by: 
       referral_phone: 
@@ -1092,6 +1219,8 @@ th-TH:
       village: 
       year: 
       yes_no: 
+    form_header:
+      case_worker_or_staff: 
     foster_case:
       carer_address: 
       carer_names: 
@@ -1112,6 +1241,27 @@ th-TH:
       start_date: 
       support_amount: 
       support_note: 
+    getting_started:
+      case_worker_or_staff: 
+      date_of_birth: 
+      family_name: 
+      first_followed_up_by: 
+      first_followed_up_date: 
+      gender: 
+      getting_started: 
+      given_name: 
+      initial_referral_date: 
+      living_detail: 
+      local_family_name: 
+      local_given_name: 
+      name_of_referee: 
+      other_detail: 
+      referee_phone_number: 
+      referral_information: 
+      referral_received_by: 
+      referral_source: 
+      specific_point: 
+      staff_responsibilities: 
     index:
       active_programs: 
       add_new_client: 
@@ -1127,6 +1277,8 @@ th-TH:
       load: 
       load_save_search: 
       most_recent: 
+      read_less: 
+      read_more: 
       report_builder: 
       reports: 
       results: 
@@ -1156,8 +1308,33 @@ th-TH:
       start_date: 
       support_amount: 
       support_note: 
+    living_detail:
+      case_worker_or_staff: 
+      contact_details: 
+      current_address: 
+      living_detail: 
+      main_school_contact: 
+      primary_carer_name: 
+      primary_carer_phone_number: 
+      school_grade: 
+      school_name: 
+      schooling: 
+      what3words: 
     new:
       new_client_title: 
+    other_detail:
+      agencies_involved: 
+      case_worker_or_staff: 
+      custom_id_number1: 
+      custom_id_number2: 
+      donor: 
+      has_been_in_government_care: 
+      has_been_in_orphanage: 
+      is_the_client_rated_for_id_poor: 
+      other_detail: 
+      other_information: 
+      province: 
+      relevant_referral_information: 
     placement:
       view_legacy_quarterly_reports: 
     remaining_programs:
@@ -1193,16 +1370,23 @@ th-TH:
       completed: 
       current_address: 
       current_province: 
+      custom_id_number1: 
+      custom_id_number2: 
       date_of_birth: 
       district: 
       donor: 
+      edit_exit_information: 
       enrolled_program_streams: 
+      enter_ngo_information: 
+      exit_circumstance: 
       exit_date: 
       exit_from_ec: 
       exit_from_fc: 
       exit_from_kc: 
       exit_ngo_btn: 
+      exit_ngo_information: 
       exit_note: 
+      exit_reasons: 
       families: 
       family_name: 
       follow_up_by: 
@@ -1224,12 +1408,17 @@ th-TH:
       id: 
       id_poor: 
       initial_referral_date: 
+      is_the_client_rated_for_id_poor: 
       kid_id: 
       live_with: 
       local_family_name: 
       local_given_name: 
+      main_school_contact: 
+      manage: 
       name: 
+      name_of_referee: 
       note: 
+      other_info_of_exit: 
       placements:
         carer_address: 
         carer_names: 
@@ -1246,15 +1435,19 @@ th-TH:
         start_date: 
         support_amount: 
         support_note: 
+      primary_carer_name: 
+      primary_carer_phone_number: 
       program_streams: 
       progress_note: 
       province: 
       received_by: 
+      referee_phone_number: 
       referral_phone: 
       referral_source: 
       reject: 
       reject_client: 
       reject_note: 
+      rejected_note: 
       relevant_referral_information: 
       school_grade: 
       school_name: 
@@ -1274,6 +1467,10 @@ th-TH:
       view_legacy_quarterly_reports: 
       view_tasks: 
       village: 
+      what3words: 
+    specific_point:
+      case_worker_or_staff: 
+      specific_point: 
     state:
       rejected_note: 
       state: 
@@ -1395,6 +1592,7 @@ th-TH:
       interventions: 
       locations: 
       materials: 
+      organisation_types: 
       partner_custom_fields: 
       partners: 
       program_streams: 
@@ -1458,10 +1656,15 @@ th-TH:
         current_province: 
         date_of_assessments: 
         date_of_birth: 
+        description_house_landmark: 
+        directions: 
         district: 
         domain: 
         domains: 
         donor: 
+        exit_circumstance: 
+        exit_note: 
+        exit_reasons: 
         family_id: 
         family_name: 
         follow_up_by: 
@@ -1487,12 +1690,15 @@ th-TH:
         live_with: 
         local_family_name: 
         local_given_name: 
+        main_school_contact: 
         manage: 
         myanmar: 
         name: 
+        name_of_referee: 
         ngo_accepted_date: 
         ngo_exit_date: 
         no_dob: 
+        other_info_of_exit: 
         placement_case_type: 
         placement_start_date: 
         placements:
@@ -1511,12 +1717,15 @@ th-TH:
           start_date: 
           support_amount: 
           support_note: 
+        plot: 
+        postal_code: 
         program_enrollment_date: 
         program_exit_date: 
         program_streams: 
         province: 
         quantitative_case_values: 
         quantitative_types: 
+        rated_for_id_poor: 
         reason_for_family_separation: 
         received_by: 
         referral_phone: 
@@ -1524,25 +1733,36 @@ th-TH:
         reject_note: 
         rejected_note: 
         relevant_referral_information: 
+        road: 
         school_grade: 
         school_name: 
         state: 
         status: 
+        street_line1: 
+        street_line2: 
         street_number: 
+        subdistrict: 
+        suburb: 
         telephone_number: 
         thailand: 
         time_of_frequency: 
         total: 
+        township: 
         type: 
         view: 
         village: 
+        what3words: 
       date_of_assessments: 
+      exit_circumstance: 
+      exit_note: 
+      exit_reasons: 
       families:
         address: 
         caregiver_information: 
         case_history: 
         case_workers: 
         changelogs: 
+        client: 
         clients: 
         code: 
         contract_date: 
@@ -1553,6 +1773,7 @@ th-TH:
         female: 
         female_adult_count: 
         female_children_count: 
+        form_title: 
         household_income: 
         id: 
         male: 
@@ -1574,7 +1795,10 @@ th-TH:
       history_of_disability_and_or_illness: 
       history_of_harm: 
       history_of_high_risk_behaviours: 
+      main_school_contact: 
       manage: 
+      name_of_referee: 
+      other_info_of_exit: 
       partner: 
       partners:
         address: 
@@ -1585,6 +1809,7 @@ th-TH:
         contact_mobile: 
         contact_name: 
         engagement: 
+        form_title: 
         id: 
         manage: 
         name: 
@@ -1622,6 +1847,7 @@ th-TH:
         kc_name: 
         staff_information: 
         visit_date: 
+      rated_for_id_poor: 
       reason_for_family_separation: 
       rejected_note: 
       select_columns: 
@@ -1659,6 +1885,7 @@ th-TH:
         roles: 
         start_date: 
         view: 
+      what3words: 
     filters:
       dynamic:
         operations:
@@ -1690,6 +1917,7 @@ th-TH:
         asc: 
         desc: 
     to: 
+    what3words: 
   date:
     formats:
       long: 
@@ -2090,7 +2318,11 @@ th-TH:
         date_of_birth: 
         delete_my_account: 
         department: 
+        disable: 
+        disable_two_factor_authentication: 
         email: 
+        enable: 
+        enable_two_factor_authentication: 
         first_name: 
         header: 
         job_title: 
@@ -2104,6 +2336,7 @@ th-TH:
         save: 
         staff_performance_notification: 
         start_date: 
+        verification_code: 
         we_need_your_current_password_to_confirm_your_changes: 
       signed_up: 
       signed_up_but_inactive: 
@@ -2115,9 +2348,11 @@ th-TH:
       already_signed_out: 
       new:
         email: 
+        leave_this_blank_if_it_is_not_enabled: 
         login: 
         password: 
         remember_me: 
+        verification_code: 
       signed_in: 
       signed_out: 
     shared:
@@ -2292,6 +2527,22 @@ th-TH:
       successfully_deleted: 
     edit:
       edit_family_title: 
+    family_advanced_searches:
+      advanced_search:
+        add_new_filter: 
+        add_new_group: 
+        advanced_search: 
+        custom_form_column: 
+        delete_group: 
+        family_column: 
+        no_results: 
+        reset: 
+        results: 
+        search: 
+      form_option:
+        basic_fields: 
+        custom_form: 
+        filter_option: 
     form:
       address: 
       caregiver_information: 
@@ -2319,6 +2570,7 @@ th-TH:
       add_new_family: 
       clients: 
       export_xls: 
+      report_builder: 
       results: 
     new:
       new_family_title: 
@@ -2345,6 +2597,8 @@ th-TH:
       name: 
       'no': 
       province: 
+      read_less: 
+      read_more: 
       significant_family_member_count: 
       'yes': 
     update:
@@ -2762,6 +3016,8 @@ th-TH:
     notification:
       check_tasks: 
       click_here: 
+      client_case_note_due_today: 
+      client_case_note_overdue: 
       client_is_about_to_end_ec: 
       client_is_end_ec_today: 
       client_quantity: 
@@ -2769,14 +3025,17 @@ th-TH:
       due_today_client_custom_field_count: 
       due_today_client_enrollment_tracking: 
       due_today_family_custom_field_count: 
+      due_today_forms_count: 
       due_today_partner_custom_field_count: 
       due_today_tasks_count: 
       due_today_user_custom_field_count: 
       no_task: 
+      overdue_and_due_today_count: 
       overdue_assessments_count: 
       overdue_client_custom_field_count: 
       overdue_client_enrollment_tracking: 
       overdue_family_custom_field_count: 
+      overdue_forms_count: 
       overdue_partner_custom_field_count: 
       overdue_tasks_count: 
       overdue_user_custom_field_count: 
@@ -2788,8 +3047,11 @@ th-TH:
       agencies: 
       changelogs: 
       clients: 
+      country: 
+      csi_tools: 
       custom_fields: 
       dashboards: 
+      default_columns: 
       departments: 
       districts: 
       domain_groups: 
@@ -2805,6 +3067,8 @@ th-TH:
       log_out: 
       manage: 
       materials: 
+      organisation_type: 
+      organisation_types: 
       partners: 
       program_streams: 
       progress_note: 
@@ -2926,6 +3190,12 @@ th-TH:
   must_be_uniq: 
   mutual_dependence_has_been_modified: 
   notifications:
+    case_note_due_today:
+      client_case_note_due_today: 
+      review_client: 
+    case_note_overdue:
+      client_case_note_overdue: 
+      review_client: 
     client_enrollment_tracking_due_today:
       client_enrollment_tracking_notification: 
       clients: 
@@ -2953,6 +3223,38 @@ th-TH:
       most_recent_assessment: 
       upcoming_assessment: 
   ok: 
+  organization_types:
+    create:
+      failed_create: 
+      successfully_created: 
+    destroy:
+      alert: 
+      failed_delete: 
+      successfully_deleted: 
+    edit:
+      title: 
+    form:
+      cancel: 
+      name: 
+      organisation_type: 
+      province: 
+      save: 
+    index:
+      add_new_organisation_type: 
+      are_you_sure: 
+      changelogs: 
+      manage: 
+      organisation_type_names: 
+      organisation_types: 
+      view: 
+    new:
+      title: 
+    update:
+      failed_update: 
+      successfully_updated: 
+    version:
+      back: 
+      modification_of: 
   partners:
     actions:
       are_you_sure: 
@@ -2980,9 +3282,26 @@ th-TH:
     index:
       add_new_partner: 
       export_xls: 
+      report_builder: 
       results: 
     new:
       new_partner_title: 
+    partner_advanced_searches:
+      advanced_search:
+        add_new_filter: 
+        add_new_group: 
+        advanced_search: 
+        custom_form_column: 
+        delete_group: 
+        no_results: 
+        partner_column: 
+        reset: 
+        results: 
+        search: 
+      form_option:
+        basic_fields: 
+        custom_form: 
+        filter_option: 
     show:
       add_form: 
       additional_forms: 
@@ -3394,15 +3713,39 @@ th-TH:
   review_problem: 
   rules_has_been_modified: 
   save: 
+  sessions:
+    create:
+      bad_credentials_supplied: 
+      your_account_needs_to_supply_a_verification_code: 
   settings:
+    assessment:
+      assessment: 
+      disable_assessment: 
+      max_assessment: 
+      min_assessment: 
+    case_note:
+      case_note: 
+      max_case_note: 
     country:
+      country: 
       settings: 
       switched_country_cambodia: 
       switched_country_lesotho: 
       switched_country_myanmar: 
       switched_country_thailand: 
+    create:
+      successfully_created: 
+    default_columns:
+      client_default_columns: 
+      default_columns: 
+      family_default_columns: 
+      partner_default_columns: 
+    index:
+      csi_tools: 
     navigation:
       country: 
+    update:
+      successfully_updated: 
   shared:
     form_builder:
       file_field:
@@ -3475,6 +3818,7 @@ th-TH:
         material: 
         no_modification: 
         'on': 
+        organisation_type: 
         partner: 
         partner_custom_field: 
         progress_note: 
@@ -3791,6 +4135,7 @@ th-TH:
     show:
       back: 
   unauthorized:
+    case_worker_unauthorized: 
     default: 
   users:
     actions:
@@ -3805,6 +4150,8 @@ th-TH:
       case_notes: 
     clients:
       clients: 
+      read_less: 
+      read_more: 
     create:
       successfully_created: 
     custom_form_permission:
@@ -3867,6 +4214,13 @@ th-TH:
       add_new_user: 
       export_xls: 
       results: 
+    multi_factor_authentication:
+      verify_disabled:
+        two_factor_authentication_could_not_be_disabled: 
+        two_factor_authentication_disabled: 
+      verify_enable:
+        two_factor_authentication_could_not_be_enabled: 
+        two_factor_authentication_enabled: 
     new:
       clients: 
       current_password: 
@@ -3896,6 +4250,10 @@ th-TH:
       custom_forms: 
       custom_programs: 
       permissions_selector: 
+      quantitative_types: 
+    quantitative_type_permission:
+      can_edit: 
+      can_view: 
     show:
       add_form: 
       additional_forms: 
