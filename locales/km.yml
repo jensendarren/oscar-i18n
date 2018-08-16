@@ -200,6 +200,8 @@ km:
           attributes:
             family_type:
               blank: មិនអាចរំលង
+            status:
+              blank: មិនអាចរំលង
         government_report:
           attributes:
             code:
@@ -323,6 +325,8 @@ km:
       code: លេខកូដផ្ទាល់ខ្លួនទី១
       commune: ឃុំ/សង្កាត់
       completed: ពេញលេញហើយឬនៅ?
+      created_at: កាលបរិច្ឆេទ
+      created_by: បង្កើត​ឡើង​ដោយ
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       current_address: ឣាសយដ្ឋានបច្ចុប្បន្ន
       current_province: ខេត្តបច្ចុប្បន្ន
@@ -384,6 +388,8 @@ km:
       referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
       referral_source: ប្រភពនៃការបញ្ជូន
       referral_source_id: ប្រភពនៃការបញ្ជូន
+      referred_from: បញ្ជូនមកពីអង្គការ
+      referred_to: បញ្ជូនទៅអង្គការដទៃ
       referred_to_ec: បញ្ជួនទៅករណី EC
       referred_to_fc: បញ្ជួនទៅករណី FC
       referred_to_kc: បញ្ជួនទៅករណី KC
@@ -518,6 +524,7 @@ km:
       three_month_assessment_report: របាយការណ៍ការប៉ាន់ប្រមាណទៀងទាត់
     update:
       successfully_updated: ការប៉ាន់ប្រមាណត្រូវបានកែសម្រួលដោយជោគជ័យ
+  at: នៅថ្ងៃ
   back: ត្រលប់ក្រោយ
   calendars:
     index:
@@ -1028,8 +1035,8 @@ km:
       yes_no: បាទ/អត់ទេ
     case_history_detail:
       accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
-      client_id: លេខសំគាល់អតិថិជន
       client: ឈ្មោះអតិថិជន
+      client_id: លេខសំគាល់អតិថិជន
       consent_form: ទម្រង់យល់ព្រម
       date_of_referral: កាលបរិច្ឆេទបញ្ជូន
       enrollment_date: កាលបរិច្ឆេទចុះឈ្មោះ
@@ -1045,7 +1052,7 @@ km:
       preview_download: មើលនិងទាញយក
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
       referral_reasons: មូលហេតុនៃការបញ្ជូន
-      referred_from: ទទួលចូលអង្គការ
+      referred_from: បញ្ជូនមកពីអង្គការ
       referred_to: បញ្ជូនទៅអង្គការដទៃ
     client_advanced_searches:
       advanced_search:
@@ -1290,6 +1297,11 @@ km:
       local_given_name: នាមខ្លួន (ភាសាខ្មែរ)
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
+      province:
+        cambodia: ខេត្តកំណើត
+        lesotho: ខេត្តកំណើត
+        myanmar: ខេត្តកំណើត
+        thailand: ខេត្តកំណើត
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
       referral_information: ព័ត៌មានការបញ្ជូន
       referral_received_by: បុគ្គលិកទទួលករណី
@@ -1369,11 +1381,6 @@ km:
       is_the_client_rated_for_id_poor: តើអតិថិជនត្រូវបានវាយតម្លៃថាអត្តសញ្ញាណក្រីក្រឬទេ
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
       other_information: ព័ត៌មានផ្សេងៗ
-      province:
-        cambodia: ខេត្តកំណើត
-        lesotho: ខេត្តកំណើត
-        myanmar: ខេត្តកំណើត
-        thailand: ខេត្តកំណើត
       relevant_referral_information: ព័ត៌មានយោងដែលពាក់ព័ន្ធ / កំណត់សំគាល់
     placement:
       view_legacy_quarterly_reports: មើល Quarterly Reports ចាស់ៗ
@@ -1488,14 +1495,18 @@ km:
       primary_carer_phone_number: លេខទូរស័ព្ទអ្នកមើលថែចំបង
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
-      province: ខេត្តកំណើត
+      province:
+        cambodia: ខេត្តកំណើត
+        lesotho: ខេត្តកំណើត
+        myanmar: ខេត្តកំណើត
+        thailand: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
       referral_forms: បែបបទបញ្ជូន
       referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
       referral_source: ប្រភពនៃការបញ្ជូន
-      referred_from: ទទួលចូលអង្គការ
+      referred_from: បញ្ជូនមកពីអង្គការ
       referred_to: បញ្ជូនទៅអង្គការដទៃ
       reject: មិនទទួលយក
       reject_client: មិនទទួលយកអតិថិជន
@@ -1535,6 +1546,7 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
+  created_by: បង្កើត​ឡើង​ដោយ
   custom_field_properties:
     attachment:
       are_you_sure: តើអ្នកប្រាកដហើយ?
@@ -1707,6 +1719,8 @@ km:
         code: លេខកូដផ្ទាល់ខ្លួនទី១
         commune: ឃុំ/សង្កាត់
         completed: ពេញលេញហើយឬនៅ?
+        created_at: កាលបរិច្ឆេទ
+        created_by: បង្កើត​ឡើង​ដោយ
         current_address: ឣាសយដ្ឋានបច្ចុប្បន្ន
         current_province: ខេត្តបច្ចុប្បន្ន
         date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
@@ -1785,6 +1799,8 @@ km:
         received_by: បុគ្គលិកទទួលករណី
         referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
         referral_source: ប្រភពនៃការបញ្ជូន
+        referred_from: ប្រភពនៃការបញ្ជូន
+        referred_to: បញ្ជូនទៅអង្គការដទៃ
         reject_note: កំណត់ហេតុនៃការមិនទទួលយក
         rejected_note: កំណត់ហេតុនៃការមិនទទួលយក
         relevant_referral_information: ព័ត៌មានសំខាន់ៗដែលពាក់ព័ន្ធនឹងការបញ្ជូនករណី
@@ -1820,8 +1836,10 @@ km:
         client: ឣតិថិជន
         clients: ឣតិថិជន
         code: លេខសំគាល់គ្រួសារ
+        commune: ឃុំ/សង្កាត់
         contract_date: កាលបរិច្ឆេទនៃកិច្ចសន្យា
         dependable_income: ប្រាក់ចំណូលទៀងទាត់
+        district: ស្រុក/ខណ្ឌ
         family: គ្រួសារ
         family_preservation: ករណីអភិរក្សគ្រួសារ?
         family_type: ប្រភេទគ្រួសារ
@@ -1829,6 +1847,7 @@ km:
         female_adult_count: ចំនួនមនុស្សស្រីពេញវ័យ
         female_children_count: ចំនួនក្មេងស្រី
         form_title: ឈ្មោះទម្រង់បែបបទ
+        house: ផ្ទះលេខ
         household_income: ប្រាក់ចំណូលគ្រួសារប្រចាំខែ
         id: លេខសំគាល់
         male: ប្រុស
@@ -1840,8 +1859,11 @@ km:
         'no': ទេ
         province: ខេត្ត/ក្រុង
         significant_family_member_count: ចំនួនសមាជិកគ្រួសារដែលចូលរួមរកប្រាក់ចំណូល
+        status: ស្ថានភាព
+        street: ផ្លូវ
         total: សរុប
         view: មើល
+        village: ភូមិ
         'yes': បាទ/ចាស
       family: គ្រួសារ
       family_id: លេខសម្គាល់គ្រួសារ
@@ -1926,6 +1948,7 @@ km:
         department: កម្មវិធី
         email: ឣុីម៉ែល
         first_name: នាមខ្លួនជាអក្សរឡាតាំង
+        gender: ភេទ
         id: លេខសំគាល់
         job_title: មុខតំណែង
         last_name: នាមត្រកូល
@@ -2602,18 +2625,29 @@ km:
         basic_fields: ពត៌មានទូទៅរបសគ្រួសារ
         custom_form: ទម្រង់បែបបទ
         filter_option: សូមជ្រើសជម្រើសសំណួររបស់អ្នកខាងក្រោម
+    family_member_fields:
+      adult_name: ឈ្មោះមនុស្សពេញវ័យ
+      date_of_birth: ថ្ងៃខែ​ឆ្នាំ​កំណើត
+      occupation: មុខរបរ
+      relation: ទំនាក់ទំនងជាមួយកុមារ
+      remove_member: ដកចេញ
     form:
+      add_new_member: បន្ថែមសមាជិកថ្មី
       address: ឣាសយដ្ឋាន
       caregiver_information: ព័ត៌មាននៃអ្នកថែទាំ
       case_history: ប្រវត្តិគ្រួសារ
       clients: អតិថិជន
       code: លេខសំគាល់គ្រួសារ
+      commune: ឃុំ/សង្កាត់
       contract_date: កាលបរិច្ឆេទនៃកិច្ចសន្យា
       custom_forms: ទម្រង់បែបបទ
       dependable_income: ប្រាក់ចំណូលទៀងទាត់
+      district: ស្រុក/ខណ្ឌ
+      family_members: សមាជិក​គ្រួសារ
       family_type: ប្រភេទគ្រួសារ
       female_adult_count: ចំនួនមនុស្សស្រីពេញវ័យ
       female_children_count: ចំនួនក្មេងស្រី
+      house: ផ្ទះលេខ
       household_income: ប្រាក់ចំណូលគ្រួសារប្រចាំខែ
       id: លេខសំគាល់
       male_adult_count: ចំនួនមនុស្សប្រុសពេញវ័យ
@@ -2624,6 +2658,9 @@ km:
       'no': ទេ
       province: ខេត្ត
       significant_family_member_count: ចំនួនសមាជិកគ្រួសារដែលចូលរួមរកប្រាក់ចំណូល
+      status: ស្ថានភាព
+      street: ផ្លូវ
+      village: ភូមិ
       'yes': បាទ/ចាស
     index:
       add_new_family: បន្ថែមគ្រួសារថ្មី
@@ -2638,16 +2675,19 @@ km:
       additional_forms: ទម្រង់បែបបទរបស់គ្រួសារដែលកំពុងប្រើ
       additional_info: ពត៌មានលំអិតបន្ថែម
       address: ឣាសយដ្ឋាន
+      adult_name: ឈ្មោះមនុស្សពេញវ័យដែលរស់នៅក្នុងផ្ទះជាមួយគ្នា
       are_you_sure: តើអ្នកប្រាកដហើយ?
       caregiver_information: ព័ត៌មាននៃអ្នកថែទាំ
       case_history: ប្រវត្តិគ្រួសារ
       code: លេខសំគាល់គ្រួសារ
       contract_date: កាលបរិច្ឆេទនៃកិច្ចសន្យា
+      date_of_birth: ថ្ងៃខែ​ឆ្នាំ​កំណើត
       dependable_income: ប្រាក់ចំណូលទៀងទាត់
       family_type: ប្រភេទគ្រួសារ
       female_adult_count: ចំនួនមនុស្សស្រីពេញវ័យ
       female_children_count: ចំនួនក្មេងស្រី
       general_info: អំពីគ្រួសារ
+      house: ផ្ទះលេខ
       household_income: ប្រាក់ចំណូលគ្រួសារប្រចាំខែ
       id: លេខសំគាល់
       male_adult_count: ចំនួនមនុស្សប្រុសពេញវ័យ
@@ -2655,10 +2695,14 @@ km:
       member_count: ចំនួនសមាជិកគ្រួសារ
       name: ឈ្មោះអ្នកថែទាំកុមារ
       'no': ទេ
+      occupation: មុខរបរ
       province: ខេត្ត
       read_less: អានតិច
       read_more: អានបន្ថែម
+      relation: ទំនាក់ទំនងជាមួយកុមារ
       significant_family_member_count: ចំនួនសមាជិកគ្រួសារដែលចូលរួមរកប្រាក់ចំណូល
+      status: ស្ថានភាព
+      street: ផ្លូវ
       'yes': បាទ/ចាស
     update:
       not_allowed_to_detach_clients: អ្នកមិនអាចយកអតិថិជនចេញពីគ្រួសារតាមទម្រង់នេះបានទេ
@@ -3168,6 +3212,7 @@ km:
       domain_groups: ការប្រមូលបណ្ដុំកត្តា
       domains: កត្តា
       donors: ម្ចាស់ជំនួយ
+      edit_org_setting: កែសម្រួលពត៌មានអង្គការ
       edit_profile: កែសម្រួលពត៌មានផ្ទាល់ខ្លួន
       en: English
       families: គ្រួសារ
@@ -3370,6 +3415,13 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
+  organizations:
+    edit:
+      commune: ឃុំ/សង្កាត់
+      district: ស្រុក/ខណ្ឌ
+      edit_org_setting: កែសម្រួលពត៌មានអង្គការ
+      name: ឈ្មោះអង្គភាព
+      province: ខេត្ត/ក្រុង
   partners:
     actions:
       are_you_sure: តើអ្នកប្រាកដហើយថាចង់លុប?
@@ -3841,7 +3893,7 @@ km:
       referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
       referral_reason: មូលហេតុនៃការបញ្ជូន
       referred_from: ប្រភពនៃការបញ្ជូន
-      referred_to: បញ្ជូនទៅកាន់
+      referred_to: បញ្ជូនទៅអង្គការដទៃ
       save: រក្សាទុក
       save_and_download: រក្សាទុក & ទាញយក
     index:
@@ -3861,8 +3913,6 @@ km:
       select_ngos: ជ្រើសរើសអង្គការ
     new:
       new_referral: បន្ថែមទម្រង់បញ្ជូន
-    update:
-      successfully_updated: ការបញ្ជូនត្រូវបានកែសម្រួលដោយជោគជ័យ
     show:
       cannot_edit_referral: អ្នកមិនអាចកែសម្រួលការបញ្ជូននេះបានទេដោយសារអង្គការគោលដៅបានទទួលយកការបញ្ជូននេះរួចទៅហើយ
       client_id: លេខសំគាល់អតិថិជន
@@ -3887,6 +3937,8 @@ km:
       referral_reason: មូលហេតុនៃការបញ្ជូន
       referred_from: ប្រភពនៃការបញ្ជូន
       referred_to: បញ្ជូនទៅកាន់
+    update:
+      successfully_updated: ការបញ្ជូនត្រូវបានកែសម្រួលដោយជោគជ័យ
   reports:
     form:
       case_statistic: ក្រាបនៃប្រភេទករណីរបស់អតិថិជន
@@ -4393,6 +4445,7 @@ km:
       department: កម្មវិធី
       email: ឣុីម៉ែល
       first_name: នាមខ្លួនជាអក្សរឡាតាំង
+      gender: ភេទ
       id: លេខសំគាល់
       job_title: មុខតំណែង
       last_name: នាមត្រកូល
@@ -4462,6 +4515,7 @@ km:
       department: កម្មវិធី
       email: ឣុីម៉ែល
       first_name: នាមខ្លួនជាអក្សរឡាតាំង
+      gender: ភេទ
       general_info: អំពីអ្នកប្រើប្រាស់
       id: លេខសំគាល់
       job_title: មុខតំណែង
