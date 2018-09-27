@@ -405,6 +405,7 @@ my:
       subdistrict: Subdistrict
       suburb: Suburb
       telephone_number: တယ်လီဖုန်းနံပါတ်
+      time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_of_frequency: အႀကိမ္အေရအတြက္
       township: မြို့နယ်
       tracking: ေနာက္ေၾကာင္းလုိက္ျခင္း
@@ -744,10 +745,8 @@ my:
         failed_create: အပ်ဒိတ်လုပ်မပေးနိုငျ
         successfully_created: အမႈသည္ကို ေအာင္ျမင္စြာ အသစ္ျပင္ဆင္ထည့္သြင္းၿပီပါၿပီ
       edit_form:
-        accept: လက္ခံသည္
         accept_ngo_form: NGO ရိုက်ထည့်ပါ
         accepted_date: လက်ခံခဲ့သည်နေ့စွဲ
-        case_worker_or_staff: ဝန်ထမ်းများ
       form:
         accept: လက္ခံသည္
         accept_ngo_form: NGO ရိုက်ထည့်ပါ
@@ -761,16 +760,12 @@ my:
         failed_create: အပ်ဒိတ်လုပ်မပေးနိုငျ
         successfully_created: အမႈသည္ကို ေအာင္ျမင္စြာ အသစ္ျပင္ဆင္ထည့္သြင္းၿပီပါၿပီ
       edit_form:
-        case_worker_or_staff: အမႈျခင္းရာအတြက္ ေဆာင္ရြက္ေပးသူ/ ၀န္ထမ္း
-        exit_btn: ထြက္ရန္
         exit_circumstance: ထွက်ပေါက်အခြေအနေ
         exit_date: ထြက္သည့္ရက္စြဲ
         exit_ngo: NGOမွ ထြက္ရန္
         exit_note: ထြက္သည့္မွတ္စု
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
-        exit_status: အေနအထား
         other_info_of_exit: အခြားအ - နောက်ထပ်သတင်းအချက်အလက်များ
-        reject_client: client ကိုငြင်းပယ်
         rejected_note: ျငင္းပယ္သည့္ မွတ္စု
       form:
         case_worker_or_staff: အမႈျခင္းရာအတြက္ ေဆာင္ရြက္ေပးသူ/ ၀န္ထမ္း
@@ -1314,6 +1309,7 @@ my:
       referral_source: လႊဲရမည့္ ရင္းျမစ္
       specific_point: လွှဲပြောင်း၏တိကျသောအချက်
       staff_responsibilities: ဝန်ထမ်းတာဝန်ဝတ္တရား
+      text-hint: သူ / သူမဖြည့်စွက်ရန် Task ကြောင့်ဤကိစ္စတွင်အလုပ်သမားဖယ်ရှားပစ်ရန် လုပ်. မရပါ။
     index:
       active_programs: အသက္၀င္ေသးေသာ အစီအစဥ္မ်ား
       add_new_client: အမႈသည္သစ္ ထည့္သြင္းသည္
@@ -1462,6 +1458,7 @@ my:
       government_form_six: အမႈပိတ္သိမ္းသည့္ပံုစံ
       government_form_three: မိသားစု ၀န္ေဆာင္မႈ အစီအစဥ္ပံုစံ
       government_form_two: မိသားစု ထိန္းသိမ္းေရး ပံုစံအတြက္ အကဲျဖတ္မႈမ်ား
+      government_forms: အစိုးရ အစီရင္ခံစာမ်ား
       government_report: အစိုးရ အစီရင္ခံစာမ်ား
       has_been_in_government_care: အစိုးရ၏ ေစာင့္ေရွာက္မႈ ခံယူဖူး
       has_been_in_orphanage: မိဘမဲ့ျဖစ္ဖူး
@@ -1529,9 +1526,15 @@ my:
       telephone_number: တယ်လီဖုန်းနံပါတ်
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
-        few: ႏွစ္အနည္းငယ္
-        one: "%{count} ႏွစ္၀န္းက်င္"
-        other: "%{count} ႏွစ္မ်ား"
+        year:
+          one: "%{count} ခုနှစ်"
+          other: "%{count} နှစ်ပေါင်း"
+        month:
+          one: "%{count} လ"
+          other: "%{count} လများ"
+        week:
+          one: "%{count} ရက်သတ္တပတ်"
+          other: "%{count} ရက်သတ္တပတ်"
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
       view_case_notes: အမႈမွတ္စုမ်ား
       view_ec_history_btn_link: ECသမုိင္းေၾကာင္း
@@ -1823,6 +1826,7 @@ my:
         suburb: Suburb
         telephone_number: တယ်လီဖုန်းနံပါတ်
         thailand: ထိုင္းႏုိင္ငံ
+        time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
         time_of_frequency: အႀကိမ္ အေရအတြက္
         total: စုစုေပါင္း
         township: မြို့နယ်
@@ -1939,6 +1943,7 @@ my:
       show_all: အားလံုးကို ျပပါ
       support_amount: ေထာက္ပံ့သည့္ပမာဏ
       support_note: ေထာက္ပံ့မႈ မွတ္စု
+      time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       trackings:
         action: လုပ္ေဆာင္မႈ
         frequency: အႀကိမ္ေရ
@@ -2597,6 +2602,7 @@ my:
     messages:
       already_confirmed: အတည္ျပဳၿပီးပါၿပီ။ ေက်းဇူးျပဳ၍ ၀င္ၾကည့္ပါ။
       already_in_use: အသံုးျပဳၿပီးပါၿပီ
+      blank: ကြက္လပ္ခ်န္ထား၍မရပါ။
       confirmation_period_expired: "%{period} အတြင္း အတည္ျပဳရန္ လုိအပ္ပါသည္။ ေက်းဇူးျပဳ၍ အသစ္ထပ္ေတာင္းပါ"
       expired: သက္တမ္းကုန္သြားပါၿပီ။ ေက်းဇူးျပဳ၍ အသစ္ထပ္ေတာင္းပါ
       not_email: ဒါသည္ အီးေမးလ္မဟုတ္ပါ
@@ -2636,6 +2642,7 @@ my:
     family_member_fields:
       adult_name: အတူတူအိမျ၌နထေိုငျသူမြားလူကြီးများ
       date_of_birth: မွေးရက်
+      guardian: ဂေါကလူကြီး
       occupation: အလုပ်အကိုင်
       relation: ကလေးတွေနဲ့အတူဆက်သွယ်ပါ
       remove_member: ဖယ်ထုတ်ထား
@@ -2696,6 +2703,7 @@ my:
       female_adult_count: အရြယ္ေရာက္မိသားစု၀င္အေရအတြက္
       female_children_count: အရြယ္မေရာက္ေသးေသာ မိန္းကေလး အေရအတြက္
       general_info: မိသားစုအေၾကာင္း
+      guardian: ဂေါကလူကြီး
       house: အိမ္နံပါတ္
       household_income: အိမ္ေထာင္စု၀င္ေငြ
       id: မွတ္ပံုတင္
@@ -2808,6 +2816,23 @@ my:
         edit: ျပင္ဆင္ရန္
       update:
         successfully_updated: အေကာက္ခြန္ပံုစံကုိ ေအာင္ျမင္စြာ အသစ္ျပင္ဆင္ျဖည့္စြက္ၿပီးပါၿပီ
+  government_forms:
+    create:
+      successfully_created: ပုံသဏ္ဌာန်ကိုအောင်မြင်စွာဖန်တီးလိုက်ပါပြီ
+    destroy:
+      successfully_deleted: ပုံသဏ္ဌာန်အောင်မြင်စွာဖျက်ထားသည်
+    edit:
+      edit_report: ပြင်ဆင်ရန်ပုံစံ
+    index:
+      action: အရေးယူ
+      add_form: အသစ်သောပုံစံထည့်သွင်း
+      back: ပြန်.
+      created_at: ရက်စွဲကိုဖန်တီး
+      created_by: တို့ကဖန်တီး
+    new:
+      new_form: အသစ်သောပုံစံ
+    update:
+      successfully_updated: ပုံသဏ္ဌာန်အောင်မြင်စွာအပ်ဒိတ်လုပ်ထားပြီး
   government_reports:
     create:
       successfully_created: အစိုးရအစီရင္ခံစာကို ေအာင္ျမင္စြာ ျပဳလုပ္ၿပီးပါၿပီ
@@ -3663,6 +3688,7 @@ my:
       tracking: ေနာက္ေၾကာင္းလိုက္ျခင္း
     tracking:
       add_tracking: ေနာက္ေၾကာင္းလုိက္ျခင္းကို ထပ္ထည့္ရန္
+      complete_tracking: မှတပါးမတိုင်မီခြေရာခံခြင်းဖြည့်စွက်ကျေးဇူးပြုပြီး
       not_require_tracking: ဤအစီအစဥ္စီးဆင္းမႈသည္ ေနာက္ေၾကာင္းလုိက္ျခင္းပံုစံ မလိုအပ္ပါ
       tracking_form: တိုးတက္မႈ ေနာက္ေၾကာင္းလုိက္ျခင္း
     tracking_fields:
@@ -3988,8 +4014,10 @@ my:
       your_account_needs_to_supply_a_verification_code: သင့်အကောင့်အတည်ပြုရန်ကုဒ်ထောက်ပံ့ဖို့လိုအပ်ပါတယ်
   settings:
     assessment:
+      age: အသက္
       assessment: CSI အကဲဖြတ်ကြိမ်နှုန်းချိန်ညှိမှုများ
       disable_assessment: ကျနော်တို့ကို အသုံးပြု. ကြသည်မဟုတ်စိစစ္အကဲျဖတ္မႈ
+      eligible: အောက်မှာ အမႈသည္ ကိုများအတွက်အရည်အချင်းပြည့်မီ
       max_assessment: အကဲဖြတ်အကြားအများဆုံးအချိန်
       min_assessment: 1st နှင့် 2nd အကဲဖြတ်များအကြားနိမ့်ဆုံးအချိန်
     case_note:
