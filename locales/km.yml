@@ -501,7 +501,7 @@ km:
       save: រក្សាទុក
       tasks_arising: កាតព្វកិច្ចកើតឡើង៖
     index:
-      assessment_completed_on: ការប៉ាន់ប្រមាណដែលបានបំពេញ
+      assessment_created_on: ការប៉ាន់ប្រមាណដែលបានបង្កើត
       assessment_history: ការប៉ាន់ប្រមាណចាស់ៗ
       back: ត្រលប់ក្រោយ
       begin_now: បង្កើតការប៉ាន់ប្រមាណថ្មី
@@ -510,7 +510,7 @@ km:
       three_month_assessment: ការប៉ាន់ប្រមាណទៀងទាត់
       view_report: ពិនិត្យរបាយការណ៍
     show:
-      assessment_completed_by: ការប៉ាន់ប្រមាណបំពេញដោយ៖
+      assessment_created_by: ការប៉ាន់ប្រមាណបង្កើតដោយ៖
       assessment_completed_for: ការប៉ាន់ប្រមាណសម្រាប់
       back_to_assessment_history: ត្រលប់ទៅការប៉ាន់ប្រមាណចាស់ៗ
       domain: កត្តា
@@ -1292,6 +1292,7 @@ km:
       local_given_name: នាមខ្លួន (ភាសាខ្មែរ)
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
+      profile: រូបថត
       province:
         cambodia: ខេត្តកំណើត
         lesotho: ខេត្តកំណើត
@@ -1301,6 +1302,7 @@ km:
       referral_information: ព័ត៌មានការបញ្ជូន
       referral_received_by: បុគ្គលិកទទួលករណី
       referral_source: ប្រភពយោង
+      remove_profile: លុបរូបថត
       specific_point: ចំណុចជាក់លាក់នៃការបញ្ជូន
       staff_responsibilities: ទំនួលខុសត្រូវបុគ្គលិក
       text-hint: មិនអាចដកបុគ្គលិកកាន់ករណីនេះបានទេ ព្រោះគាត់មានកាតព្វកិច្ចមួយចំនួនដែលមិនទាន់បានបញ្ចប់
@@ -1319,6 +1321,8 @@ km:
       load: កំពុងផ្ទុក...
       load_save_search: ទាញយកលក្ខខ័ណ្ឌស្វែងរក
       most_recent: ថ្មីបំផុត
+      popover_content: សូមចុចប៊ូតុងស្វែងរកដើម្បីមើលអតិថិជន
+      popover_done: បិទ
       read_less: អានតិច
       read_more: អានបន្ថែម
       report_builder: បង្កើតរបាយការណ៍
@@ -2532,6 +2536,7 @@ km:
       description: ការបរិយាយ
       domain_group: ការប្រមូលផ្តុំកត្តា
       identity: សំគាល់
+      interpretation: អត្ថន័យ
       name: ឈ្មោះកត្តា
       save: រក្សាទុក
       score_1: ពិន្ទុ 1
