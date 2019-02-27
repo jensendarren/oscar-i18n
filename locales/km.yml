@@ -330,6 +330,7 @@ km:
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       current_address: ឣាសយដ្ឋានបច្ចុប្បន្ន
       current_province: ខេត្តបច្ចុប្បន្ន
+      custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       custom_form: ទម្រង់បែបបទ
       date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
       date_of_birth: ថ្ងៃ ខែ ឆ្នាំ កំណើត
@@ -464,6 +465,7 @@ km:
     form_builder_attachments:
       destroy:
         successfully_deleted: ឯកសារភ្ជាប់ត្រូវបានលុបដោយជោគជ័យ
+        successfully_updated: ឯកសារភ្ជាប់ត្រូវបានកែសម្រួលដោយជោគជ័យ
   are_you_sure: តើអ្នកប្រាកដហើយ?
   assessments:
     add_task_form:
@@ -490,32 +492,45 @@ km:
       successfully_deleted: ឯកសារភ្ជាប់ត្រូវបានកែសម្រួលដោយជោគជ័យ
     form:
       add_task: បន្ថែមកាតព្វកិច្ចថ្មី
+      add_task_confirm: តើអ្នកចង់បន្ថែមភារកិច្ចនៅជំហានចុងក្រោយនៃការវាយតម្លៃនេះទេ?
       at_least_one_task_required: យ៉ាងហោចណាស់ត្រូវបង្កើតកាតព្វកិច្ចមួយ
       back: ត្រលប់ក្រោយ
       domain: កត្តា
       finish: រក្សាទុក
+      finished_assessment_msg: ការវាយតម្លៃនេះរួចរាល់ក្នុងការរក្សាទុក!
       goal: គោលដៅ
       next: ទំព័របន្ទាប់
       previous: ទំព័រមុន
-      reason: មូលហេតុ
+      reason: ការសង្កេត
+      reason_placeholder: បញ្ចូលការសង្កេតរបស់អ្នកទៅលើស្ថានភាពរបស់អតិថិជនដោយផ្អែកលើអ្វីដែលអ្នកបានឃើញហើយត្រូវបានប្រាប់ដោយអតិថិជននិងគ្រួសាររបស់ពួកគេ។
       save: រក្សាទុក
+      score_label: ជ្រើសរើសការពិពណ៌នាខាងក្រោមណាមួយដែលរៀបរាប់យ៉ាងដិតដល់អំពីស្ថានភាពរបស់អតិថិជនដោយផ្អែកលើការសង្កេតរបស់អ្នក។
+      set_goal: តើអ្នកចង់កំណត់គោលដៅទេ?
       tasks_arising: កាតព្វកិច្ចកើតឡើង៖
     index:
       assessment_completed_on: ការប៉ាន់ប្រមាណដែលបានបំពេញ
+      assessment_created_on: ការប៉ាន់ប្រមាណដែលបានបង្កើត
       assessment_history: ការប៉ាន់ប្រមាណចាស់ៗ
       back: ត្រលប់ក្រោយ
-      begin_now: បង្កើតការប៉ាន់ប្រមាណថ្មី
+      begin_now: បង្កើតថ្មី
       initial_assessment: ការប៉ាន់ប្រមាណដំបូង
       next_review: ការប៉ាន់ប្រមាណទៀងទាត់ពេលក្រោយ
+      no_custom_domains_available: មិនមានកត្តាផ្ទាល់ខ្លួន
+      please_add_custom_domains: អ្នកគួរតែបង្កើតកត្តាផ្ទាល់ខ្លួនមួយចំនួនមុននឹងអ្នកអាចធ្វើប្រតិបត្តិការនេះ
       three_month_assessment: ការប៉ាន់ប្រមាណទៀងទាត់
       view_report: ពិនិត្យរបាយការណ៍
     show:
       assessment_completed_by: ការប៉ាន់ប្រមាណបំពេញដោយ៖
       assessment_completed_for: ការប៉ាន់ប្រមាណសម្រាប់
+      assessment_created_by: ការប៉ាន់ប្រមាណបង្កើតដោយ៖
       back_to_assessment_history: ត្រលប់ទៅការប៉ាន់ប្រមាណចាស់ៗ
+      based_on: ដោយផ្អែកលើការប៉ាន់ប្រមាណលេខ
+      case_plan: គម្រងករណី
       domain: កត្តា
+      due_date: កាលបរិច្ឆេទ
       edit: កែតម្រូវ
       goal: គោលដៅ
+      initial_assessment: ដោយផ្អែកលើការប៉ាន់ប្រមាណដំបូង
       initial_assessment_of: ការប៉ាន់ប្រមាណដំបូងរបស់
       on_date: នៅថ្ងៃ
       reason: មូលហេតុ
@@ -619,7 +634,9 @@ km:
       domain: កត្តា
       goal: គោលដៅ
       new_case_note: កំណត់ត្រាថ្មី
+      no_custom_domains_available: មិនមានកត្តាផ្ទាល់ខ្លួន
       note: កំណត់ត្រា
+      please_add_custom_domains: អ្នកគួរតែបង្កើតកត្តាផ្ទាល់ខ្លួនមួយចំនួនមុននឹងអ្នកអាចធ្វើប្រតិបត្តិការនេះ
       present: វត្តមានឣ្នកចូលរួម
       type: ប្រភេទ
       you_need_to_create_assessment: ត្រូវបង្កើតការប៉ាន់ប្រមាណជាមុនសិន
@@ -739,12 +756,16 @@ km:
         failed_create: អតិថិជនមិនត្រូវបានកែសម្រួលដោយជោគជ័យ
         successfully_created: អតិថិជនត្រូវបានកែសម្រួលដោយជោគជ័យ
       edit_form:
-        accept_ngo_form: ទទួលចូលអង្គការ
-        accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
-      form:
         accept: ទទួលយក
         accept_ngo_form: ទទួលចូលអង្គការ
         accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
+        case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
+      form:
+        accept: ទទួលយក
+        accepting: កំពុងទទួលយក...
+        accept_ngo_form: ទទួលចូលអង្គការ
+        accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
+        accepting: កំពុងទទួលយក...
         case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       update:
         failed_update: អតិថិជនមិនត្រូវបានកែសម្រួលដោយជោគជ័យ
@@ -754,12 +775,17 @@ km:
         failed_create: អតិថិជនមិនត្រូវបានកែសម្រួលដោយជោគជ័យ
         successfully_created: អតិថិជនត្រូវបានកែសម្រួលដោយជោគជ័យ
       edit_form:
+        case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
+        exit_btn: ចាកចេញ
         exit_circumstance: ស្ថានភាពនៃការចាកចេញ
         exit_date: ថ្ងៃចាកចេញ
         exit_ngo: ចាកចេញពីអង្គការ
         exit_note: កំណត់ហេតុនៃការចាកចេញ
         exit_reasons: មូលហេតុនៃការចាកចេញ
+        exit_status: ស្ថានភាព
+        exiting: កំពុងចាកចេញពីអង្គការ...
         other_info_of_exit: ព័ត៌មានបន្ថែមនៃការចាកចេញ
+        reject_client: មិនទទួលយកអតិថិជន
         rejected_note: កំណត់ហេតុនៃការមិនទទួលយក
       form:
         case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
@@ -770,6 +796,7 @@ km:
         exit_note: កំណត់ហេតុនៃការចាកចេញ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
+        exiting: កំពុងចាកចេញ...
         other_info_of_exit: ព័ត៌មានបន្ថែមនៃការចាកចេញ
         reject_client: មិនទទួលយកអតិថិជន
         rejected_note: កំណត់ហេតុនៃការមិនទទួលយក
@@ -836,8 +863,10 @@ km:
       add_new_filter: បន្ថែមលក្ខខ័ណ្ឌថ្មី
       add_new_group: បន្ថែមក្រុមលក្ខខ័ណ្ឌថ្មី
       advanced_search: ការបង្កើតរបាយការណ៍
+      assessment_data: ទិន្នន័យវាយតម្លៃ
       assessments: ការប៉ាន់ប្រមាណ
       client_column: ជួរឈរពត៌មានទូទៅរបស់អតិថិជន
+      client_name: ឈ្មោះកុមារ
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       custom_form_column: ជួរឈរទម្រង់បែបបទ
       delete_group: លុបក្រុមលក្ខខ័ណ្ឌនៃការស្វែងរក
@@ -1028,6 +1057,14 @@ km:
     answer_fields:
       answer: ចម្លើយ
       yes_no: បាទ/អត់ទេ
+    assessment_domain_score:
+      assessment_data: ទិន្នន័យពិន្ទុនៃការវាយតម្លៃ
+      assessment_date: កាលបរិច្ឆេទនៃការវាយតម្លៃ
+      assessment_number: 'ការវាយតម្លៃ #'
+      client_id: លេខសំគាល់អតិថិជន
+      client_name: ឈ្មោះអតិថិជន
+      close: បិទ
+      export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
     case_history_detail:
       accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
       client: ឈ្មោះអតិថិជន
@@ -1110,6 +1147,14 @@ km:
       title: សូមប្រយ័ត្ន!
     create:
       successfully_created: អតិថិជនត្រូវបានបង្កើតឡើងដោយជោគជ័យ
+    custom_assessment_domain_score:
+      assessment_data: ទិន្នន័យពិន្ទុនៃការវាយតម្លៃ
+      assessment_date: កាលបរិច្ឆេទនៃការវាយតម្លៃ
+      assessment_number: 'ការវាយតម្លៃ #'
+      client_id: លេខសំគាល់អតិថិជន
+      client_name: ឈ្មោះអតិថិជន
+      close: បិទ
+      export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
     destroy:
       successfully_deleted: អតិថិជនត្រូវបានលុបដោយជោគជ័យ
     edit:
@@ -1150,6 +1195,7 @@ km:
       exit_ngo: ចាកចេញពីអង្គការ
       exit_note: កំណត់ហេតុនៃការចាកចេញ
       exit_status: ស្ថានភាព
+      exiting: កំពុងចាកចេញ...
     exit_ngo_form:
       case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       exit_btn: ចាកចេញ
@@ -1292,6 +1338,7 @@ km:
       local_given_name: នាមខ្លួន (ភាសាខ្មែរ)
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
+      profile: រូបថត
       province:
         cambodia: ខេត្តកំណើត
         lesotho: ខេត្តកំណើត
@@ -1301,6 +1348,7 @@ km:
       referral_information: ព័ត៌មានការបញ្ជូន
       referral_received_by: បុគ្គលិកទទួលករណី
       referral_source: ប្រភពយោង
+      remove_profile: លុបរូបថត
       specific_point: ចំណុចជាក់លាក់នៃការបញ្ជូន
       staff_responsibilities: ទំនួលខុសត្រូវបុគ្គលិក
       text-hint: មិនអាចដកបុគ្គលិកកាន់ករណីនេះបានទេ ព្រោះគាត់មានកាតព្វកិច្ចមួយចំនួនដែលមិនទាន់បានបញ្ចប់
@@ -1309,10 +1357,14 @@ km:
       add_new_client: បន្ថែមអតិថិជនថ្មី
       advanced_search: ការស្វែងរកដែលឆ្លាតវៃ
       all_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
+      all_custom_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+      assessment_data: ទិន្នន័យពិន្ទុនៃការវាយតម្លៃ
       assessments: ការប៉ាន់ប្រមាណ
       case_statistics: ក្រាបនៃប្រភេទករណីរបស់អតិថិជន
       client_amount: ចំនួនអតិថិជន
+      csi_assessment: ការប៉ាន់ប្រមាណ CSI
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
+      custom_assessment: ការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       domain_score: ពិន្ទុកត្តាការប៉ាន់ប្រមាណ
       end: អស់លទ្ធផល!
       export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
@@ -1324,6 +1376,7 @@ km:
       read_less: អានតិច
       read_more: អានបន្ថែម
       report_builder: បង្កើតរបាយការណ៍
+      report_builder_wizard: ជំនួយការបង្កើតរបាយការណ៍
       reports: ក្រាប
       results: លទ្ធផល
       sInfoShow: បង្ហាញទិន្នន័យចំនួន
@@ -1379,6 +1432,7 @@ km:
       is_the_client_rated_for_id_poor: តើអតិថិជនត្រូវបានវាយតម្លៃថាអត្តសញ្ញាណក្រីក្រឬទេ
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
       other_information: ព័ត៌មានផ្សេងៗ
+      province: ខេត្ត
       relevant_referral_information: ព័ត៌មានយោងដែលពាក់ព័ន្ធ / កំណត់សំគាល់
     placement:
       view_legacy_quarterly_reports: មើល Quarterly Reports ចាស់ៗ
@@ -1395,6 +1449,7 @@ km:
       able_state: ស្ថានភាព Able
       accept: ទទួលយក
       accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
+      accepting: កំពុងទទួលយក...
       add_client_to_case: បញ្ចូលអតិថិជិនទៅក្នុងករណី
       add_ec_btn: បន្ថែមចូលទៅ EC
       add_fc_btn: បន្ថែមចូលទៅ FC
@@ -1494,6 +1549,7 @@ km:
       primary_carer_phone_number: លេខទូរស័ព្ទអ្នកមើលថែចំបង
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
+      province: ខេត្តកំណើត
       province:
         cambodia: ខេត្តកំណើត
         lesotho: ខេត្តកំណើត
@@ -1522,15 +1578,17 @@ km:
       telephone_number: លេខទូរស័ព្ទ
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
-        year:
-          one: "%{count} ឆ្នាំ"
-          other: "%{count} ឆ្នាំ"
         month:
           one: "%{count} ខែ"
           other: "%{count} ខែ"
+        one: ប្រហែល%{count}ឆ្នាំ
+        other: ប្រហែល%{count}ឆ្នាំ
         week:
           one: "%{count} សប្តាហ៍"
           other: "%{count} សប្តាហ៍"
+        year:
+          one: "%{count} ឆ្នាំ"
+          other: "%{count} ឆ្នាំ"
       view_assessments: ការប៉ាន់ប្រមាណ
       view_case_notes: កំណត់ត្រាករណី
       view_ec_history_btn_link: មើលប្រវត្តិនៃ EC
@@ -1604,6 +1662,16 @@ km:
       active_progarm_streams_by_gender: បំណែងចែកចំនួនអតិថិជនតាមភេទដែលបាននិងកំពុងចូលរួមកម្មវិធី
       active_program_streams: កម្មវិធីចម្បងបច្ចុប្បន្ន
       client_active_in_programs: ចំនួនអតិថិជនដែលបាននិងកំពុងចូលរួមកម្មវិធី
+    custom_fields_tab:
+      link: តំណ
+      name: ឈ្មោះ
+      next: ទំព័របន្ទាប់
+      open_form: បើកទម្រង់
+      previous: ទំព័រមុន
+    multiple_forms:
+      custom_forms: ទម្រង់បែបបទ
+      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
+      tracking_forms: ទម្រង់បែបបទតាមដាន
     duetoday:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -1614,6 +1682,10 @@ km:
       families: គ្រួសារបច្ចុប្បន្ន
       foster: Foster
       kinship: Kinship
+    multiple_forms:
+      custom_forms: ទម្រង់បែបបទ
+      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
+      tracking_forms: ទម្រង់បែបបទតាមដាន
     overdue:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -1622,6 +1694,13 @@ km:
       tasks: កាតព្វកិច្ច
     program_stream:
       program_stream: កម្មវិធីចម្បង
+    program_streams_tab:
+      link: តំណ
+      next: ទំព័របន្ទាប់
+      open_form: បើកទម្រង់
+      previous: ទំព័រមុន
+      program_stream_name: កម្មវិធី
+      tracking_name: ទម្រង់បែបបទតាមដាន
     third_party:
       ables: អតិថិជនបច្ចុប្បន្នក្នុងកម្មវិធី អែបល
       agencies: អង្គភាព
@@ -1686,6 +1765,7 @@ km:
   datagrid:
     columns:
       all_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
+      all_custom_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       carer_address: អាសយដ្ឋានអ្នកថែទាំ
       carer_names: ឈ្មោះអ្នកថែទាំ
       carer_phone_number: លេខទូរស័ព្ទអ្នកថែទាំ
@@ -1711,6 +1791,7 @@ km:
         agencies_involved: អង្គភាពដែលពាក់ព័ន្ធ
         agency_names: ឈ្មោះអង្គភាព
         all_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
+        all_custom_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
         any_assessments: មានការប៉ាន់ប្រមាណ
         assessments: ការប៉ាន់ប្រមាណ
         assessments_due_to: ដល់ពេលធ្វើការប៉ាន់ប្រមាណ
@@ -1731,11 +1812,12 @@ km:
         current_province: ខេត្តបច្ចុប្បន្ន
         date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
         date_of_birth: ថ្ងៃ ខែ ឆ្នាំ កំណើត
+        date_of_custom_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: ស្រុក/ខណ្ឌ
         domain: កត្តា
-        domains: កត្តា CSI ទាំងអស់
+        domains: កត្តាការវាយតម្លៃទាំងអស់
         donor: ម្ចាស់ជំនួយ
         exit_circumstance: ស្ថានភាពនៃការចាកចេញ
         exit_note: កំណត់ហេតុនៃការចាកចេញ
@@ -1805,7 +1887,7 @@ km:
         received_by: បុគ្គលិកទទួលករណី
         referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
         referral_source: ប្រភពនៃការបញ្ជូន
-        referred_from: ប្រភពនៃការបញ្ជូន
+        referred_from: បញ្ជូនមកពីអង្គការ
         referred_to: បញ្ជូនទៅអង្គការដទៃ
         reject_note: កំណត់ហេតុនៃការមិនទទួលយក
         rejected_note: កំណត់ហេតុនៃការមិនទទួលយក
@@ -1831,6 +1913,7 @@ km:
         village: ភូមិ
         what3words: What3words
       date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
+      date_of_custom_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       exit_circumstance: ស្ថានភាពនៃការចាកចេញ
       exit_note: កំណត់ហេតុនៃការចាកចេញ
       exit_reasons: មូលហេតុនៃការចាកចេញ
@@ -1984,7 +2067,8 @@ km:
         'no': ទេ
         'yes': បាទ/ចាស
     form:
-      csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
+      csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណ
+      custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       filter_domains: កត្តា
       has_overdue_assessment: ការប៉ាន់ប្រមាណហួសកំណត់
       has_overdue_forms: ទម្រង់បែបបទហួសកំណត់
@@ -2524,9 +2608,22 @@ km:
   domains:
     create:
       successfully_created: កត្តាត្រូវបានបង្កើតដោយជោគជ័យ
+    csi_tool:
+      add_new_domain: បន្ថែមកត្តាថ្មី
+    custom_csi_tool:
+      add_new_domain: បន្ថែមកត្តាថ្មី
     destroy:
       alert: កត្តាមិនអាចលុបបានទេ
       successfully_deleted: កត្តាត្រូវបានលុបចោលដោយជោគជ័យ
+    domain_list:
+      add_new_domain: បន្ថែមកត្តាថ្មី
+      changelog: ប្រវត្តិនៃកំណែ
+      domains: កត្តា
+      score_1: ពិន្ទុ 1
+      score_2: ពិន្ទុ 2
+      score_3: ពិន្ទុ 3
+      score_4: ពិន្ទុ 4
+      view: មើល
     edit:
       title: ពិនិត្យកែសម្រួលកត្តា
     form:
@@ -2534,8 +2631,10 @@ km:
       description: ការបរិយាយ
       domain_group: ការប្រមូលផ្តុំកត្តា
       identity: សំគាល់
+      interpretation: អត្ថន័យ
       name: ឈ្មោះកត្តា
       save: រក្សាទុក
+      saving: កំពុងផ្ទុក...
       score_1: ពិន្ទុ 1
       score_2: ពិន្ទុ 2
       score_3: ពិន្ទុ 3
@@ -2544,6 +2643,8 @@ km:
       add_new_domain: បន្ថែមកត្តាថ្មី
       are_you_sure: តើអ្នកប្រាកដហើយ?
       changelog: ប្រវត្តិនៃកំណែ
+      csi_tool: ឧបករណ៍ការវាយតម្លៃលំនាំដើម
+      custom_csi_tool: ឧបករណ៍ការវាយតម្លៃផ្ទាល់ខ្លួន
       domains: កត្តា
       score_1: ពិន្ទុ 1
       score_2: ពិន្ទុ 2
@@ -2711,6 +2812,7 @@ km:
       read_less: អានតិច
       read_more: អានបន្ថែម
       relation: ទំនាក់ទំនងជាមួយកុមារ
+      remove_member: លុបសមាជិក
       significant_family_member_count: ចំនួនសមាជិកគ្រួសារដែលចូលរួមរកប្រាក់ចំណូល
       status: ស្ថានភាព
       street: ផ្លូវ
@@ -3140,11 +3242,15 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
+  invalid_name: មិនត្រឺមត្រូវ
   invalid_program_enrollment_date: កាលបរិច្ឆេទចុះឈ្មោះដែលអ្នកបានជ្រើសរើសគឺមិនត្រឹមត្រូវទេ សូមជ្រើសរើសកាលបរិច្ឆេទមុនកាលបរិច្ឆេទចេញពីកម្មវិធីរបស់អ្នក
   invalid_program_exit_date: កាលបរិច្ឆេទចាកចេញដែលអ្នកបានជ្រើសរើសគឺមិនត្រឹមត្រូវទេ សូមជ្រើសរើសកាលបរិច្ឆេទក្រោយកាលបរិច្ឆេទចុះឈ្មោះចូលកម្មវិធី
   is_not_email: មិនមែនជាអ៊ីម៉ែល
   layouts:
     notification:
+      assessments_count:
+        one: អ្នកមានការប៉ាន់ប្រមាណចំនួន1
+        other: មានទម្រង់បែបបទរបស់អតិថិជនចំនួន%{count}
       check_tasks: ដើម្បីពិនិត្យកាព្វកិច្ចរបស់អ្នក សូមចុច
       click_here: ទីនេះ
       client_case_note_due_today:
@@ -3162,6 +3268,9 @@ km:
       client_quantity:
         one: "(អតិថិជនចំនួន 1)"
         other: "(អតិថិជនចំនួន %{count})"
+      due_today_assessments:
+        one: ដែលត្រូវបំពេញនៅថ្ងៃនេះ
+        other: ដែលត្រូវបំពេញនៅថ្ងៃនេះ
       due_today_assessments_count:
         one: អ្នកមានការប៉ាន់ប្រមាណចំនួន1ដែលត្រូវបំពេញនៅថ្ងៃនេះ
         other: អ្នកមានការប៉ាន់ប្រមាណចំនួន%{count}ដែលត្រូវបំពេញនៅថ្ងៃនេះ
@@ -3190,6 +3299,9 @@ km:
         one: អ្នកមានអតិថិជនបញ្ជូនបន្តថ្មីចំនួន1
         other: អ្នកមានអតិថិជនបញ្ជូនបន្តថ្មីចំនួន%{count}
       no_task: មិនមានពត៌មានដែលត្រូវបង្ហាញ
+      overdue_assessments:
+        one: មិនទាន់បានធ្វើ
+        other: មិនទាន់បានធ្វើ
       overdue_and_due_today_count:
         one: ហើយនិងមានចំនួន1ដែលត្រូវបំពេញនៅថ្ងៃនេះ
         other: ហើយនិងមានចំនួន%{count}ដែលត្រូវបំពេញនៅថ្ងៃនេះ
@@ -3231,7 +3343,7 @@ km:
       changelogs: ប្រវត្តិនៃកំណែទិន្នន័យ
       clients: ឣតិថិជន
       country: ប្រទេស
-      csi_tools: ឧបករណ៍ CSI
+      csi_tools: ឧបករណ៍ការវាយតម្លៃ
       custom_fields: ទម្រង់បែបបទ
       dashboards: តារាងទិន្នន័យ
       default_columns: ជួរឈរលំនាំដើម
@@ -3261,6 +3373,7 @@ km:
       quantitative_types: ពត៌មានបញ្ជូនបន្ថែម
       referral_sources: ប្រភពនៃការបញ្ជូន
       release_logs: Release logs
+      research_module: Research Module
       settings: ការកំណត់
       users: ឣ្នកប្រើ
       view_calendar: មើលប្រតិទិន
@@ -3371,6 +3484,27 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
+  multiple_form:
+    client_custom_fields:
+      create:
+        successfully_created: ទម្រង់បែបបទត្រូវបានរក្សាទុកនៅក្នុងអតិថិជនដោយជោគជ័យ
+      form:
+        clients: អតិថិជន
+        warning: ការបំពេញទម្រង់បែបបទនេះនឹងរក្សាទុកពត៌មានទាំងនេះដាច់ដោយឡែកសម្រាប់អតិថិជននីមួយៗដែលបានជ្រើសរើសនៅទីនេះ។ អតិថិជននីមួយៗនឹងមានពត៌មានដូចៗគ្នា។ សូមកុំប្រើទម្រង់មួយនេះ បើអតិថិជននីមួយៗមានពត៌មានខុសៗគ្នា។
+    client_trackings:
+      create:
+        successfully_created: ការតាមដានត្រូវបានរក្សាទុកនៅក្នុងអតិថិជនដោយជោគជ័យ
+      form:
+        clients: អតិថិជន
+        warning: ការបំពេញទម្រង់បែបបទនេះនឹងរក្សាទុកពត៌មានទាំងនេះដាច់ដោយឡែកសម្រាប់អតិថិជននីមួយៗដែលបានជ្រើសរើសនៅទីនេះ។ អតិថិជននីមួយៗនឹងមានពត៌មានដូចៗគ្នា។ សូមកុំប្រើទម្រង់មួយនេះ បើអតិថិជននីមួយៗមានពត៌មានខុសៗគ្នា។
+    complete_form:
+      agree: បាទ/ចាស
+      disagree: ទេ
+      want_to_complete_again: តើអ្នកចង់ប្រើទម្រង់នេះម្តងទៀតសម្រាប់អតិថិជនដទៃទៀតដែរឬទេ?
+    fields:
+      file_field:
+        allow_file_size: ប្រភេទឯកសារដែលបានអនុញ្ញាត
+        max_file_size: "*ទំហំឯកសារអតិបរមា: 5MB/ឯកសារ និង 30MB/ផ្ទុកឡើង."
   must_be_uniq: ផ្នែកនៃទម្រង់មិនអាចមានឈ្មោះដូចគ្នា
   mutual_dependence_has_been_modified: កម្មវិធីអាស្រ័យគ្នាមិនអាចផ្លាស់ប្តូរឬបន្ថែមទេព្រោះលក្ខខ័ណ្ឌមុនត្រូវបានផ្លាស់ប្តូរ។
   notifications:
@@ -3983,6 +4117,7 @@ km:
   review_problem: សូមពិនិត្យបញ្ហាសារឡើងវិញនៅខាងក្រោម៖
   rules_has_been_modified: លក្ខខ័ណ្ឌមិនអាចផ្លាស់ប្តូរឬបន្ថែមទេព្រោះលក្ខខ័ណ្ឌមុនត្រូវបានផ្លាស់ប្តូរ។
   save: រក្សាទុក
+  saving: កំពុងរក្សាទុក...
   sessions:
     create:
       bad_credentials_supplied: កូដផ្ទៀងផ្ទាត់មិនត្រឹមត្រូវ
@@ -3990,11 +4125,16 @@ km:
   settings:
     assessment:
       age: អាយុ
-      assessment: ការកំណត់ប្រេកង់នៃការវាយតំលៃ CSI
+      assessment: ការកំណត់ប្រេកង់នៃការវាយតំលៃផ្ទាល់ខ្លួន
+      custom_assessment: ឈ្មោះ
+      default_assessment: ការកំណត់ប្រេកង់នៃការវាយតំលៃលំនាំដើម CSI
       disable_assessment: យើងមិនប្រើការប៉ាន់ប្រមាណ
+      name: ឈ្មោះ
       eligible: មានសិទ្ធិសម្រាប់អតិថិជននៅក្រោម
       max_assessment: រយៈពេលអតិបរមារវាងការវាយតម្លៃ
       min_assessment: រយៈពេលអប្បបរមារវាងការវាយតម្លៃទី 1 និងទី 2
+      name: ឈ្មោះ
+      noted: 'ចំណាំ: ទីភ្នាក់ងារ USAID បានស្នើថា CSI មិនត្រូវបានប្រើសម្រាប់ការវាយតម្លៃតាមតម្រូវការ។'
     case_note:
       case_note: រយៈពេលអតិបរមារវាងកំណត់ត្រាករណីសម្រាប់អតិថិជន
       max_case_note: អតិបរមា
@@ -4013,11 +4153,16 @@ km:
       family_default_columns: គ្រួសារ
       partner_default_columns: ដៃគូ
     index:
-      csi_tools: ឧបករណ៍ CSI
+      csi_tools: ឧបករណ៍ការវាយតម្លៃ
+      custom_assessment: ឧបករណ៍ការវាយតម្លៃផ្ទាល់ខ្លួន
+      default_assessment: ឧបករណ៍ការវាយតម្លៃលំនាំដើម
     navigation:
       country: ប្រទេស
     update:
       successfully_updated: ការកំណត់បានកែសម្រួលដោយជោគជ័យ
+    research_module:
+      title: ការស្រាវជ្រាវ OSCaR
+      research_module_label: ចែករំលែកទិន្នន័យអតិថិជនអនាមិករបស់អង្គការមិនមែនរដ្ឋាភិបាលជាមួយការស្រាវជ្រាវ OSCaR
   shared:
     form_builder:
       file_field:
@@ -4090,6 +4235,7 @@ km:
         material: របស់របរ/សំភារៈ
         no_modification: មិនមានប្រវត្តិកំណែ
         'on': របស់
+        organisation_type: ប្រភេទឣង្គភាព
         organization_type: ប្រភេទឣង្គភាព
         partner: ដៃគូ
         partner_custom_field: ទម្រង់បែបបទរបស់ដៃគូ
