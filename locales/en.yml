@@ -2635,7 +2635,6 @@ en:
       score_3: Score 3
       score_4: Score 4
     index:
-      add_new_domain: Add New Domain
       are_you_sure: Are you sure you want to delete?
       changelog: Changelog
       csi_tool: Assessment Tools
