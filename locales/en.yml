@@ -508,8 +508,8 @@ en:
       set_goal: Would you like to set a goal?
       tasks_arising: 'Tasks arising:'
     index:
-      assessment_created_on: Assessment created on
       assessment_completed_on: Assessment completed on
+      assessment_created_on: Assessment created on
       assessment_history: Assessment History
       back: Back
       begin_now: Add New
@@ -762,9 +762,9 @@ en:
         case_worker_or_staff: Case Worker / Staff
       form:
         accept: Accept
-        accepting: Accepting...
         accept_ngo_form: Enter NGO Form
         accepted_date: Accepted Date
+        accepting: Accepting...
         case_worker_or_staff: Case Worker / Staff
       update:
         failed_update: Failed to update the client.
@@ -1549,11 +1549,6 @@ en:
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
       province: Birth Province
-      province:
-        cambodia: Birth Province
-        lesotho: Birth Suburb
-        myanmar: Birth State
-        thailand: Birth Province
       received_by: Referral Received By
       refer_client: Refer Client
       referee_phone_number: Referee Phone Number
@@ -1577,17 +1572,8 @@ en:
       telephone_number: Primary Carer Phone Number
       time_in_care: Time In Care
       time_in_care_around:
-        month:
-          one: "%{count} month"
-          other: "%{count} months"
         one: Around %{count} year
         other: Around %{count} years
-        week:
-          one: "%{count} week"
-          other: "%{count} weeks"
-        year:
-          one: "%{count} year"
-          other: "%{count} years"
       view_assessments: Assessments
       view_case_notes: Case Notes
       view_ec_history_btn_link: EC History
@@ -1667,10 +1653,6 @@ en:
       next: Next
       open_form: Open Form
       previous: Previous
-    multiple_forms:
-      custom_forms: Custom Forms
-      multiple_forms: Add Form to Multiple Clients
-      tracking_forms: Tracking Forms
     duetoday:
       assessment: Assessment
       assessments: Assessments
@@ -1681,6 +1663,10 @@ en:
       families: Active Families
       foster: Foster
       kinship: Kinship
+    multiple_forms:
+      custom_forms: Custom Forms
+      multiple_forms: Add Form to Multiple Clients
+      tracking_forms: Tracking Forms
     overdue:
       assessment: Assessment
       assessments: Assessments
@@ -2635,6 +2621,7 @@ en:
       score_3: Score 3
       score_4: Score 4
     index:
+      add_new_domain: Add New Domain
       are_you_sure: Are you sure you want to delete?
       changelog: Changelog
       csi_tool: Assessment Tools
@@ -3499,7 +3486,6 @@ en:
       file_field:
         allow_file_size: Allowed file types
         max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
-
   must_be_uniq: field label must be uniq
   mutual_dependence_has_been_modified: Prerequisite Programs cannot be changed or added because it breaks the previous conditions.
   notifications:
@@ -4124,7 +4110,6 @@ en:
       custom_assessment: Name
       default_assessment: CSI Assessment Frequency Settings
       disable_assessment: We are not using CSI Assessment Tool
-      name: Name
       eligible: Eligible for client under
       max_assessment: Maximum time between assessments
       min_assessment: Minimum time between 1st and 2nd assessment
@@ -4154,8 +4139,8 @@ en:
     navigation:
       country: Country
     research_module:
-      title: Research Module
       research_module_label: Share my NGO's anonymous client data with the OSCaR Research Module
+      title: Research Module
     update:
       successfully_updated: Setting have been successfully updated.
   shared:
@@ -4231,6 +4216,7 @@ en:
         material: Equipment/Material
         no_modification: There are no any changelog.
         'on': 'on'
+        organisation_type: Organisation Type
         organization_type: Organisation Type
         partner: Partner
         partner_custom_field: Partner Custom Forms

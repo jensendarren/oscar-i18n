@@ -87,7 +87,7 @@ my:
           general_question: အေထြေထြေမးခြန္း
           new_general_question: အေထြေထြေမးခြန္းအသစ္
           new_stage_question: အဆင့္ေမးခြန္းအသစ္
-          question: ေမးခြန္း
+          question: 
           stage: အဆင့္
           stage_question: အဆင့္ေမးခြန္း
           to: သို႔
@@ -518,6 +518,7 @@ my:
       three_month_assessment: သုံးလစဉ်အကဲဖြတ်
       view_report: အစီခံစာကို ၾကည့္ရန္
     show:
+      assessment_completed_by: က စိစစ္မႈကို ျဖည္ထားပါသည္။
       assessment_completed_for: အဘို့အပြီးစီးခဲ့အကဲဖြတ်
       assessment_created_by: အသုံးပြုနေသူများကဖန်တီးအကဲဖြတ်
       back_to_assessment_history: စိစစ္မႈသမုိင္းေၾကာင္းသို႔ ျပန္ထြက္၇န္
@@ -766,9 +767,9 @@ my:
         case_worker_or_staff: ဝန်ထမ်းများ
       form:
         accept: လက္ခံသည္
-        accepting: လက်ခံ...
         accept_ngo_form: NGO ရိုက်ထည့်ပါ
         accepted_date: လက်ခံခဲ့သည်နေ့စွဲ
+        accepting: လက်ခံ...
         case_worker_or_staff: ဝန်ထမ်းများ
       update:
         failed_update: အပ်ဒိတ်လုပ်မပေးနိုငျ
@@ -1553,11 +1554,6 @@ my:
       program_streams: အစီအစဥ္ စီးဆင္းမႈမ်ား
       progress_note: ေဆာင္ရြက္ဆဲမွတ္စု
       province: ေမြးဖြားရာခ႐ိုင္
-      province:
-        cambodia: Birth Province
-        lesotho: Birth Suburb
-        myanmar: ေမြးဖြားရာ ခ႐ိုင္
-        thailand: Birth Province
       received_by: မွ လက္ခံသည္
       refer_client: ရည်ညွှန်း
       referee_phone_number: ဒိုင်လူကြီးဖုန်းနံပါတ်ကို
@@ -1582,17 +1578,8 @@ my:
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
         few: ႏွစ္အနည္းငယ္
-        month:
-          one: "%{count} လ"
-          other: "%{count} လများ"
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
-        week:
-          one: "%{count} ရက်သတ္တပတ်"
-          other: "%{count} ရက်သတ္တပတ်"
-        year:
-          one: "%{count} ခုနှစ်"
-          other: "%{count} နှစ်ပေါင်း"
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
       view_case_notes: အမႈမွတ္စုမ်ား
       view_ec_history_btn_link: ECသမုိင္းေၾကာင္း
@@ -1672,11 +1659,6 @@ my:
       next: ေနာက္တစ္ခု
       open_form: ပွင့်လင်းပုံစံ
       previous: ေရွ႕တစ္ခု
-      name: နာမည္
-    multiple_forms:
-      custom_forms: ပုံစံများ
-      multiple_forms: ပုံစံအမျိုးမျိုး
-      tracking_forms: ခြေရာခံခြင်းပုံစံ
     duetoday:
       assessment: ရက်လွန်အကဲဖြတ်
       assessments: ရက်လွန်အကဲဖြတ်
@@ -1687,6 +1669,10 @@ my:
       families: မိသားစုမ်ား
       foster: ေမြးစားျခင္း
       kinship: ေဆြမ်ိဳး
+    multiple_forms:
+      custom_forms: ပုံစံများ
+      multiple_forms: ပုံစံအမျိုးမျိုး
+      tracking_forms: ခြေရာခံခြင်းပုံစံ
     overdue:
       assessment: ရက်လွန်အကဲဖြတ်
       assessments: ရက်လွန်အကဲဖြတ်
@@ -1812,8 +1798,8 @@ my:
         current_address: လက္ရွိလိပ္စာ
         current_province: လက္ရွိေနထိုင္ရာခ႐ိုင္
         date_of_assessments: စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
-        date_of_custom_assessments: Custom စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
         date_of_birth: ေမြးရက္၊ လ၊ ႏွစ္
+        date_of_custom_assessments: Custom စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: ခ႐ိုင္
@@ -2641,6 +2627,7 @@ my:
       score_3: ရမွတ္ ၃
       score_4: ရမွတ္ ၄
     index:
+      add_new_domain: ဒိုမိန္းအသစ္
       are_you_sure: ဖ်က္လုိသည္မွာ ေသခ်ာပါသလား
       changelog: ေျပာင္းလဲမႈ မွတ္တမ္း
       csi_tool: အကဲဖြတ် tool ကို
@@ -2783,7 +2770,6 @@ my:
     new:
       new_family_title: မိသားစုအသစ္
     show:
-      remove_member: ဖယ်ထုတ်ထား
       add_form: ပံုစံအသစ္
       additional_forms: ထပ္ေဆာင္းပံုစံမ်ား
       additional_info: ထပ္ေဆာင္းသတင္းအခ်က္အလက္မ်ား
@@ -3519,8 +3505,8 @@ my:
         clients: အမႈသည္
         warning: ഈ ഫോം പൂരിപ്പിക്കുന്നത്, ഇവിടെ പറഞ്ഞിരിക്കുന്ന ഓരോ ക്ലയന്റിനുമായി ഈ ഫോമിന്റെ വ്യത്യസ്ത പകർപ്പിലേക്ക് ഈ ഉത്തരങ്ങൾ സംരക്ഷിക്കും. ഓരോ ക്ലൈന്റിനും സമാനമായ ഉത്തരം ലഭിക്കും. ഓരോ ക്ലയന്റ് വ്യത്യസ്ത ഉത്തരങ്ങൾ ഉണ്ടായിരിക്കേണ്ട ഫോമുകൾക്കായി ഈ സവിശേഷത ഉപയോഗിക്കരുത്.
     complete_form:
-      agree: 'ဟုတ်ကဲ့'
-      disagree: 'အဘယ်သူမျှမ'
+      agree: ဟုတ်ကဲ့
+      disagree: အဘယ်သူမျှမ
       want_to_complete_again: သင်ပိုမို client များအတွက်နောက်တဖန်ဤပုံစံကိုဖြည့်စွက်ရန်လိုပါသလား?
     fields:
       file_field:
@@ -4150,7 +4136,6 @@ my:
       custom_assessment: နာမတျောကို
       default_assessment: ပျက်ကွက် အကဲဖြတ်ကြိမ်နှုန်းချိန်ညှိမှုများ
       disable_assessment: ကျနော်တို့ကို အသုံးပြု. ကြသည်မဟုတ်စိစစ္အကဲျဖတ္မႈ
-      name: နာမတျောကို
       eligible: အောက်မှာ အမႈသည္ ကိုများအတွက်အရည်အချင်းပြည့်မီ
       max_assessment: အကဲဖြတ်အကြားအများဆုံးအချိန်
       min_assessment: 1st နှင့် 2nd အကဲဖြတ်များအကြားနိမ့်ဆုံးအချိန်
@@ -4179,6 +4164,9 @@ my:
       default_assessment: ပျက်ကွက် အကဲဖြတ်ကြိမ်နှုန်းချိန်ညှိမှုများ
     navigation:
       country: ႏုိင္ငံ
+    research_module:
+      research_module_label: 
+      title: 
     update:
       successfully_updated: အောင်မြင်စွာဖြည့်ပါ
   shared:
@@ -4222,6 +4210,7 @@ my:
         date_deleted: ရက္စြဲ
         no_modification: ေျပာင္းလဲမႈ မွတ္တမ္းမရွိပါ
         'on': ေပၚတြင္
+        organisation_type: 
         value_of: "၏ တန္ဖိုး"
       common:
         able_screening_question: Able Screening ေမးခြန္း

@@ -520,6 +520,7 @@ km:
       three_month_assessment: ការប៉ាន់ប្រមាណទៀងទាត់
       view_report: ពិនិត្យរបាយការណ៍
     show:
+      assessment_completed_by: ការប៉ាន់ប្រមាណបំពេញដោយ៖
       assessment_completed_for: ការប៉ាន់ប្រមាណសម្រាប់
       assessment_created_by: ការប៉ាន់ប្រមាណបង្កើតដោយ៖
       back_to_assessment_history: ត្រលប់ទៅការប៉ាន់ប្រមាណចាស់ៗ
@@ -761,7 +762,6 @@ km:
         case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       form:
         accept: ទទួលយក
-        accepting: កំពុងទទួលយក...
         accept_ngo_form: ទទួលចូលអង្គការ
         accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
         accepting: កំពុងទទួលយក...
@@ -1549,11 +1549,6 @@ km:
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
-      province:
-        cambodia: ខេត្តកំណើត
-        lesotho: ខេត្តកំណើត
-        myanmar: ខេត្តកំណើត
-        thailand: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
@@ -1577,17 +1572,8 @@ km:
       telephone_number: លេខទូរស័ព្ទ
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
-        month:
-          one: "%{count} ខែ"
-          other: "%{count} ខែ"
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
-        week:
-          one: "%{count} សប្តាហ៍"
-          other: "%{count} សប្តាហ៍"
-        year:
-          one: "%{count} ឆ្នាំ"
-          other: "%{count} ឆ្នាំ"
       view_assessments: ការប៉ាន់ប្រមាណ
       view_case_notes: កំណត់ត្រាករណី
       view_ec_history_btn_link: មើលប្រវត្តិនៃ EC
@@ -1667,10 +1653,6 @@ km:
       next: ទំព័របន្ទាប់
       open_form: បើកទម្រង់
       previous: ទំព័រមុន
-    multiple_forms:
-      custom_forms: ទម្រង់បែបបទ
-      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
-      tracking_forms: ទម្រង់បែបបទតាមដាន
     duetoday:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -2639,6 +2621,7 @@ km:
       score_3: ពិន្ទុ 3
       score_4: ពិន្ទុ 4
     index:
+      add_new_domain: បន្ថែមកត្តាថ្មី
       are_you_sure: តើអ្នកប្រាកដហើយ?
       changelog: ប្រវត្តិនៃកំណែ
       csi_tool: ឧបករណ៍ការវាយតម្លៃលំនាំដើម
@@ -3297,12 +3280,12 @@ km:
         one: អ្នកមានអតិថិជនបញ្ជូនបន្តថ្មីចំនួន1
         other: អ្នកមានអតិថិជនបញ្ជូនបន្តថ្មីចំនួន%{count}
       no_task: មិនមានពត៌មានដែលត្រូវបង្ហាញ
-      overdue_assessments:
-        one: មិនទាន់បានធ្វើ
-        other: មិនទាន់បានធ្វើ
       overdue_and_due_today_count:
         one: ហើយនិងមានចំនួន1ដែលត្រូវបំពេញនៅថ្ងៃនេះ
         other: ហើយនិងមានចំនួន%{count}ដែលត្រូវបំពេញនៅថ្ងៃនេះ
+      overdue_assessments:
+        one: មិនទាន់បានធ្វើ
+        other: មិនទាន់បានធ្វើ
       overdue_assessments_count:
         one: អ្នកមានការប៉ាន់ប្រមាណចំនួន1មិនទាន់បានធ្វើ
         other: អ្នកមានការប៉ាន់ប្រមាណចំនួន%{count}មិនទាន់បានធ្វើ
@@ -3535,9 +3518,9 @@ km:
     program_stream_notify:
       review_client: អតិថិជនដែលត្រូវការត្រួតពិនិត្យ
     referrals:
-      referral_clients:  អតិថិជនដែលត្រូវបានបញ្ជូនមក
+      referral_clients: អតិថិជនដែលត្រូវបានបញ្ជូនមក
     repeat_referrals:
-      referral_clients:  អតិថិជនដែលត្រូវបានបញ្ជូនមកម្តងទៀត
+      referral_clients: អតិថិជនដែលត្រូវបានបញ្ជូនមកម្តងទៀត
     upcoming_assessment:
       client: អតិថិជន
       most_recent_assessment: ការប៉ាន់ប្រមាណចុងក្រោយ
@@ -4127,7 +4110,6 @@ km:
       custom_assessment: ឈ្មោះ
       default_assessment: ការកំណត់ប្រេកង់នៃការវាយតំលៃលំនាំដើម CSI
       disable_assessment: យើងមិនប្រើការប៉ាន់ប្រមាណ
-      name: ឈ្មោះ
       eligible: មានសិទ្ធិសម្រាប់អតិថិជននៅក្រោម
       max_assessment: រយៈពេលអតិបរមារវាងការវាយតម្លៃ
       min_assessment: រយៈពេលអប្បបរមារវាងការវាយតម្លៃទី 1 និងទី 2
@@ -4156,11 +4138,11 @@ km:
       default_assessment: ឧបករណ៍ការវាយតម្លៃលំនាំដើម
     navigation:
       country: ប្រទេស
+    research_module:
+      research_module_label: ចែករំលែកទិន្នន័យអតិថិជនអនាមិករបស់អង្គការមិនមែនរដ្ឋាភិបាលជាមួយការស្រាវជ្រាវ OSCaR
+      title: ការស្រាវជ្រាវ OSCaR
     update:
       successfully_updated: ការកំណត់បានកែសម្រួលដោយជោគជ័យ
-    research_module:
-      title: ការស្រាវជ្រាវ OSCaR
-      research_module_label: ចែករំលែកទិន្នន័យអតិថិជនអនាមិករបស់អង្គការមិនមែនរដ្ឋាភិបាលជាមួយការស្រាវជ្រាវ OSCaR
   shared:
     form_builder:
       file_field:
@@ -4202,6 +4184,7 @@ km:
         date_deleted: កាលបរិច្ឆេទនៃការលុប
         no_modification: មិនមានប្រវត្តិកំណែ
         'on': របស់
+        organisation_type: 
         value_of: តម្លៃនៃ
       common:
         able_screening_question: សំនួរ Able Screening
