@@ -101,6 +101,8 @@ en:
         update:
           successfully_updated: Successfully updated
   activerecord:
+    default: &default
+      blank: can't be blank
     errors:
       models:
         able_screening_question:
@@ -121,6 +123,8 @@ en:
             name:
               blank: can't be blank
               taken: has already been taken
+        assessment_domain:
+          <<: *default
         case:
           attributes:
             exit_date:
@@ -130,11 +134,14 @@ en:
             start_date:
               blank: can't be blank
         case_note:
+          <<: *default
           attributes:
             attendee:
               blank: can't be blank
             meeting_date:
               blank: can't be blank
+        case_note_domain_group:
+          <<: *default
         changelog:
           attributes:
             change_version:
@@ -196,6 +203,10 @@ en:
             name:
               blank: can't be blank
               taken: has already been taken
+        enter_ngo:
+          attributes:
+            user_ids:
+              blank: can't be blank
         family:
           attributes:
             family_type:
@@ -252,7 +263,10 @@ en:
             name:
               blank: can't be blank
               taken: has already been taken
+        referral:
+          <<: *default
         referral_source:
+          <<: *default
           attributes:
             name:
               blank: can't be blank
@@ -282,6 +296,7 @@ en:
                 other: must be greater than %{count}
               taken: has already been taken
         task:
+          <<: *default
           attributes:
             completion_date:
               blank: This field is required
@@ -313,6 +328,7 @@ en:
       agencies_involved: Other Agencies Involved
       agency_name: Agency Name
       agency_names: Agency Name
+      assessment_number: Assessment#
       basic_fields: Client Basic Fields
       birth_province: Client Birth Province
       birth_province_id: Birth Province
@@ -331,6 +347,7 @@ en:
       current_address: Current Address
       current_province: Current Province
       custom_csi_domain_scores: Custom Domain Scores
+      custom_csi_group: At
       custom_form: Custom Form
       date_of_assessments: Date of Assessments
       date_of_birth: Date of Birth
@@ -350,7 +367,7 @@ en:
       exit_reasons: Reason For Exit
       family: Family
       family_id: Family ID
-      family_name: Family Name (English)
+      family_name: Family Name (Latin)
       follow_up_by: First Follow-Up By
       follow_up_date: First Follow-Up Date
       followed_up_by: First Follow-Up By
@@ -358,7 +375,7 @@ en:
       form_title: Form Title
       frequency: Frequency
       gender: Gender
-      given_name: Given Name (English)
+      given_name: Given Name (Latin)
       grade: School Grade
       has_been_in_government_care: Has the client lived in government care
       has_been_in_orphanage: Has the client lived in an orphanage
@@ -371,6 +388,7 @@ en:
       local_family_name: Family Name
       local_given_name: Given Name
       main_school_contact: Main School Contact
+      month_number: Month#
       name: Name
       name_of_referee: Name of Referee
       ngo_accepted_date: NGO Accept Date
@@ -494,6 +512,7 @@ en:
       add_task: Add Task
       add_task_confirm: Would you prefer to add tasks at the last step of this assessment?
       at_least_one_task_required: At least one task is required
+      cancel: Cancel
       back: Back
       domain: Domain
       finish: Done
@@ -508,8 +527,8 @@ en:
       set_goal: Would you like to set a goal?
       tasks_arising: 'Tasks arising:'
     index:
-      assessment_completed_on: Assessment completed on
       assessment_created_on: Assessment created on
+      assessment_completed_on: Assessment completed on
       assessment_history: Assessment History
       back: Back
       begin_now: Add New
@@ -633,6 +652,7 @@ en:
       completed_tasks: Completed Tasks
       domain: Domain
       goal: Goal
+      incompleted_tasks: Incompleted Tasks
       new_case_note: New case note
       no_custom_domains_available: No Custom Domains Available
       note: Note
@@ -762,9 +782,9 @@ en:
         case_worker_or_staff: Case Worker / Staff
       form:
         accept: Accept
+        accepting: Accepting...
         accept_ngo_form: Enter NGO Form
         accepted_date: Accepted Date
-        accepting: Accepting...
         case_worker_or_staff: Case Worker / Staff
       update:
         failed_update: Failed to update the client.
@@ -859,6 +879,7 @@ en:
       quantitative: Custom Referral Data
       tracking: Tracking
     index:
+      add_custom_group: Add Assessment Filter
       add_new_filter: Add New Filter
       add_new_group: Add Group
       advanced_search: Report Builder
@@ -875,6 +896,40 @@ en:
       reset: Reset
       results: Results
       search: Search
+  client_books:
+    assessments:
+      assessment: CSI Assessment
+      custom_assessment: Custom Assessment
+    by: By
+    case_histories:
+      accepted_date: NGO Accept Date
+      case_history: Case Histories
+      enrollment_to: Enrollment to
+      exit_date: NGO Exit Date
+      exited_from: Exit from
+      referred_from: Referred from External Organisation
+    case_notes:
+      case_note: Case Note
+    client_enrollments:
+      enrollment: Enrollment
+      enrollment_to: Enrollment to
+    completed: Completed
+    created: Created
+    custom_field_properties:
+      custom_form: Custom Forms
+    enrolled_program_trackings:
+      tracking: Tracking
+    incomplete: Incomplete
+    index:
+      book: Client book
+      jump_to: Jump to date
+    for: For
+    tasks:
+      task: Task
+      domain: Domain
+      overdue_tasks: Overdue
+      today_tasks: Today
+      upcoming_tasks: Upcoming
   client_enrolled_program_trackings:
     action:
       new_tracking: New Tracking
@@ -1064,6 +1119,8 @@ en:
       client_name: Client Name
       close: Close
       export_to_xls: Export to XLS
+    book:
+      book: Client Book For
     case_history_detail:
       accepted_date: NGO Accept Date
       client: Client
@@ -1087,6 +1144,7 @@ en:
       referred_to: Referred to External Organisation
     client_advanced_searches:
       advanced_search:
+        add_custom_group: Add Assessment Filter
         add_new_filter: Add New Filter
         add_new_group: Add Group
         advanced_search: Report Builder
@@ -1138,12 +1196,23 @@ en:
       close: Close
       question: Q
     confirm_client:
-      body_first: The client you are registering has many attributes that match a client who is already registered at
-      body_second: ". You may wish to contact"
-      body_third: to discuss this.
+      birth_province: Birth Province
+      body_first: 'The client record you are saving has similarities to other records in OSCaR in the following fields:'
+      body_second: "Duplicate Checker feature is currently in Beta testing, please Email: %{sender_email} if you have any issues with excessive false positive/negative results."
+      body_third: Please check with the client whether they have ever worked with another organisation that may have put their details into OSCaR.
       close: Cancel
+      commune: Commune/Sangkat
       confirm: Save Anyway
+      date_of_birth: Date of Birth
+      district: District/Khan
+      family_name: Family Name
+      given_name: Given Name
+      local_family_name: Family Name
+      local_given_name: Given Name
+      name_fields: Name Fields
+      province: Current Province
       title: Warning
+      village: Village
     create:
       successfully_created: Client has been successfully created.
     custom_assessment_domain_score:
@@ -1232,7 +1301,7 @@ en:
       exit_date: NGO Exit Date
       exit_note: Exit Note
       exit_status: Exit Status
-      family_name: Family Name (English)
+      family_name: Family Name (Latin)
       finish: Finish
       follow_up_by: First Follow-Up By
       follow_up_date: First Follow-Up Date
@@ -1241,7 +1310,7 @@ en:
       gender: Gender
       general_question: General Question
       getting_started: Getting Started
-      given_name: Given Name (English)
+      given_name: Given Name (Latin)
       gov_caseworker_comment: Caseworker comment
       gov_caseworker_comment_section: Caseworker comment on needs and challenges of the client
       gov_caseworker_name: Caseworker name
@@ -1325,12 +1394,12 @@ en:
     getting_started:
       case_worker_or_staff: Case Worker / Staff
       date_of_birth: Date of Birth
-      family_name: Family Name (English)
+      family_name: Family Name (Latin)
       first_followed_up_by: First Follow-Up By
       first_followed_up_date: First Follow-Up Date
       gender: Gender
       getting_started: Getting Started
-      given_name: Given Name (English)
+      given_name: Given Name (Latin)
       initial_referral_date: Initial Referral Date
       living_detail: Living Details
       local_family_name: Family Name
@@ -1359,19 +1428,26 @@ en:
       all_custom_csi_assessments: All Custom Assessments
       assessment_data: Assessment Data
       assessments: Assessments
+      assessment_number: Assessment#
       case_statistics: Case Statistics
       client_amount: Clients
       csi_assessment: CSI Assessment
       csi_domain_scores: CSI Domain Scores
       custom_assessment: Custom Assessment
+      custom_csi_domain_scores: Custom Domain Scores
+      custom_csi_group: At
+      date_of_assessment: Date of Assessment
+      date_of_assessments: Date of Assessments
       domain_score: Domain Scores
       end: Loading end!
       export_to_xls: Export to XLS
       load: Loading more...
       load_save_search: Load Saved Search
+      month_number: Month#
       most_recent: Most Recent
       popover_content: Please click Search button to see clients
       popover_done: Close
+      popover_info: Notice
       read_less: read less
       read_more: read more
       report_builder: Report Builder
@@ -1463,6 +1539,7 @@ en:
       agency_names: Agency Name
       are_you_sure: Are you sure you want to delete?
       birth_province: Client Birth Province
+      book: Client book
       cambodia: Cambodia
       case_histories: Case Histories
       case_history: Case History
@@ -1495,13 +1572,13 @@ en:
       exit_reasons: Reason for Exit / Case Rejection
       external_referral: External Referral
       families: Families
-      family_name: Family Name (English)
+      family_name: Family Name (Latin)
       follow_up_by: First Follow-Up By
       follow_up_date: First Follow-Up Date
       followed_up_by: First Follow-Up By
       gender: Gender
       general_info: About Client
-      given_name: Given Name (English)
+      given_name: Given Name (Latin)
       government_form_five: Follow up the Child in Alternative Care Form
       government_form_four: Placement-Reintegration Form
       government_form_one: Initial Information Form
@@ -1549,6 +1626,12 @@ en:
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
       province: Birth Province
+      province:
+        cambodia: Birth Province
+        lesotho: Birth Suburb
+        myanmar: Birth State
+        thailand: Birth Province
+        uganda: Birth Province
       received_by: Referral Received By
       refer_client: Refer Client
       referee_phone_number: Referee Phone Number
@@ -1572,8 +1655,17 @@ en:
       telephone_number: Primary Carer Phone Number
       time_in_care: Time In Care
       time_in_care_around:
+        month:
+          one: "%{count} month"
+          other: "%{count} months"
         one: Around %{count} year
         other: Around %{count} years
+        week:
+          one: "%{count} week"
+          other: "%{count} weeks"
+        year:
+          one: "%{count} year"
+          other: "%{count} years"
       view_assessments: Assessments
       view_case_notes: Case Notes
       view_ec_history_btn_link: EC History
@@ -1653,6 +1745,10 @@ en:
       next: Next
       open_form: Open Form
       previous: Previous
+    multiple_forms:
+      custom_forms: Custom Forms
+      multiple_forms: Add Form to Multiple Clients
+      tracking_forms: Tracking Forms
     duetoday:
       assessment: Assessment
       assessments: Assessments
@@ -1663,10 +1759,6 @@ en:
       families: Active Families
       foster: Foster
       kinship: Kinship
-    multiple_forms:
-      custom_forms: Custom Forms
-      multiple_forms: Add Form to Multiple Clients
-      tracking_forms: Tracking Forms
     overdue:
       assessment: Assessment
       assessments: Assessments
@@ -1804,14 +1896,14 @@ en:
         exit_note: NGO Exit Note
         exit_reasons: Reason For Exit
         family_id: Family ID
-        family_name: Family Name (English)
+        family_name: Family Name (Latin)
         follow_up_by: First Follow-Up By
         follow_up_date: First Follow-Up Date
         followed_up_by: First Follow-Up By
         form_title: Form Title
         frequency: Frequency
         gender: Gender
-        given_name: Given Name (English)
+        given_name: Given Name (Latin)
         has_been_in_government_care: Has the client lived in government care
         has_been_in_orphanage: Has the client lived in an orphanage
         has_date_of_birth: Has Date of Birth
@@ -2099,12 +2191,12 @@ en:
     date_of_birth: Date of Birth
     district: District/Khan
     donor: Donor
-    family_name: Family Name (English)
+    family_name: Family Name (Latin)
     follow_up_by: First Follow-Up By
     follow_up_date: First Follow-Up Date
     followed_up_by: First Follow-Up By
     gender: Gender
-    given_name: Given Name (English)
+    given_name: Given Name (Latin)
     has_been_in_government_care: Has the client lived in government care
     has_been_in_orphanage: Has the client lived in an orphanage
     house_number: House
@@ -2476,6 +2568,7 @@ en:
         enable: Enable
         enable_two_factor_authentication: Enable Two Factor Authentication
         first_name: First Name
+        gender: Gender
         header: Edit Personal Information
         job_title: Job Title
         last_name: Last Name
@@ -2484,6 +2577,7 @@ en:
         overdue_task_summary_notify: Notification Email
         password: Password
         password_confirmation: Confirm Password
+        pin_number: Pin Number
         province: Province
         referral_notification: Referral Notification
         save: Save
@@ -2518,6 +2612,9 @@ en:
       send_instructions: You will receive an email with instructions for how to unlock your account in a few minutes.
       send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
       unlocked: Your account has been unlocked successfully. Please sign in to continue.
+  devise_token_auth:
+   sessions:
+     not_confirmed: Your account is not activated yet.
   districts:
     create:
       failed_create: Failed to create a district.
@@ -3486,6 +3583,7 @@ en:
       file_field:
         allow_file_size: Allowed file types
         max_file_size: "*Maximum file size: 5MB/file and 30MB/upload."
+
   must_be_uniq: field label must be uniq
   mutual_dependence_has_been_modified: Prerequisite Programs cannot be changed or added because it breaks the previous conditions.
   notifications:
@@ -4034,9 +4132,10 @@ en:
       date_of_referral: Date of Referral
       external_referral_warning: The NGO that you are attempting to refer your client to is not currently using OSCaR. Please print a copy of this referral form to send to your target organisation.
       name_of_referee: Case Worker Making the Referral
+      ngo_name: NGO Name
       referral_phone: Contact Phone Number
       referral_reason: What is the reason for this referral?
-      referred_from: Reffered from
+      referred_from: Referred from
       referred_to: Referred to
       save: Save
       save_and_download: Save & Download
@@ -4066,6 +4165,7 @@ en:
       download_referral_form: Download Printable Referral Form
       external_referral_warning: The NGO that you are attempting to refer your client to is not currently using OSCaR. Please print a copy of this referral form to send to your target organisation.
       name_of_referee: Case Worker Making the Referral
+      ngo_name: NGO Name
       pdf:
         haml:
           client_id: Client ID
@@ -4139,8 +4239,8 @@ en:
     navigation:
       country: Country
     research_module:
-      research_module_label: Share my NGO's anonymous client data with the OSCaR Research Module
       title: Research Module
+      research_module_label: Share my NGO's anonymous client data with the OSCaR Research Module
     update:
       successfully_updated: Setting have been successfully updated.
   shared:

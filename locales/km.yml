@@ -101,6 +101,8 @@ km:
         update:
           successfully_updated: ដំណាក់កាលត្រូវបានកែសម្រួលដោយជោគជ័យ
   activerecord:
+    default: &default
+      blank: មិនអាចរំលង
     errors:
       models:
         able_screening_question:
@@ -121,6 +123,8 @@ km:
             name:
               blank: មិនអាចរំលង
               taken: ត្រូវបានប្រើរួចហើយ
+        assessment_domain:
+          <<: *default
         case:
           attributes:
             exit_date:
@@ -130,11 +134,14 @@ km:
             start_date:
               blank: មិនអាចរំលង
         case_note:
+          <<: *default
           attributes:
             attendee:
               blank: មិនអាចរំលង
             meeting_date:
               blank: មិនអាចរំលង
+        case_note_domain_group:
+          <<: *default
         changelog:
           attributes:
             change_version:
@@ -196,6 +203,10 @@ km:
             name:
               blank: មិនអាចរំលង
               taken: ត្រូវបានប្រើរួចហើយ
+        enter_ngo:
+          attributes:
+            user_ids:
+              blank: មិនអាចរំលង
         family:
           attributes:
             family_type:
@@ -252,6 +263,8 @@ km:
             name:
               blank: មិនអាចរំលង
               taken: ត្រូវបានប្រើរួចហើយ
+        referral:
+          <<: *default
         referral_source:
           attributes:
             name:
@@ -282,6 +295,7 @@ km:
                 other: ត្រូវតែធំជាង %{count}
               taken: ត្រូវបានប្រើរួចហើយ
         task:
+          <<: *default
           attributes:
             completion_date:
               blank: មិនអាចរំលង
@@ -300,6 +314,9 @@ km:
               too_short: អប្បបរមា៨តួអក្សរ
             password_confirmation:
               confirmation: បញ្ជាក់ពាក្យសម្ងាត់ថ្មីមិនត្រឹមត្រូវ
+            pin_code:
+              not_an_integer: អនុញ្ញាតតែលេខប៉ុណ្ណោះ
+              wrong_length: ត្រូវតែមាន៥តួ
             roles:
               blank: មិនអាចរំលង
   add_event_success: ព្រឹត្តិការណ៍ត្រូវបានបន្ថែមទៅក្នុងប្រតិទិនដោយជោគជ័យ
@@ -313,6 +330,7 @@ km:
       agencies_involved: អង្គភាពដែលពាក់ព័ន្ធ
       agency_name: ឈ្មោះអង្គភាព
       agency_names: ឈ្មោះអង្គភាព
+      assessment_number: ការប៉ាន់ប្រមាណ#
       basic_fields: ពត៌មានទូទៅរបស់អតិថិជន
       birth_province: ស្រុកកំណើត
       birth_province_id: ស្រុកកំណើត
@@ -331,6 +349,7 @@ km:
       current_address: ឣាសយដ្ឋានបច្ចុប្បន្ន
       current_province: ខេត្តបច្ចុប្បន្ន
       custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+      custom_csi_group: នៅ
       custom_form: ទម្រង់បែបបទ
       date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
       date_of_birth: ថ្ងៃ ខែ ឆ្នាំ កំណើត
@@ -371,6 +390,7 @@ km:
       local_family_name: នាមត្រកូលជាអក្សរខ្មែរ
       local_given_name: នាមខ្លួនជាអក្សរខ្មែរ
       main_school_contact: អាស័យដ្ឋានទំនាក់ទំនងសាលារៀន
+      month_number: ខែ#
       name: ឈ្មោះ
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
       ngo_accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
@@ -495,6 +515,7 @@ km:
       add_task_confirm: តើអ្នកចង់បន្ថែមភារកិច្ចនៅជំហានចុងក្រោយនៃការវាយតម្លៃនេះទេ?
       at_least_one_task_required: យ៉ាងហោចណាស់ត្រូវបង្កើតកាតព្វកិច្ចមួយ
       back: ត្រលប់ក្រោយ
+      cancel: ទុកជាមោឃៈ
       domain: កត្តា
       finish: រក្សាទុក
       finished_assessment_msg: ការវាយតម្លៃនេះរួចរាល់ក្នុងការរក្សាទុក!
@@ -633,6 +654,7 @@ km:
       completed_tasks: កាតព្វកិច្ចដែលបានធ្វើរួច
       domain: កត្តា
       goal: គោលដៅ
+      incompleted_tasks: កាតព្វកិច្ចដែលមិនទាន់បំពេញ
       new_case_note: កំណត់ត្រាថ្មី
       no_custom_domains_available: មិនមានកត្តាផ្ទាល់ខ្លួន
       note: កំណត់ត្រា
@@ -762,6 +784,7 @@ km:
         case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       form:
         accept: ទទួលយក
+        accepting: កំពុងទទួលយក...
         accept_ngo_form: ទទួលចូលអង្គការ
         accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
         accepting: កំពុងទទួលយក...
@@ -859,6 +882,7 @@ km:
       quantitative: ពត៌មានបញ្ជូនបន្ថែម
       tracking: តាមដាន
     index:
+      add_custom_group: បន្ថែមការស្វែងរកការប៉ាន់ប្រមាណ
       add_new_filter: បន្ថែមលក្ខខ័ណ្ឌថ្មី
       add_new_group: បន្ថែមក្រុមលក្ខខ័ណ្ឌថ្មី
       advanced_search: ការបង្កើតរបាយការណ៍
@@ -875,6 +899,40 @@ km:
       reset: សំអាត
       results: លទ្ធផល
       search: ស្វែងរក
+  client_books:
+    assessments:
+      assessment: ការប៉ាន់ប្រមាណ CSI
+      custom_assessment: ការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+    by: ដោយ
+    case_histories:
+      accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
+      case_history: ប្រវត្តិនៃករណី
+      enrollment_to: ចូលទៅ ទម្រង់បែបបទចុះឈ្មោះ
+      exit_date: ថ្ងៃចាកចេញពីអង្គការ
+      exited_from: ចាកចេញពី
+      referred_from: បញ្ជូនមកពីអង្គការ
+    case_notes:
+      case_note: កំណត់ត្រាករណី
+    client_enrollments:
+      enrollment: ទម្រង់បែបបទនៃចុះឈ្មោះ
+      enrollment_to: ចូលទៅ ទម្រង់បែបបទចុះឈ្មោះ
+    completed: បានបំពេញ
+    created: បានបង្កើត
+    custom_field_properties:
+      custom_form: ទម្រង់បែបបទ
+    enrolled_program_trackings:
+      tracking: តាមដាន
+    incomplete: មិនទានបំពេញចប់
+    index:
+      book: សៀវភៅអតិថិជនបច្ចុប្បន្ន
+      jump_to: ទៅកាន់កាលបរិច្ឆេទ
+    for: សំរាប់
+    tasks:
+      task: កាតព្វកិច្ច
+      domain: កត្តា
+      overdue_tasks: កាតព្វកិច្ចផុតកំណត់
+      today_tasks: កាតព្វកិច្ចថ្ងៃនេះ
+      upcoming_tasks: កាតព្វកិច្ចបន្ទាប់
   client_enrolled_program_trackings:
     action:
       new_tracking: បន្ថែមការតាមដានថ្មី
@@ -1065,6 +1123,7 @@ km:
       close: បិទ
       export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
     case_history_detail:
+      initial_referral_date: កាលបរិចេ្ឆទនៃការបញ្ជូនដំបូង
       accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
       client: ឈ្មោះអតិថិជន
       client_id: លេខសំគាល់អតិថិជន
@@ -1087,6 +1146,7 @@ km:
       referred_to: បញ្ជូនទៅអង្គការដទៃ
     client_advanced_searches:
       advanced_search:
+        add_custom_group: បន្ថែមការស្វែងរកការប៉ាន់ប្រមាណ
         add_new_filter: បន្ថែមលក្ខខ័ណ្ឌថ្មី
         add_new_group: បន្ថែមក្រុមលក្ខខ័ណ្ឌថ្មី
         advanced_search: ការបង្កើតរបាយការណ៍
@@ -1138,12 +1198,23 @@ km:
       close: ត្រលប់ក្រោយ
       question: សំនួរ
     confirm_client:
-      body_first: អតិថិជនដែលអ្នកកំពុងចុះឈ្មោះមានភាពប្រហាក់ប្រហែលគ្នាជាមួយនឹងអតិថិជនដែលបានចុះឈ្មោះលើកមុនរួចហើយ នៅ
-      body_second: "៕ អ្នកប្រហែលត្រូវទាក់ទងនឺង"
-      body_third: ដើម្បីពិភាក្សាពីបញ្ហានេះ៕
+      birth_province: ស្រុកកំណើត
+      body_first: 'កំណត់ត្រាអតិថិជនដែលអ្នកកំពុងរក្សាទុកមានភាពស្រដៀងគ្នាទៅនឹងកំណត់ត្រាផ្សេងទៀតនៅក្នុង OSCaR នៅលើព័ត៌មានដូចខាងក្រោម:'
+      body_second: "ការពិនិត្យទិន្នន័យស្ទួនបច្ចុប្បន្នស្ថិតនៅក្នុងការសាកល្បង សូមអ៊ីម៉ែល: %{sender_email} ប្រសិនបើអ្នកមានបញ្ហាណាមួយជាមួយលទ្ធផលវិជ្ជមាន / អវិជ្ជមាន"
+      body_third: សូមពិនិត្យជាមួយអតិថិជនថាតើពួកគេធ្លាប់ធ្វើការជាមួយអង្គការផ្សេងទៀតដែលអាចបញ្ចូលព័ត៌មានលម្អិតរបស់ពួកគេទៅក្នុង OSCaR
       close: ទុកជាមោឃៈ
+      commune: ឃុំ/សង្កាត់
       confirm: រក្សាទុក
+      date_of_birth: ថ្ងៃ ខែ ឆ្នាំ កំណើត
+      district: ស្រុក/ខណ្ឌ
+      family_name: នាមត្រកូលជាអក្សរឡាតាំង
+      given_name: នាមខ្លួនជាអក្សរឡាតាំង
+      local_family_name: នាមត្រកូលជាអក្សរខ្មែរ
+      local_given_name: នាមខ្លួនជាអក្សរខ្មែរ
+      name_fields: ទិន្នន័យឈ្មោះ
+      province: ខេត្ត/ក្រុង
       title: សូមប្រយ័ត្ន!
+      village: ភូមិ
     create:
       successfully_created: អតិថិជនត្រូវបានបង្កើតឡើងដោយជោគជ័យ
     custom_assessment_domain_score:
@@ -1359,19 +1430,26 @@ km:
       all_custom_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       assessment_data: ទិន្នន័យពិន្ទុនៃការវាយតម្លៃ
       assessments: ការប៉ាន់ប្រមាណ
+      assessment_number: ការប៉ាន់ប្រមាណ#
       case_statistics: ក្រាបនៃប្រភេទករណីរបស់អតិថិជន
       client_amount: ចំនួនអតិថិជន
       csi_assessment: ការប៉ាន់ប្រមាណ CSI
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       custom_assessment: ការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+      custom_csi_group: នៅ
+      custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+      date_of_assessment: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
+      date_of_assessments: Date of Assessments
       domain_score: ពិន្ទុកត្តាការប៉ាន់ប្រមាណ
       end: អស់លទ្ធផល!
       export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
       load: កំពុងផ្ទុក...
       load_save_search: ទាញយកលក្ខខ័ណ្ឌស្វែងរក
+      month_number: ខែ#
       most_recent: ថ្មីបំផុត
       popover_content: សូមចុចប៊ូតុងស្វែងរកដើម្បីមើលអតិថិជន
       popover_done: បិទ
+      popover_info: ចំណាំ
       read_less: អានតិច
       read_more: អានបន្ថែម
       report_builder: បង្កើតរបាយការណ៍
@@ -1463,6 +1541,7 @@ km:
       agency_names: ឈ្មោះអង្គភាព
       are_you_sure: តើអ្នកប្រាកដហើយ?
       birth_province: ស្រុកកំណើត
+      book: សៀវភៅអតិថិជនបច្ចុប្បន្ន
       cambodia: កម្ពុជា
       case_histories: ប្រវត្តិនៃករណី
       case_history: ប្រវត្តិនៃករណី
@@ -1549,6 +1628,12 @@ km:
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
+      province:
+        cambodia: ខេត្តកំណើត
+        lesotho: ខេត្តកំណើត
+        myanmar: ខេត្តកំណើត
+        thailand: ខេត្តកំណើត
+        uganda: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
@@ -1572,8 +1657,17 @@ km:
       telephone_number: លេខទូរស័ព្ទ
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
+        month:
+          one: "%{count} ខែ"
+          other: "%{count} ខែ"
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
+        week:
+          one: "%{count} សប្តាហ៍"
+          other: "%{count} សប្តាហ៍"
+        year:
+          one: "%{count} ឆ្នាំ"
+          other: "%{count} ឆ្នាំ"
       view_assessments: ការប៉ាន់ប្រមាណ
       view_case_notes: កំណត់ត្រាករណី
       view_ec_history_btn_link: មើលប្រវត្តិនៃ EC
@@ -1653,6 +1747,10 @@ km:
       next: ទំព័របន្ទាប់
       open_form: បើកទម្រង់
       previous: ទំព័រមុន
+    multiple_forms:
+      custom_forms: ទម្រង់បែបបទ
+      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
+      tracking_forms: ទម្រង់បែបបទតាមដាន
     duetoday:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -2476,6 +2574,7 @@ km:
         enable: បើកដំណើរការ
         enable_two_factor_authentication: បើកការផ្ទៀងផ្ទាត់ជំហានទីពីរ
         first_name: នាមខ្លួនជាអក្សរឡាតាំង
+        gender: ភេទ
         header: កែសម្រួលពត៌មានផ្ទាល់ខ្លួន
         job_title: មុខតំណែង
         last_name: នាមត្រកូល
@@ -2484,6 +2583,7 @@ km:
         overdue_task_summary_notify: ការជូនដំណឹងតាមរយៈអ៊ីម៉ែល
         password: លេខកូដសំងាត់
         password_confirmation: បញ្ជាក់ពាក្យសម្ងាត់ថ្មី
+        pin_number: លេខ Pin
         province: ខេត្ត
         referral_notification: ការជូនដំណឹងអំពីការបញ្ជូន
         save: រក្សាទុក
@@ -2518,6 +2618,9 @@ km:
       send_instructions: អ្នកនឹងទទួលបាន អ៊ីម៉ែលមួយ ជាមួយនឹងការណែនាំ សម្រាប់របៀបក្នុងការ ដោះសោគណនី របស់អ្នកនៅក្នុងពេលប៉ុន្មាននាទីខាងមុខ
       send_paranoid_instructions: បើគណនីរបស់អ្នក មានរួចហើយ, អ្នកនឹងទទួលបាន អ៊ីម៉ែលមួយ ជាមួយនឹងការណែនាំ អំពីរបៀប ដើម្បីដោះសោ វានៅក្នុងពេល ពីរឬបីនាទីខាងមុខ
       unlocked: គណនីរបស់អ្នកត្រូវ បានដោះសោ ដោយជោគជ័យ។ សូមចូលទៅ បន្ត
+  devise_token_auth:
+   sessions:
+     not_confirmed: គណនីរបស់អ្នកមិនទាន់ដំណើរការនៅឡើយទេ។
   districts:
     create:
       failed_create: ស្រុកមិនត្រូវបានបង្កើតដោយជោគជ័យ
@@ -4034,6 +4137,7 @@ km:
       date_of_referral: កាលបរិច្ឆេទបញ្ជូន
       external_referral_warning: អង្គការដែលអ្នកកំពុងព្យាយាមបញ្ជូនអតិថិជនរបស់អ្នកទៅបច្ចុប្បន្ននេះមិនកំពុងប្រើ OSCaR ទេ។ សូមបោះពុម្ពច្បាប់ចម្លងនៃទម្រង់បញ្ជូននេះដើម្បីផ្ញើទៅអង្គការគោលដៅរបស់អ្នក។
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
+      ngo_name: ឈ្មោះអង្គការ
       referral_phone: លេខទូរស័ព្ទរបស់ឣ្នកបញ្ជូនករណី
       referral_reason: មូលហេតុនៃការបញ្ជូន
       referred_from: ប្រភពនៃការបញ្ជូន
@@ -4066,6 +4170,7 @@ km:
       download_referral_form: ទាញយកទម្រង់បញ្ជូន
       external_referral_warning: អង្គការដែលអ្នកកំពុងព្យាយាមបញ្ជូនអតិថិជនរបស់អ្នកទៅ បច្ចុប្បន្ននេះមិនកំពុងប្រើ OSCaR ទេ។ សូមបោះពុម្ពច្បាប់ចម្លងនៃទម្រង់បញ្ជូននេះដើម្បីផ្ញើទៅអង្គការគោលដៅរបស់អ្នក។
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
+      ngo_name: ឈ្មោះអង្គការ
       pdf:
         haml:
           client_id: លេខសំគាល់អតិថិជន
@@ -4184,7 +4289,7 @@ km:
         date_deleted: កាលបរិច្ឆេទនៃការលុប
         no_modification: មិនមានប្រវត្តិកំណែ
         'on': របស់
-        organisation_type: 
+        organisation_type: ប្រភេទអង្គការ
         value_of: តម្លៃនៃ
       common:
         able_screening_question: សំនួរ Able Screening
