@@ -1779,7 +1779,7 @@ km:
     program_stream:
       program_stream: កម្មវិធីចម្បងីចម្បង
     program_stream_services:
-      ​name: ឈ្មោះ
+      name: ឈ្មោះ
       program_stream: កម្មវិធីចម្បង
       program_stream_sub: សូមបន្ថែម 'ប្រភេទសេវាកម្ម' ទៅកម្មវិធីចម្បងនីមួយៗ។
       remind_me: រំលឹកខ្ញុំពេលក្រោយ
