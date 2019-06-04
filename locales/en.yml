@@ -1658,6 +1658,7 @@ en:
       primary_carer_phone_number: Primary Carer Phone Number
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
+      province: Birth Province
       province:
         cambodia: Birth Province
         lesotho: Birth Suburb
@@ -2659,8 +2660,8 @@ en:
       send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
       unlocked: Your account has been unlocked successfully. Please sign in to continue.
   devise_token_auth:
-    sessions:
-      not_confirmed: Your account is not activated yet.
+   sessions:
+     not_confirmed: Your account is not activated yet.
   districts:
     create:
       failed_create: Failed to create a district.
