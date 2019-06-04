@@ -634,7 +634,7 @@ th-TH:
         non_face_to_face:
         rd_party:
         visit:
-        other: Other
+        other:
     form_with_assessment_domains:
       add_task:
       domain:
