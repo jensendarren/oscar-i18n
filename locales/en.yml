@@ -2660,8 +2660,8 @@ en:
       send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
       unlocked: Your account has been unlocked successfully. Please sign in to continue.
   devise_token_auth:
-    sessions:
-      not_confirmed: Your account is not activated yet.
+   sessions:
+     not_confirmed: Your account is not activated yet.
   districts:
     create:
       failed_create: Failed to create a district.
