@@ -318,8 +318,8 @@ en:
             roles:
               blank: can't be blank
             pin_code:
-              not_an_integer:
-              wrong_length:
+              not_an_integer: 
+              wrong_length: 
   add_event_success: Event has been added to calendar successfully.
   advanced_search:
     fields:
@@ -1171,7 +1171,7 @@ en:
       referral_reasons: Referral Reasons
       referred_from: Referred from External Organisation
       referred_to: Referred to External Organisation
-      initial_referral_date:
+      initial_referral_date: 
     client_advanced_searches:
       advanced_search:
         add_custom_group: Add Assessment Filter
@@ -1228,7 +1228,7 @@ en:
     confirm_client:
       birth_province: Birth Province
       body_first: 'The client record you are saving has similarities to other records in OSCaR in the following fields:'
-      body_second: "Duplicate Checker feature is currently in Beta testing, please Email: %{sender_email} if you have any issues with excessive false positive/negative results."
+      body_second: 'Duplicate Checker feature is currently in Beta testing, please Email: %{sender_email} if you have any issues with excessive false positive/negative results.'
       body_third: Please check with the client whether they have ever worked with another organisation that may have put their details into OSCaR.
       close: Cancel
       commune: Commune/Sangkat
@@ -1658,7 +1658,6 @@ en:
       primary_carer_phone_number: Primary Carer Phone Number
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
-      province: Birth Province
       province:
         cambodia: Birth Province
         lesotho: Birth Suburb
@@ -2660,8 +2659,8 @@ en:
       send_paranoid_instructions: If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.
       unlocked: Your account has been unlocked successfully. Please sign in to continue.
   devise_token_auth:
-   sessions:
-     not_confirmed: Your account is not activated yet.
+    sessions:
+      not_confirmed: Your account is not activated yet.
   districts:
     create:
       failed_create: Failed to create a district.

@@ -2665,8 +2665,8 @@ km:
       send_paranoid_instructions: បើគណនីរបស់អ្នក មានរួចហើយ, អ្នកនឹងទទួលបាន អ៊ីម៉ែលមួយ ជាមួយនឹងការណែនាំ អំពីរបៀប ដើម្បីដោះសោ វានៅក្នុងពេល ពីរឬបីនាទីខាងមុខ
       unlocked: គណនីរបស់អ្នកត្រូវ បានដោះសោ ដោយជោគជ័យ។ សូមចូលទៅ បន្ត
   devise_token_auth:
-   sessions:
-     not_confirmed: គណនីរបស់អ្នកមិនទាន់ដំណើរការនៅឡើយទេ។
+    sessions:
+      not_confirmed: គណនីរបស់អ្នកមិនទាន់ដំណើរការនៅឡើយទេ។
   districts:
     create:
       failed_create: ស្រុកមិនត្រូវបានបង្កើតដោយជោគជ័យ
@@ -4859,8 +4859,5 @@ km:
   warning: ប្រុងប្រយ័ត្ន
   will_paginate:
     next_label: ទំព័របន្ទាប់
-    page_gap: "..."
-    previous_label: ទំព័រមុន
-   next_label: ទំព័របន្ទាប់
     page_gap: "..."
     previous_label: ទំព័រមុន
