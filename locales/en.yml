@@ -635,6 +635,11 @@ en:
       tasks: Tasks
       tasks_arising: Tasks Arising
       type: 'Type (Note: Choose ''visit'' only if you met with the client.)'
+      type_options:
+        visit: Visi
+        non_face_to_face: Non face to face
+        rd_party: 3rd Party
+        other: Other
     form_with_assessment_domains:
       add_task: Add Task
       domain: Domain
