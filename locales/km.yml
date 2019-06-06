@@ -134,12 +134,12 @@ km:
             start_date:
               blank: មិនអាចរំលង
         case_note:
-          blank: មិនអាចរំលង
           attributes:
             attendee:
               blank: មិនអាចរំលង
             meeting_date:
               blank: មិនអាចរំលង
+          blank: មិនអាចរំលង
         case_note_domain_group:
           blank: មិនអាចរំលង
         changelog:
@@ -296,12 +296,12 @@ km:
                 other: ត្រូវតែធំជាង %{count}
               taken: ត្រូវបានប្រើរួចហើយ
         task:
-          blank: មិនអាចរំលង
           attributes:
             completion_date:
               blank: មិនអាចរំលង
             name:
               blank: មិនអាចរំលង
+          blank: មិនអាចរំលង
         user:
           attributes:
             current_password:
@@ -639,10 +639,9 @@ km:
       tasks_arising: កាតព្វកិច្ចកើតឡើង
       type: ប្រភេទ
       type_options:
-        visit: សួរសុខទុក្ខ
         non_face_to_face: Non face to face
         rd_party: 3rd Party
-        other: Other
+        visit: សួរសុខទុក្ខ
     form_with_assessment_domains:
       add_task: បន្ថែមកាតព្វកិច្ចថ្មី
       domain: កត្តា
@@ -791,7 +790,6 @@ km:
         case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       form:
         accept: ទទួលយក
-        accepting: កំពុងទទួលយក...
         accept_ngo_form: ទទួលចូលអង្គការ
         accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
         accepting: កំពុងទទួលយក...
@@ -811,14 +809,13 @@ km:
         exit_ngo: ចាកចេញពីអង្គការ
         exit_note: កំណត់ហេតុនៃការចាកចេញ
         exit_reason_options:
+          agency_lack_resource: Agency lacks sufficient resources
+          client_died: Client died
+          client_refuse_service: Client refused service
           move_out_within_cambodia: Client is/moved outside NGO target area (within Cambodia)
           move_out_within_international: Client is/moved outside NGO target area (International)
-          client_refuse_service: Client refused service
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
-          client_died: Client died
           not_required_support: Client does not require / no longer requires support
-          agency_lack_resource: Agency lacks sufficient resources
-          other: ផ្សេងៗ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
         exiting: កំពុងចាកចេញពីអង្គការ...
@@ -833,14 +830,13 @@ km:
         exit_ngo: ចាកចេញពីអង្គការ
         exit_note: កំណត់ហេតុនៃការចាកចេញ
         exit_reason_options:
+          agency_lack_resource: Agency lacks sufficient resources
+          client_died: Client died
+          client_refuse_service: Client refused service
           move_out_within_cambodia: Client is/moved outside NGO target area (within Cambodia)
           move_out_within_international: Client is/moved outside NGO target area (International)
-          client_refuse_service: Client refused service
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
-          client_died: Client died
           not_required_support: Client does not require / no longer requires support
-          agency_lack_resource: Agency lacks sufficient resources
-          other: ផ្សេងៗ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
         exiting: កំពុងចាកចេញ...
@@ -947,17 +943,17 @@ km:
       custom_form: ទម្រង់បែបបទ
     enrolled_program_trackings:
       tracking: តាមដាន
+    for: សំរាប់
     incomplete: មិនទានបំពេញចប់
     index:
       book: សៀវភៅអតិថិជនបច្ចុប្បន្ន
       jump_to: ទៅកាន់កាលបរិច្ឆេទ
     leave_programs:
       exited_from: ចាកចេញពី
-    for: សំរាប់
     tasks:
-      task: កាតព្វកិច្ច
       domain: កត្តា
       overdue_tasks: កាតព្វកិច្ចផុតកំណត់
+      task: កាតព្វកិច្ច
       today_tasks: កាតព្វកិច្ចថ្ងៃនេះ
       upcoming_tasks: កាតព្វកិច្ចបន្ទាប់
   client_enrolled_program_trackings:
@@ -1149,8 +1145,9 @@ km:
       client_name: ឈ្មោះអតិថិជន
       close: បិទ
       export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
+    book:
+      book:
     case_history_detail:
-      initial_referral_date: កាលបរិចេ្ឆទនៃការបញ្ជូនដំបូង
       accepted_date: កាលបរិច្ឆេទទទួលយកចូលអង្គការ
       client: ឈ្មោះអតិថិជន
       client_id: លេខសំគាល់អតិថិជន
@@ -1163,6 +1160,7 @@ km:
       exit_program_date: ថ្ងៃចាកចេញពីកម្មវិធី
       exit_reasons: មូលហេតុនៃការចាកចេញ
       external_referral: ផ្ទេរចេញទៅ
+      initial_referral_date: កាលបរិចេ្ឆទនៃការបញ្ជូនដំបូង
       internal_referral: ផ្ទេរចូលពី
       name_of_referee: ឈ្មោះអ្នកបញ្ជូន
       other_info_of_exit: ព័ត៌មានបន្ថែមនៃការចាកចេញ
@@ -1201,7 +1199,7 @@ km:
       load_save_search:
         my_saved_search: ការស្វែងរករបស់ខ្ញុំ
         other_saved_search: ការស្វែងរកដទៃទៀត
-        search_settings_list: តារាងលក្ខខ័ណ្ឌស្វែងរក
+        search_settings_list: តារាងលក្ខខណ្ឌស្វែងរក
       my_saved_searches:
         action: សកម្មភាព
         date: កាលបរិច្ឆេទ
@@ -1227,7 +1225,7 @@ km:
     confirm_client:
       birth_province: ស្រុកកំណើត
       body_first: 'កំណត់ត្រាអតិថិជនដែលអ្នកកំពុងរក្សាទុកមានភាពស្រដៀងគ្នាទៅនឹងកំណត់ត្រាផ្សេងទៀតនៅក្នុង OSCaR នៅលើព័ត៌មានដូចខាងក្រោម:'
-      body_second: "ការពិនិត្យទិន្នន័យស្ទួនបច្ចុប្បន្នស្ថិតនៅក្នុងការសាកល្បង សូមអ៊ីម៉ែល: %{sender_email} ប្រសិនបើអ្នកមានបញ្ហាណាមួយជាមួយលទ្ធផលវិជ្ជមាន / អវិជ្ជមាន"
+      body_second: 'ការពិនិត្យទិន្នន័យស្ទួនបច្ចុប្បន្នស្ថិតនៅក្នុងការសាកល្បង សូមអ៊ីម៉ែល: %{sender_email} ប្រសិនបើអ្នកមានបញ្ហាណាមួយជាមួយលទ្ធផលវិជ្ជមាន / អវិជ្ជមាន'
       body_third: សូមពិនិត្យជាមួយអតិថិជនថាតើពួកគេធ្លាប់ធ្វើការជាមួយអង្គការផ្សេងទៀតដែលអាចបញ្ចូលព័ត៌មានលម្អិតរបស់ពួកគេទៅក្នុង OSCaR
       close: ទុកជាមោឃៈ
       commune: ឃុំ/សង្កាត់
@@ -1421,14 +1419,17 @@ km:
       support_amount: ប្រាក់ឧបត្ថម្ភ
       support_note: ពត៌មានពីប្រាក់ឧប្ថម្ភ
     getting_started:
+      case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       date_of_birth: ថ្ងៃខែឆ្នាំកំណើត
       family_name: នាមត្រកូល (ភាសាអង់គ្លេស)
-      followed_up_by_id: បុគ្គលិកតាមដានករណី
+      first_followed_up_by: បុគ្គលិកតាមដានករណី
+      first_followed_up_date: កាលបរិច្ឆេទតាមដានដំបូង
       follow_up_date: កាលបរិច្ឆេទតាមដានដំបូង
+      followed_up_by_id: បុគ្គលិកតាមដានករណី
       gender: ភេទ
       getting_started: ព័ត៌មានបឋម
       given_name: នាមខ្លួន (ភាសាអង់គ្លេស)
-      initial_referral_date: កាលបរិច្ឆេទបង្អែកដំបូង
+      initial_referral_date: កាលបរិច្ឆេទនៃការបញ្ជូនដំបូង
       living_detail: ព័ត៎មានរស់នៅលំអិត
       local_family_name: នាមត្រកូល (ភាសាខ្មែរ)
       local_given_name: នាមខ្លួន (ភាសាខ្មែរ)
@@ -1441,8 +1442,10 @@ km:
         myanmar: ខេត្តកំណើត
         thailand: ខេត្តកំណើត
       received_by_id: បុគ្គលិកទទួលករណី
+      referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
       referral_information: ព័ត៌មានការបញ្ជូន
       referral_phone: លេខទូរស័ព្ទអ្នកបញ្ជូន
+      referral_received_by: បុគ្គលិកទទួលករណី
       referral_source: ប្រភពយោង
       referral_source_category: ប្រភេទនៃប្រភពយោង
       remove_profile: លុបរូបថត
@@ -1457,22 +1460,22 @@ km:
       all_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       all_custom_csi_assessments: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       assessment_data: ទិន្នន័យពិន្ទុនៃការវាយតម្លៃ
-      assessments: ការប៉ាន់ប្រមាណ
       assessment_number: ការប៉ាន់ប្រមាណ#
+      assessments: ការប៉ាន់ប្រមាណ
       case_statistics: ក្រាបនៃប្រភេទករណីរបស់អតិថិជន
       client_amount: ចំនួនអតិថិជន
       csi_assessment: ការប៉ាន់ប្រមាណ CSI
       csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណCSI
       custom_assessment: ការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
-      custom_csi_group: នៅ
       custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
+      custom_csi_group: នៅ
       date_of_assessment: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
       date_of_assessments: Date of Assessments
       domain_score: ពិន្ទុកត្តាការប៉ាន់ប្រមាណ
       end: អស់លទ្ធផល!
       export_to_xls: ទាញចេញជាឯកសារប្រភេទ XLS
       load: កំពុងផ្ទុក...
-      load_save_search: ទាញយកលក្ខខ័ណ្ឌស្វែងរក
+      load_save_search: ទាញយកលក្ខខណ្ឌស្វែងរក
       month_number: ខែ#
       most_recent: ថ្មីបំផុត
       popover_content: សូមចុចប៊ូតុងស្វែងរកដើម្បីមើលអតិថិជន
@@ -1513,28 +1516,33 @@ km:
     living_detail:
       case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       contact_details: ព័ត៌មានទំនាក់ទំនងលំអិត
-      current_address: អាស័យដ្ឋានបច្ចុប្បន្ន
+      current_address: អាស័យដ្ឋានបច្ចុប្បន្នានបច្ចុប្បន្ន
       live_with: អ្នកមើលថែចំបង
       living_detail: ព័ត៌មានរស់នៅលំអិត
       main_school_contact: អាស័យដ្ឋានទំនាក់ទំនងសាលារៀន
+      primary_carer_name: ឈ្មោះអ្នកថែទាំចម្បង
+      primary_carer_phone_number: លេខទូរស័ព្ទអ្នកថែទាំចម្បង
       school_grade: កំរិត
       school_name: ឈ្មោះសាលារៀន
       schooling: សាលារៀន
       telephone_number: លេខទូរស័ព្ទអ្នកមើលថែចំបង
       what3words: What3words
-      primary_carer_name: ឈ្មោះអ្នកថែទាំចម្បង
-      primary_carer_phone_number: លេខទូរស័ព្ទអ្នកថែទាំចម្បង
     new:
       download_supporting_document: ទាញយកឯកសារផ្គត់ផ្គង់
       new_client_title: បន្ថែមអតិថិជនថ្មី
       referral_has_already_been_saved: ការបញ្ជូនត្រូវបានរក្សាទុករួចហើយ
     other_detail:
       agencies: អង្គភាពពាក់ព័ន្ធ
+      agencies_involved: អង្គភាពពាក់ព័ន្ធ
       case_worker_or_staff: បុគ្គលិកគ្រប់គ្រងករណី
       code: លេខកូដផ្ទាល់ខ្លួនទី១
+      custom_id_number1: លេខកូដផ្ទាល់ខ្លួនទី១
+      custom_id_number2: លេខកូដផ្ទាល់ខ្លួនទី២
+      donor: ម្ចាស់ជំនួយ
       donors: ម្ចាស់ជំនួយ
       has_been_in_government_care: តើអតិថិជនធ្លាប់ស្ថិតក្នុងការថែទាំរបស់រាជរដ្ឋាភិបាលឬទេ
       has_been_in_orphanage: តើអតិថិជនធ្លាប់បានរស់នៅក្នុងមណ្ឌលកុមារកំព្រាឬទេ
+      is_the_client_rated_for_id_poor: តើអតិថិជនត្រូវបានវាយតម្លៃថាអត្តសញ្ញាណក្រីក្រឬទេ
       kid_id: លេខកូដផ្ទាល់ខ្លួនទី២
       other_detail: ព័ត៌មានលំអិតផ្សេងៗ
       other_information: ព័ត៌មានផ្សេងៗ
@@ -1658,12 +1666,6 @@ km:
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
-      province:
-        cambodia: ខេត្តកំណើត
-        lesotho: ខេត្តកំណើត
-        myanmar: ខេត្តកំណើត
-        thailand: ខេត្តកំណើត
-        uganda: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទអ្នកបញ្ជូន
@@ -1687,17 +1689,8 @@ km:
       telephone_number: លេខទូរស័ព្ទ
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
-        month:
-          one: "%{count} ខែ"
-          other: "%{count} ខែ"
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
-        week:
-          one: "%{count} សប្តាហ៍"
-          other: "%{count} សប្តាហ៍"
-        year:
-          one: "%{count} ឆ្នាំ"
-          other: "%{count} ឆ្នាំ"
       view_assessments: ការប៉ាន់ប្រមាណ
       view_case_notes: កំណត់ត្រាករណី
       view_ec_history_btn_link: មើលប្រវត្តិនៃ EC
@@ -1719,8 +1712,6 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
-    book:
-      book:
   created_by: បង្កើត​ឡើង​ដោយ
   custom_field_properties:
     attachment:
@@ -1779,10 +1770,6 @@ km:
       next: ទំព័របន្ទាប់
       open_form: បើកទម្រង់
       previous: ទំព័រមុន
-    multiple_forms:
-      custom_forms: ទម្រង់បែបបទ
-      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
-      tracking_forms: ទម្រង់បែបបទតាមដាន
     duetoday:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -2878,6 +2865,7 @@ km:
       caregiver_information: ព័ត៌មាននៃអ្នកថែទាំ
       case_history: ប្រវត្តិគ្រួសារ
       children: អតិថិជន
+      clients: អតិថិជន
       code: លេខសំគាល់គ្រួសារ
       commune: ឃុំ/សង្កាត់
       contract_date: កាលបរិច្ឆេទនៃកិច្ចសន្យា
@@ -4739,6 +4727,7 @@ km:
       id: លេខសំគាល់
       job_title: មុខតំណែង
       last_name: នាមត្រកូល
+      manager: អ្នកគ្រប់គ្រង
       manager_id: អ្នកគ្រប់គ្រង
       mobile: លេខទូរស័ព្ទ
       password: ពាក្យសម្ងាត់
@@ -4763,6 +4752,7 @@ km:
       id: លេខសំគាល់
       job_title: មុខតំណែង
       last_name: នាមត្រកូល
+      manager: អ្នកគ្រប់គ្រង
       manager_id: អ្នកគ្រប់គ្រង
       mobile: លេខទូរស័ព្ទ
       password: ពាក្យសម្ងាត់
@@ -4795,6 +4785,7 @@ km:
       id: លេខសំគាល់
       job_title: មុខតំណែង
       last_name: នាមត្រកូល
+      manager: អ្នកគ្រប់គ្រង
       manager_id: អ្នកគ្រប់គ្រង
       mobile: លេខទូរស័ព្ទ
       new_user_title: បង្កើតអ្នកប្រើប្រាស់ថ្មី
@@ -4834,6 +4825,7 @@ km:
       id: លេខសំគាល់
       job_title: មុខតំណែង
       last_name: នាមត្រកូល
+      manager: អ្នកគ្រប់គ្រង
       manager_id: អ្នកគ្រប់គ្រង
       mobile: លេខទូរស័ព្ទ
       password: ពាក្យសម្ងាត់
