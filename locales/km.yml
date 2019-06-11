@@ -642,6 +642,7 @@ km:
         non_face_to_face: មិនបានជួបផ្ទាល់ជាមួយអតិថិជន
         rd_party: បុគ្គលទី៣
         visit: ជួបជាមួយអតិថិជនផ្ទាល់
+        other_option: ផ្សេងៗ
     form_with_assessment_domains:
       add_task: បន្ថែមកាតព្វកិច្ចថ្មី
       domain: កត្តា
@@ -816,6 +817,7 @@ km:
           move_out_within_international: អតិថិជននៅក្រៅ / ចាកចេញទៅក្រៅតំបន់គោលដៅអង្គការ (អន្តរជាតិ)
           no_meet_service_criteria: អតិថិជនមិនត្រូវ​ /​ ឈប់ត្រូវតាមលក្ខខណ្ឌសេវាកម្ម
           not_required_support: អតិថិជនមិនត្រូវការ / ឈប់ត្រូវការការឧបត្ថម្ភ
+          other_reason: ផ្សេងៗ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
         exiting: កំពុងចាកចេញពីអង្គការ...
@@ -837,6 +839,7 @@ km:
           move_out_within_international: អតិថិជននៅក្រៅ/ចាក់ចេញទៅក្រៅតំបន់គោលដៅអង្គការ (អន្តរជាតិ)
           no_meet_service_criteria: អតិថិជនមិនត្រូវ​ /​ ឈប់ត្រូវតាមលក្ខខណ្ឌសេវាកម្
           not_required_support: អតិថិជនមិនត្រូវការ / ឈប់ត្រូវការការឧបត្ថម្ភ
+          other_reason: ផ្សេងៗ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
         exiting: កំពុងចាកចេញ...
@@ -4841,6 +4844,7 @@ km:
     version:
       back: ត្រលប់ក្រោយ
       modification_of: ប្រវត្តិកំណែរបស់
+    warning_message: កុមារនេះមិនមានបុគ្គលិកថែទាំផ្សេងទៀតទេហើយកុមារទាំងអស់ត្រូវតែមានយ៉ាងហោចណាស់បុគ្គលិកថែទាំម្នាក់។ សូមចាត់តាំងបុគ្គលិកថែទាំថ្មីទៅឱ្យកុមារនេះមុនពេលដកពួកគេចេញ។
   views:
     pagination:
       first: "&laquo; ដំបូង"
