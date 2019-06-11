@@ -1669,6 +1669,12 @@ km:
       program_streams: បញ្ជូនអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
+      province:
+        cambodia: ខេត្តកំណើត
+        lesotho: ខេត្តកំណើត
+        myanmar: ខេត្តកំណើត
+        thailand: ខេត្តកំណើត
+        uganda: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទរបស់អ្នកបញ្ជូនករណី
@@ -1692,8 +1698,17 @@ km:
       telephone_number: លេខទូរស័ព្ទអ្នកថែទាំចម្បង
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
+        month:
+          one: "%{count} ខែ"
+          other: "%{count} ខែ"
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
+        week:
+          one: "%{count} សប្តាហ៍"
+          other: "%{count} សប្តាហ៍"
+        year:
+          one: "%{count} ឆ្នាំ"
+          other: "%{count} ឆ្នាំ"
       view_assessments: ការប៉ាន់ប្រមាណ
       view_case_notes: កំណត់ត្រាករណី
       view_ec_history_btn_link: មើលប្រវត្តិនៃ EC
@@ -1773,6 +1788,10 @@ km:
       next: ទំព័របន្ទាប់
       open_form: បើកទម្រង់
       previous: ទំព័រមុន
+    multiple_forms:
+      custom_forms: ទម្រង់បែបបទ
+      multiple_forms: បង្កើតទម្រង់ឲ្យអតិថិជនច្រើនព្រមគ្នា
+      tracking_forms: ទម្រង់បែបបទតាមដាន
     duetoday:
       assessment: ការប៉ាន់ប្រមាណ
       assessments: ការប៉ាន់ប្រមាណ
@@ -1909,6 +1928,8 @@ km:
         assessments: ការប៉ាន់ប្រមាណ
         assessments_due_to: ដល់ពេលធ្វើការប៉ាន់ប្រមាណ
         birth_province: ស្រុកកំណើត
+        birth_province_en: ស្រុកកំណើត (ឡាតាំង)
+        birth_province_kh: ស្រុកកំណើត (ខ្មែរ)
         cambodia: កម្ពុជា
         case_note_date: កាលបរិច្ឆេទកំណត់ត្រាករណី
         case_note_type: ប្រភេទកំណត់ត្រាករណី
@@ -1918,17 +1939,23 @@ km:
         changelogs: ប្រវត្តិកំណែ
         code: លេខកូដផ្ទាល់ខ្លួនទី១
         commune: ឃុំ/សង្កាត់
+        commune_en: អាស័យដ្ឋាន - ឃុំ/សង្កាត់ (ឡាតាំង)
+        commune_kh: អាស័យដ្ឋាន​ - ឃុំ/សង្កាត់ (ខ្មែរ)
         completed: ពេញលេញហើយឬនៅ?
         created_at: កាលបរិច្ឆេទ
         created_by: បង្កើត​ឡើង​ដោយ
         current_address: ឣាសយដ្ឋានបច្ចុប្បន្ន
         current_province: ខេត្តបច្ចុប្បន្ន
+        current_province_en: ខេត្តបច្ចុប្បន្ន (ឡាតាំង)
+        current_province_kh: ខេត្តបច្ចុប្បន្ន (ខ្មែរ)
         date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
         date_of_birth: ថ្ងៃ ខែ ឆ្នាំ កំណើត
         date_of_custom_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: ស្រុក/ខណ្ឌ
+        district_en: អាស័យដ្ឋាន - ស្រុក/ខណ្ឌ (ឡាតាំង)
+        district_kh: អាស័យដ្ឋាន - ស្រុក/ខណ្ឌ (ខ្មែរ)
         domain: កត្តា
         domains: កត្តាការវាយតម្លៃទាំងអស់
         donor: ម្ចាស់ជំនួយ
@@ -2025,6 +2052,8 @@ km:
         type: ប្រើប្រាស់ជាមួយ
         view: មើល
         village: ភូមិ
+        village_en: អាស័យដ្ឋាន - ភូមិ (ឡាតាំង)
+        village_kh: អាស័យដ្ឋាន - ភូមិ (ខ្មែរ)
         what3words: What3words
       date_of_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណ
       date_of_custom_assessments: កាលបរិច្ឆេទការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
@@ -4758,11 +4787,13 @@ km:
       manager: អ្នកគ្រប់គ្រង
       manager_id: អ្នកគ្រប់គ្រង
       mobile: លេខទូរស័ព្ទ
+      overdue_summary: សង្ខេបហួសកាលកំណត់
       password: ពាក្យសម្ងាត់
       password_confirmation: បញ្ជាក់ពាក្យសម្ងាត់
       password_hint: រំលងប្រសិនបើឣ្នកមិនចង់ធ្វើការផ្លាស់ប្តូរពាក្យសម្ងាត់
       pin_number: លេខ Pin
       province: ខេត្ត\ក្រុង
+      referral_notification: ការជូនដំណឹងអំពីការបញ្ជូន
       roles: តួនាទី
       start_date: កាលបរិច្ឆេទចាប់ផ្តើម
     index:
