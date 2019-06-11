@@ -87,7 +87,7 @@ my:
           general_question: အေထြေထြေမးခြန္း
           new_general_question: အေထြေထြေမးခြန္းအသစ္
           new_stage_question: အဆင့္ေမးခြန္းအသစ္
-          question: 
+          question:
           stage: အဆင့္
           stage_question: အဆင့္ေမးခြန္း
           to: သို႔
@@ -268,7 +268,7 @@ my:
             name:
               blank: ကြက္လပ္ခ်ိန္ထား၍မရပါ။
               taken: ယူထားၿပီးျဖစ္ပါသည္။
-          blank: 
+          blank:
         setting:
           attributes:
             max_assessment:
@@ -1151,7 +1151,7 @@ my:
       close: ပိတ်
       export_to_xls: XLS အျဖစ္ ထုတ္ရန္
     book:
-      book: 
+      book:
     case_history_detail:
       accepted_date: လက်ခံခဲ့သည်နေ့စွဲ
       client: ကေလးနာမည္
@@ -1474,7 +1474,7 @@ my:
       custom_assessment: ထုံးစံအကဲဖြတ်
       custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       custom_csi_group: At
-      date_of_assessment: 
+      date_of_assessment:
       date_of_assessments: Date of Assessments
       domain_score: ဒိုမိန္း ရမွတ္မ်ား
       end: လုပ္ေဆာင္ၿပီး ၿပီးဆံုးၿပီ
@@ -4309,8 +4309,8 @@ my:
     navigation:
       country: ႏုိင္ငံ
     research_module:
-      research_module_label: 
-      title: 
+      research_module_label:
+      title:
     update:
       successfully_updated: အောင်မြင်စွာဖြည့်ပါ
   shared:
@@ -4354,7 +4354,7 @@ my:
         date_deleted: ရက္စြဲ
         no_modification: ေျပာင္းလဲမႈ မွတ္တမ္းမရွိပါ
         'on': ေပၚတြင္
-        organisation_type: 
+        organisation_type:
         value_of: "၏ တန္ဖိုး"
       common:
         able_screening_question: Able Screening ေမးခြန္း
