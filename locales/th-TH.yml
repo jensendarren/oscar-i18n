@@ -312,6 +312,18 @@ th-TH:
               wrong_length:
             roles:
               blank:
+        assessment_domain:
+          blank:
+        case_note_domain_group:
+          blank:
+        enter_ngo:
+          attributes:
+            user_ids:
+              blank:
+        referral:
+          blank:
+    default:
+      blank:
   add_event_success:
   advanced_search:
     fields:
@@ -412,6 +424,31 @@ th-TH:
       relevant_referral_information:
       road:
       school_grade:
+      shcool_grade_list:
+        grade_1: '1'
+        grade_10: '10'
+        grade_11: '11'
+        grade_12: '12'
+        grade_2: '2'
+        grade_3: '3'
+        grade_4: '4'
+        grade_5: '5'
+        grade_6: '6'
+        grade_7: '7'
+        grade_8: '8'
+        grade_9: '9'
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
+        year_1: Year 1
+        year_2: Year 2
+        year_3: Year 3
+        year_4: Year 4
+        year_5: Year 5
+        year_6: Year 6
+        year_7: Year 7
+        year_8: Year 8
       school_name:
       slug:
       state:
@@ -804,6 +841,7 @@ th-TH:
           move_out_within_international:
           no_meet_service_criteria:
           not_required_support:
+          other_option:
         exit_reasons:
         exit_status:
         exiting:
@@ -831,6 +869,7 @@ th-TH:
         other_info_of_exit:
         reject_client:
         rejected_note:
+        other_option:
       update:
         failed_update:
         successfully_updated:
@@ -1515,6 +1554,8 @@ th-TH:
       schooling:
       telephone_number:
       what3words:
+      live_with:
+      telephone_number:
     new:
       download_supporting_document:
       new_client_title:
@@ -1537,6 +1578,11 @@ th-TH:
       province:
       rated_for_id_poor:
       relevant_referral_information:
+      agencies:
+      code:
+      donors:
+      kid_id:
+      rated_for_id_poor:
     placement:
       view_legacy_quarterly_reports:
     referral_form:
@@ -1568,6 +1614,7 @@ th-TH:
       are_you_sure:
       birth_province:
       book:
+        book:
       cambodia:
       case_histories:
       case_history:
@@ -2276,6 +2323,17 @@ th-TH:
     contract_date:
     dependable_income:
     family_type:
+    family_type_list:
+      birth_family_both_parents: Birth Family (Both Parents)
+      birth_family_only_father: Birth Family (Only Father)
+      birth_family_only_mother: Birth Family (Only Mother)
+      child_headed_household: Child-Headed Household
+      domestically_adopted: Domestically Adopted
+      extended_family_kinship_care: Extended Family / Kinship Care
+      long_term_foster_care: Long Term Foster Care
+      no_family: No Family
+      short_term_emergency_foster_care: Short Term / Emergency Foster Care
+      the_other: Other
     female_adult_count:
     female_children_count:
     household_income:
@@ -2718,6 +2776,32 @@ th-TH:
     destroy:
       alert:
       successfully_deleted:
+    domain_identies:
+      care: Care
+      emotional_health: Emotional Health
+      food_security: Food Security
+      health_care_services: Health Care Services
+      legal_protection: Legal Protection
+      nutrition_and_growth: Nutrition and Growth
+      performance: Performance
+      protection_from_abuse_and_exploitation: Protection from Abuse and Exploitation
+      shelter: Shelter
+      social_behaviour: Social Behaviour
+      wellness: Wellness
+      work_and_education: Work and Education
+    domain_names:
+      a1: A1
+      b1: B1
+      a2: A2
+      b2: B2
+      a3: A3
+      b3: B3
+      a4: A4
+      b4: B4
+      a5: A5
+      b5: B5
+      a6: A6
+      b6: B6
     domain_list:
       add_new_domain:
       changelog:
@@ -4775,3 +4859,4 @@ th-TH:
     next_label:
     page_gap:
     previous_label:
+
