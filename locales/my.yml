@@ -418,31 +418,6 @@ my:
       relevant_referral_information: သက္ဆိုင္ေသာလႊဲေျပာင္းျခင္းအခ်က္အလက္
       road: Road
       school_grade: ေက်ာင္းအဆင့္
-      school_grade_list:
-        grade_1: '1'
-        grade_10: '10'
-        grade_11: '11'
-        grade_12: '12'
-        grade_2: '2'
-        grade_3: '3'
-        grade_4: '4'
-        grade_5: '5'
-        grade_6: '6'
-        grade_7: '7'
-        grade_8: '8'
-        grade_9: '9'
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
-        year_1: Year 1
-        year_2: Year 2
-        year_3: Year 3
-        year_4: Year 4
-        year_5: Year 5
-        year_6: Year 6
-        year_7: Year 7
-        year_8: Year 8
       school_name: ေက်ာင္းနာမည္
       slug: မွတ္ပံုတင္
       state: ပြည်နယ်
@@ -671,7 +646,6 @@ my:
         non_face_to_face: Non face to face
         rd_party: 3rd Party
         visit: Visit
-        type_options: Other
     form_with_assessment_domains:
       add_task: လုပ္ငန္းေပါင္းထည့္ရန္
       domain: ဒိုမိန္း
@@ -847,7 +821,6 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
         exiting: မထွက်...
@@ -869,7 +842,6 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
         exiting: မထွက်...
@@ -983,7 +955,6 @@ my:
       jump_to: ရက်စွဲကိုဤနေရာသို့သွားရန်
     leave_programs:
       exited_from: ကနေမထွက်
-    for: အဘို့
     tasks:
       domain: ဒိုမိန္း
       overdue_tasks: အခ်ိန္လြန္ေနေသာ လုပ္ငန္းမ်ား
@@ -1724,17 +1695,8 @@ my:
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
         few: ႏွစ္အနည္းငယ္
-        month:
-          one: "%{count} လ"
-          other: "%{count} လများ"
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
-        week:
-          one: "%{count} ရက်သတ္တပတ်"
-          other: "%{count} ရက်သတ္တပတ်"
-        year:
-          one: "%{count} ခုနှစ်"
-          other: "%{count} နှစ်ပေါင်း"
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
       view_case_notes: အမႈမွတ္စုမ်ား
       view_ec_history_btn_link: ECသမုိင္းေၾကာင္း
@@ -1814,7 +1776,6 @@ my:
       next: ေနာက္တစ္ခု
       open_form: ပွင့်လင်းပုံစံ
       previous: ေရွ႕တစ္ခု
-      name: နာမည္
     duetoday:
       assessment: ရက်လွန်အကဲဖြတ်
       assessments: ရက်လွန်အကဲဖြတ်
@@ -2335,17 +2296,6 @@ my:
     contract_date: စာခ်ဳပ္ ရက္စြဲ
     dependable_income: မွီခိုႏိုင္ေလာက္ေသာ ၀င္ေငြ
     family_type: မိသားစုအမ်ိဳးအစား
-    family_type_list:
-      birth_family_both_parents: Birth Family (Both Parents)
-      birth_family_only_father: Birth Family (Only Father)
-      birth_family_only_mother: Birth Family (Only Mother)
-      child_headed_household: Child-Headed Household
-      domestically_adopted: Domestically Adopted
-      extended_family_kinship_care: Extended Family / Kinship Care
-      long_term_foster_care: Long Term Foster Care
-      no_family: No Family
-      short_term_emergency_foster_care: Short Term / Emergency Foster Care
-      the_other: Other
     female_adult_count: အရြယ္ေရာက္ အမ်ိဳးသမီး အေရအတြက္
     female_children_count: အရြယ္မေရာက္ေသးေသာ မိန္းကေလး အေရအတြက္
     household_income: အိမ္ေထာင္စု၀င္ေငြ
@@ -2708,8 +2658,8 @@ my:
       send_paranoid_instructions: အကယ္၍ သင့္အေကာင့္က တကယ္ရွိသည္ဆိုလွ်င္ အေကာင့္ကို မည္သို႔ ျပန္၍ ေလာ့ခ္ေျဖနည္း ညႊန္ၾကားခ်က္ အီးေမးလ္ကို မိနစ္အနည္းငယ္အတြင္းတြင္ ရပါလိမ့္မည္။
       unlocked: သင့္အေကာင့္ကို ေအာင္ျမင့္စြာ ေသာ့ျဖည္ၿပီးပါၿပီ။ ဆက္လက္ အသံုးျပဳ၇န္ ေက်းဇူးျပဳ၍ ၀င္ေရာက္ပါ။
   devise_token_auth:
-   sessions:
-     not_confirmed: သင့်အကောင့်သေး activated မပေးပါ။
+    sessions:
+      not_confirmed: သင့်အကောင့်သေး activated မပေးပါ။
   districts:
     create:
       failed_create: ခ႐ိုင္ကို ဖန္တီးျခင္း မေအာင္ျမင္ပါ
@@ -2788,19 +2738,6 @@ my:
     destroy:
       alert: ဒိုမိန္းအုုပ္စုကို ဖ်က္၍ မရပါ။
       successfully_deleted: ဒိုမိန္းအုပ္စုကို ေအာင္ျမင္စြာဖ်က္ၿပီးပါၿပီ
-    domain_identies:
-      care: Care
-      emotional_health: Emotional Health
-      food_security: Food Security
-      health_care_services: Health Care Services
-      legal_protection: Legal Protection
-      nutrition_and_growth: Nutrition and Growth
-      performance: Performance
-      protection_from_abuse_and_exploitation: Protection from Abuse and Exploitation
-      shelter: Shelter
-      social_behaviour: Social Behaviour
-      wellness: Wellness
-      work_and_education: Work and Education
     domain_list:
       add_new_domain: ဒိုမိန္းအသစ္
       changelog: ေျပာင္းလဲမႈ မွတ္တမ္း
@@ -2810,19 +2747,6 @@ my:
       score_3: ရမွတ္ ၃
       score_4: ရမွတ္ ၄
       view: ျမင္ကြင္း
-    domain_names:
-      a1: A1
-      b1: B1
-      a2: A2
-      b2: B2
-      a3: A3
-      b3: B3
-      a4: A4
-      b4: B4
-      a5: A5
-      b5: B5
-      a6: A6
-      b6: B6
     edit:
       title: ဒိုမိန္းကို ျပင္ဆင္ရန္
     form:
