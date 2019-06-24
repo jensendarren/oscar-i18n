@@ -446,31 +446,6 @@ en:
         year_7: Year 7
         year_8: Year 8
       school_name: School Name
-      shcool_grade_list:
-        grade_1: 1
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
-        grade_2: 2
-        grade_3: 3
-        grade_4: 4
-        grade_5: 5
-        grade_6: 6
-        grade_7: 7
-        grade_8: 8
-        grade_9: 9
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
-        year_1: Year 1
-        year_2: Year 2
-        year_3: Year 3
-        year_4: Year 4
-        year_5: Year 5
-        year_6: Year 6
-        year_7: Year 7
-        year_8: Year 8
       slug: ID
       state: State
       status: Status
@@ -694,7 +669,6 @@ en:
         non_face_to_face: Non face to face
         other_option: Other
         rd_party: 3rd Party
-        type_options:
         visit: Visit
     form_with_assessment_domains:
       add_task: Add Task

@@ -692,7 +692,6 @@ km:
       type: ប្រភេទ (សំគាល់ៈ ជ្រើសយក "សួរសុខទុក្ខ" លុះត្រាតែអ្នកបានជួបជាមួយអតិថិជនផ្ទាល់)
       type_options:
         non_face_to_face: មិនបានជួបផ្ទាល់ជាមួយអតិថិជន
-        other_option: ផ្សេងៗ
         rd_party: បុគ្គលទី៣
         type_options:
         visit: ជួបជាមួយអតិថិជនផ្ទាល់
@@ -870,7 +869,6 @@ km:
           move_out_within_international: អតិថិជននៅក្រៅ / ចាកចេញទៅក្រៅតំបន់គោលដៅអង្គការ (អន្តរជាតិ)
           no_meet_service_criteria: អតិថិជនមិនត្រូវ​ /​ ឈប់ត្រូវតាមលក្ខខណ្ឌសេវាកម្ម
           not_required_support: អតិថិជនមិនត្រូវការ / ឈប់ត្រូវការការឧបត្ថម្ភ
-          other_option:
           other_reason: ផ្សេងៗ
         exit_reasons: មូលហេតុនៃការចាកចេញ
         exit_status: ស្ថានភាព
@@ -898,7 +896,6 @@ km:
         exit_status: ស្ថានភាព
         exiting: កំពុងចាកចេញ...
         other_info_of_exit: ព័ត៌មានបន្ថែមនៃការចាកចេញ
-        other_option:
         reject_client: មិនទទួលយកអតិថិជន
         rejected_note: កំណត់ហេតុនៃការមិនទទួលយក
       update:
@@ -1724,6 +1721,12 @@ km:
       program_streams: បញ្ជូលអតិថិជនក្នុងកម្មវិធីចម្បង
       progress_note: កំណត់សំគាល់ការរីកចំរើន
       province: ខេត្តកំណើត
+      province:
+        cambodia: ខេត្តកំណើត
+        lesotho: ខេត្តកំណើត
+        myanmar: ខេត្តកំណើត
+        thailand: ខេត្តកំណើត
+        uganda: ខេត្តកំណើត
       received_by: បុគ្គលិកទទួលករណី
       refer_client: បញ្ជូនអតិថិជន
       referee_phone_number: លេខទូរស័ព្ទរបស់អ្នកបញ្ជូនករណី
@@ -1747,6 +1750,9 @@ km:
       telephone_number: លេខទូរស័ព្ទអ្នកថែទាំចម្បង
       time_in_care: រយៈពេលមើលថែទាំ
       time_in_care_around:
+        month:
+          one: "%{count} ខែ"
+          other: "%{count} ខែ"
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
       time_in_cps: រយៈពេលស្ថិតនៅក្នុងកម្មវិធីចម្បង
