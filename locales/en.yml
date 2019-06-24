@@ -420,7 +420,57 @@ en:
       relevant_referral_information: Relevant Referral Information
       road: Road
       school_grade: School Grade
+      school_grade_list:
+        grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
+        grade_2: 2
+        grade_3: 3
+        grade_4: 4
+        grade_5: 5
+        grade_6: 6
+        grade_7: 7
+        grade_8: 8
+        grade_9: 9
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
+        year_1: Year 1
+        year_2: Year 2
+        year_3: Year 3
+        year_4: Year 4
+        year_5: Year 5
+        year_6: Year 6
+        year_7: Year 7
+        year_8: Year 8
       school_name: School Name
+      shcool_grade_list:
+        grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
+        grade_2: 2
+        grade_3: 3
+        grade_4: 4
+        grade_5: 5
+        grade_6: 6
+        grade_7: 7
+        grade_8: 8
+        grade_9: 9
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
+        year_1: Year 1
+        year_2: Year 2
+        year_3: Year 3
+        year_4: Year 4
+        year_5: Year 5
+        year_6: Year 6
+        year_7: Year 7
+        year_8: Year 8
       slug: ID
       state: State
       status: Status
@@ -640,7 +690,9 @@ en:
       type: 'Type (Note: Choose ''visit'' only if you met with the client.)'
       type_options:
         non_face_to_face: Non face to face
+        other_option:
         rd_party: 3rd Party
+        type_options:
         visit: Visit
     form_with_assessment_domains:
       add_task: Add Task
@@ -816,6 +868,8 @@ en:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
+          other_option:
+          other_reason:
         exit_reasons: Reason for Exit / Case Rejection
         exit_status: Status
         exiting: Exiting...
@@ -837,10 +891,12 @@ en:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
+          other_reason:
         exit_reasons: Reason for Exit / Case Rejection
         exit_status: Status
         exiting: Exiting...
         other_info_of_exit: Other - More Information
+        other_option:
         reject_client: Reject Client
         rejected_note: Rejected Note
       update:
@@ -1906,6 +1962,8 @@ en:
         assessments: Assessments
         assessments_due_to: Assessments Due To
         birth_province: Client Birth Province
+        birth_province_en:
+        birth_province_kh:
         cambodia: Cambodia
         case_note_date: Case Note Date
         case_note_type: Case Note Type
@@ -1915,17 +1973,23 @@ en:
         changelogs: Changelog
         code: Custom ID Number1
         commune: Commune/Sangkat
+        commune_en:
+        commune_kh:
         completed: Completed
         created_at: Created Date
         created_by: Created By
         current_address: Current Address
         current_province: Current Province
+        current_province_en:
+        current_province_kh:
         date_of_assessments: Date of Assessments
         date_of_birth: Date of Birth
         date_of_custom_assessments: Date of Custom Assessment
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: District/Khan
+        district_en:
+        district_kh:
         domain: Domain
         domains: All CSI
         donor: Donor
@@ -2022,6 +2086,8 @@ en:
         type: Attached with
         view: View
         village: Village
+        village_en:
+        village_kh:
         what3words: What3words
       date_of_assessments: Date of Assessments
       date_of_custom_assessments: Date of Custom Assessment
@@ -2290,6 +2356,17 @@ en:
     contract_date: Contract Date
     dependable_income: Dependable Income
     family_type: Family Type
+    family_type_list:
+      birth_family_both_parents: Birth Family (Both Parents)
+      birth_family_only_father: Birth Family (Only Father)
+      birth_family_only_mother: Birth Family (Only Mother)
+      child_headed_household: Child-Headed Household
+      domestically_adopted: Domestically Adopted
+      extended_family_kinship_care: Extended Family / Kinship Care
+      long_term_foster_care: Long Term Foster Care
+      no_family: No Family
+      short_term_emergency_foster_care: Short Term / Emergency Foster Care
+      the_other: Other
     female_adult_count: Female Adult Count
     female_children_count: Female Children Count
     household_income: Monthly Household Income
@@ -2732,6 +2809,19 @@ en:
     destroy:
       alert: Domain cannot be deleted.
       successfully_deleted: Domain has been successfully deleted.
+    domain_identies:
+      care:
+      emotional_health:
+      food_security:
+      health_care_services:
+      legal_protection:
+      nutrition_and_growth:
+      performance:
+      protection_from_abuse_and_exploitation:
+      shelter:
+      social_behaviour:
+      wellness:
+      work_and_education:
     domain_list:
       add_new_domain: Add New Domain
       changelog: Changelog
@@ -2741,6 +2831,19 @@ en:
       score_3: Score 3
       score_4: Score 4
       view: View
+    domain_names:
+      a1:
+      a2:
+      a3:
+      a4:
+      a5:
+      a6:
+      b1:
+      b2:
+      b3:
+      b4:
+      b5:
+      b6:
     edit:
       title: Edit Domain
     form:
@@ -4757,11 +4860,13 @@ en:
       manager: Manager
       manager_id: Manager
       mobile: Mobile
+      overdue_summary:
       password: Password
       password_confirmation: Password Confirmation
       password_hint: Leave it blank if you don't want to change password
       pin_number: Pin Number
       province: Province
+      referral_notification:
       roles: Permission Set
       start_date: Start Date
     index:
@@ -4843,6 +4948,7 @@ en:
     version:
       back: Back
       modification_of: Changelog of
+    warning_message:
   views:
     pagination:
       first: "&laquo; First"

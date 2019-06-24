@@ -419,18 +419,18 @@ my:
       road: Road
       school_grade: ေက်ာင္းအဆင့္
       school_grade_list:
-        grade_1: '1'
-        grade_10: '10'
-        grade_11: '11'
-        grade_12: '12'
-        grade_2: '2'
-        grade_3: '3'
-        grade_4: '4'
-        grade_5: '5'
-        grade_6: '6'
-        grade_7: '7'
-        grade_8: '8'
-        grade_9: '9'
+        grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
+        grade_2: 2
+        grade_3: 3
+        grade_4: 4
+        grade_5: 5
+        grade_6: 6
+        grade_7: 7
+        grade_8: 8
+        grade_9: 9
         kindergarten_1: Kindergarten 1
         kindergarten_2: Kindergarten 2
         kindergarten_3: Kindergarten 3
@@ -444,6 +444,31 @@ my:
         year_7: Year 7
         year_8: Year 8
       school_name: ေက်ာင္းနာမည္
+      shcool_grade_list:
+        grade_1:
+        grade_10:
+        grade_11:
+        grade_12:
+        grade_2:
+        grade_3:
+        grade_4:
+        grade_5:
+        grade_6:
+        grade_7:
+        grade_8:
+        grade_9:
+        kindergarten_1:
+        kindergarten_2:
+        kindergarten_3:
+        kindergarten_4:
+        year_1:
+        year_2:
+        year_3:
+        year_4:
+        year_5:
+        year_6:
+        year_7:
+        year_8:
       slug: မွတ္ပံုတင္
       state: ပြည်နယ်
       status: အေနအထား
@@ -669,9 +694,10 @@ my:
       type: အမ်ိဳးအစား
       type_options:
         non_face_to_face: Non face to face
+        other_option:
         rd_party: 3rd Party
-        visit: Visit
         type_options: Other
+        visit: Visit
     form_with_assessment_domains:
       add_task: လုပ္ငန္းေပါင္းထည့္ရန္
       domain: ဒိုမိန္း
@@ -847,6 +873,7 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
+          other_option:
           other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
@@ -874,6 +901,7 @@ my:
         exit_status: အေနအထား
         exiting: မထွက်...
         other_info_of_exit: အခြားအ - နောက်ထပ်သတင်းအချက်အလက်များ
+        other_option:
         reject_client: client ကိုငြင်းပယ်
         rejected_note: ျငင္းပယ္သည့္ မွတ္စု
       update:
@@ -983,7 +1011,6 @@ my:
       jump_to: ရက်စွဲကိုဤနေရာသို့သွားရန်
     leave_programs:
       exited_from: ကနေမထွက်
-    for: အဘို့
     tasks:
       domain: ဒိုမိန္း
       overdue_tasks: အခ်ိန္လြန္ေနေသာ လုပ္ငန္းမ်ား
@@ -1724,17 +1751,8 @@ my:
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
         few: ႏွစ္အနည္းငယ္
-        month:
-          one: "%{count} လ"
-          other: "%{count} လများ"
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
-        week:
-          one: "%{count} ရက်သတ္တပတ်"
-          other: "%{count} ရက်သတ္တပတ်"
-        year:
-          one: "%{count} ခုနှစ်"
-          other: "%{count} နှစ်ပေါင်း"
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
       view_case_notes: အမႈမွတ္စုမ်ား
       view_ec_history_btn_link: ECသမုိင္းေၾကာင္း
@@ -1814,7 +1832,6 @@ my:
       next: ေနာက္တစ္ခု
       open_form: ပွင့်လင်းပုံစံ
       previous: ေရွ႕တစ္ခု
-      name: နာမည္
     duetoday:
       assessment: ရက်လွန်အကဲဖြတ်
       assessments: ရက်လွန်အကဲဖြတ်
@@ -1951,6 +1968,8 @@ my:
         assessments: စိစစ္အကဲျဖတ္မႈမ်ား
         assessments_due_to: လုပ္ရေတာ့မည္ စိစစ္အကဲျဖတ္မႈမ်ား
         birth_province: ေမြးရာ ခ႐ိုင္
+        birth_province_en:
+        birth_province_kh:
         cambodia: ကေမာၻဒီးယား
         case_note_date: အမႈ မွတ္စု ရက္စြဲ
         case_note_type: အမႈ မွတ္စု အမ်ိဳးအစား
@@ -1960,17 +1979,23 @@ my:
         changelogs: ေျပာင္းလဲမႈ မွတ္တမ္း
         code: Custom ID Number1
         commune: ရပ္ကြက္/ ေက်းရြာအုပ္စု
+        commune_en:
+        commune_kh:
         completed: ၿပီးစီးၿပီျဖစ္ေသာ
         created_at: ရက္စြဲကို ဖန္တီးရန္
         created_by: တည်ထောင်ထားတဲ့
         current_address: လက္ရွိလိပ္စာ
         current_province: လက္ရွိေနထိုင္ရာခ႐ိုင္
+        current_province_en:
+        current_province_kh:
         date_of_assessments: စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
         date_of_birth: ေမြးရက္၊ လ၊ ႏွစ္
         date_of_custom_assessments: Custom စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: ခ႐ိုင္
+        district_en:
+        district_kh:
         domain: ဒိုမိန္း
         domains: ဒိုမိန်း
         donor: အလွဴရွင္
@@ -2067,6 +2092,8 @@ my:
         type: အမ်ိဳးအစား
         view: ျမင္ကြင္း
         village: ေက်းရြာ
+        village_en:
+        village_kh:
         what3words: What3words
       date_of_assessments: စိစစ္အကဲျဖတ္မႈမ်ား ျပဳလုပ္သည့္ ရက္စြဲ
       date_of_custom_assessments: Custom စိစစ္အကဲျဖတ္မႈလုပ္သည့္ ရက္စြဲ
@@ -2812,16 +2839,16 @@ my:
       view: ျမင္ကြင္း
     domain_names:
       a1: A1
-      b1: B1
       a2: A2
-      b2: B2
       a3: A3
-      b3: B3
       a4: A4
-      b4: B4
       a5: A5
-      b5: B5
       a6: A6
+      b1: B1
+      b2: B2
+      b3: B3
+      b4: B4
+      b5: B5
       b6: B6
     edit:
       title: ဒိုမိန္းကို ျပင္ဆင္ရန္
@@ -4860,11 +4887,13 @@ my:
       manager: မန္ေနဂ်ာ
       manager_id: မန္ေနဂ်ာ
       mobile: မိုုဘိုင္းဖုန္း
+      overdue_summary:
       password: စကား၀ွက္
       password_confirmation: စကား၀ွက္အတည္ျပဳခ်က္
       password_hint: စကား၀ွက္ကို မေျပာင္းလိုလွ်င္ ကြက္လပ္ခ်န္ခဲ့ပါ
       pin_number: ပင္နံပါတ္
       province: ျပည္နယ္
+      referral_notification:
       roles: ခြင့္ျပဳခ်က္လုပ္
       start_date: စတင္သည့္ ရက္စြဲ
     index:
@@ -4946,6 +4975,7 @@ my:
     version:
       back: ေနာက္သို႔
       modification_of: "၏ ေျပာင္းလဲမႈ မွတ္တမ္း"
+    warning_message:
   views:
     pagination:
       first: ပထမ
