@@ -686,6 +686,7 @@ th-TH:
         rd_party:
         type_options:
         visit:
+        other_option:
     form_with_assessment_domains:
       add_task:
       domain:
@@ -856,7 +857,6 @@ th-TH:
           move_out_within_international:
           no_meet_service_criteria:
           not_required_support:
-          other_option:
           other_reason:
         exit_reasons:
         exit_status:

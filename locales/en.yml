@@ -481,6 +481,8 @@ en:
       suburb: Suburb
       telephone_number: Primary Carer Phone Number
       time_in_care: Time in Care
+      time_in_cps: Time in Custom Program Stream
+      time_in_ngo: Time in NGO
       time_of_frequency: Time of Frequency
       township: Township
       tracking: Tracking
@@ -694,6 +696,7 @@ en:
         rd_party: 3rd Party
         type_options:
         visit: Visit
+        other_option: Other
     form_with_assessment_domains:
       add_task: Add Task
       domain: Domain
@@ -868,8 +871,7 @@ en:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_option:
-          other_reason:
+          other_reason: Other
         exit_reasons: Reason for Exit / Case Rejection
         exit_status: Status
         exiting: Exiting...
@@ -891,7 +893,7 @@ en:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_reason:
+          other_reason: Other
         exit_reasons: Reason for Exit / Case Rejection
         exit_status: Status
         exiting: Exiting...
@@ -1722,6 +1724,12 @@ en:
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
       province: Birth Province
+      province:
+        cambodia: Birth Province
+        lesotho: Birth Suburb
+        myanmar: Birth State
+        thailand: Birth Province
+        uganda: Birth Province
       received_by: Referral Received By
       refer_client: Refer Client
       referee_phone_number: Referee Phone Number
@@ -1745,8 +1753,19 @@ en:
       telephone_number: Primary Carer Phone Number
       time_in_care: Time In Care
       time_in_care_around:
+        month:
+          one: "%{count} month"
+          other: "%{count} months"
         one: Around %{count} year
         other: Around %{count} years
+        week:
+          one: "%{count} week"
+          other: "%{count} weeks"
+        year:
+          one: "%{count} year"
+          other: "%{count} years"
+      time_in_cps: Time in Custom Program Stream
+      time_in_ngo: Time in NGO
       view_assessments: Assessments
       view_case_notes: Case Notes
       view_ec_history_btn_link: EC History
@@ -1962,8 +1981,8 @@ en:
         assessments: Assessments
         assessments_due_to: Assessments Due To
         birth_province: Client Birth Province
-        birth_province_en:
-        birth_province_kh:
+        birth_province_en: Client Birth Province (English)
+        birth_province_kh: Client Birth Province (Khmer)
         cambodia: Cambodia
         case_note_date: Case Note Date
         case_note_type: Case Note Type
@@ -1973,23 +1992,23 @@ en:
         changelogs: Changelog
         code: Custom ID Number1
         commune: Commune/Sangkat
-        commune_en:
-        commune_kh:
+        commune_en: Address - Commune/Sangkat (English)
+        commune_kh: Address - Commune/Sangkat (Khmer)
         completed: Completed
         created_at: Created Date
         created_by: Created By
         current_address: Current Address
         current_province: Current Province
-        current_province_en:
-        current_province_kh:
+        current_province_en: Current Province (English)
+        current_province_kh: Current Province (Khmer)
         date_of_assessments: Date of Assessments
         date_of_birth: Date of Birth
         date_of_custom_assessments: Date of Custom Assessment
         description_house_landmark: Description of the house and a landmark
         directions: Directions
         district: District/Khan
-        district_en:
-        district_kh:
+        district_en: Address - District/Khan (English)
+        district_kh: Address - District/Khan (Khmer)
         domain: Domain
         domains: All CSI
         donor: Donor
@@ -2080,14 +2099,16 @@ en:
         telephone_number: Primary Carer Phone Number
         thailand: Thailand
         time_in_care: Time in Care
+        time_in_cps: Time in Custom Program Stream
+        time_in_ngo: Time in NGO
         time_of_frequency: Time of Frequency
         total: Total
         township: Township
         type: Attached with
         view: View
         village: Village
-        village_en:
-        village_kh:
+        village_en: Address - Village (English)
+        village_kh: Address - Village (Khmer)
         what3words: What3words
       date_of_assessments: Date of Assessments
       date_of_custom_assessments: Date of Custom Assessment
@@ -2201,6 +2222,8 @@ en:
       support_amount: Support Amount
       support_note: Support Note
       time_in_care: Time in Care
+      time_in_cps: Time in Custom Program Stream
+      time_in_ngo: Time in NGO
       trackings:
         action: Action
         frequency: Frequency
@@ -2810,18 +2833,18 @@ en:
       alert: Domain cannot be deleted.
       successfully_deleted: Domain has been successfully deleted.
     domain_identies:
-      care:
-      emotional_health:
-      food_security:
-      health_care_services:
-      legal_protection:
-      nutrition_and_growth:
-      performance:
-      protection_from_abuse_and_exploitation:
-      shelter:
-      social_behaviour:
-      wellness:
-      work_and_education:
+      care: Care
+      emotional_health: Emotional Health
+      food_security: Food Security
+      health_care_services: Health Care Services
+      legal_protection: Legal Protection
+      nutrition_and_growth: Nutrition and Growth
+      performance: Performance
+      protection_from_abuse_and_exploitation: Protection from Abuse and Exploitation
+      shelter: Shelter
+      social_behaviour: Social Behaviour
+      wellness: Wellness
+      work_and_education: Work and Education
     domain_list:
       add_new_domain: Add New Domain
       changelog: Changelog
@@ -2832,18 +2855,18 @@ en:
       score_4: Score 4
       view: View
     domain_names:
-      a1:
-      a2:
-      a3:
-      a4:
-      a5:
-      a6:
-      b1:
-      b2:
-      b3:
-      b4:
-      b5:
-      b6:
+      a1: A1
+      b1: B1
+      a2: A2
+      b2: B2
+      a3: A3
+      b3: B3
+      a4: A4
+      b4: B4
+      a5: A5
+      b5: B5
+      a6: A6
+      b6: B6
     edit:
       title: Edit Domain
     form:
@@ -4860,13 +4883,13 @@ en:
       manager: Manager
       manager_id: Manager
       mobile: Mobile
-      overdue_summary:
+      overdue_summary: Overdue Summary
       password: Password
       password_confirmation: Password Confirmation
       password_hint: Leave it blank if you don't want to change password
       pin_number: Pin Number
       province: Province
-      referral_notification:
+      referral_notification: Referral Notification
       roles: Permission Set
       start_date: Start Date
     index:
@@ -4948,7 +4971,7 @@ en:
     version:
       back: Back
       modification_of: Changelog of
-    warning_message:
+    warning_message: This client has no other care worker, and all clients must have at least one case worker. Please assign a new case worker to this client before removing their current case worker.
   views:
     pagination:
       first: "&laquo; First"
