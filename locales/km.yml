@@ -446,6 +446,31 @@ km:
         year_7: ឆ្នាំទី ៧
         year_8: ឆ្នាំទី ៨
       school_name: ឈ្មោះសាលារៀន
+      shcool_grade_list:
+        grade_1: ថ្នាក់ទី ១
+        grade_10: ថ្នាក់ទី ១០
+        grade_11: ថ្នាក់ទី ១១
+        grade_12: ថ្នាក់ទី ១២
+        grade_2: ថ្នាក់ទី ២
+        grade_3: ថ្នាក់ទី ៣
+        grade_4: ថ្នាក់ទី ៤
+        grade_5: ថ្នាក់ទី ៥
+        grade_6: ថ្នាក់ទី ៦
+        grade_7: ថ្នាក់ទី ៧
+        grade_8: ថ្នាក់ទី ៨
+        grade_9: ថ្នាក់ទី ៩
+        kindergarten_1: ថ្នាក់មតេយ្យកម្រិត ១
+        kindergarten_2: ថ្នាក់មតេយ្យកម្រិត ២
+        kindergarten_3: ថ្នាក់មតេយ្យកម្រិត ៣
+        kindergarten_4: ថ្នាក់មតេយ្យកម្រិត ៤
+        year_1: ឆ្នាំទី ១
+        year_2: ឆ្នាំទី ២
+        year_3: ឆ្នាំទី ៣
+        year_4: ឆ្នាំទី ៤
+        year_5: ឆ្នាំទី ៥
+        year_6: ឆ្នាំទី ៦
+        year_7: ឆ្នាំទី ៧
+        year_8: ឆ្នាំទី ៨
       slug: លេខសម្គាល់
       state: State
       status: ស្ថានភាព
@@ -669,8 +694,8 @@ km:
         non_face_to_face: មិនបានជួបផ្ទាល់ជាមួយអតិថិជន
         other_option: ផ្សេងៗ
         rd_party: បុគ្គលទី៣
+        type_options:
         visit: ជួបជាមួយអតិថិជនផ្ទាល់
-        other_option: ផ្សេងៗ
     form_with_assessment_domains:
       add_task: បន្ថែមកាតព្វកិច្ចថ្មី
       domain: កត្តា
@@ -1724,12 +1749,6 @@ km:
       time_in_care_around:
         one: ប្រហែល%{count}ឆ្នាំ
         other: ប្រហែល%{count}ឆ្នាំ
-        week:
-          one: "%{count} សប្តាហ៍"
-          other: "%{count} សប្តាហ៍"
-        year:
-          one: "%{count} ឆ្នាំ"
-          other: "%{count} ឆ្នាំ"
       time_in_cps: រយៈពេលស្ថិតនៅក្នុងកម្មវិធីចម្បង
       time_in_ngo: រយៈពេលនៅក្នុងអង្គការ
       view_assessments: ការប៉ាន់ប្រមាណ
@@ -2188,6 +2207,8 @@ km:
       support_amount: ប្រាក់ឧបត្ថម្ភ
       support_note: ពត៌មានពីប្រាក់ឧប្ថម្ភ
       time_in_care: រយៈពេលមើលថែទាំ
+      time_in_cps:
+      time_in_ngo:
       trackings:
         action: សកម្មភាព
         frequency: ភាពញឹកញាប់

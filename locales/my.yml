@@ -696,10 +696,10 @@ my:
       type: အမ်ိဳးအစား
       type_options:
         non_face_to_face: Non face to face
-        other_option:
-        rd_party: 3rd Party
-        visit: Visit
         other_option: Other
+        rd_party: 3rd Party
+        type_options: Other
+        visit: Visit
     form_with_assessment_domains:
       add_task: လုပ္ငန္းေပါင္းထည့္ရန္
       domain: ဒိုမိန္း
@@ -1755,12 +1755,6 @@ my:
         few: ႏွစ္အနည္းငယ္
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
-        week:
-          one: "%{count} ရက်သတ္တပတ်"
-          other: "%{count} ရက်သတ္တပတ်"
-        year:
-          one: "%{count} ခုနှစ်"
-          other: "%{count} နှစ်ပေါင်း"
       time_in_cps: ထုံးစံအစီအစဉ်ကိုစီးအတွက်အချိန်
       time_in_ngo: Time in NGO
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား

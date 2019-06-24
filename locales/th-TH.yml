@@ -473,6 +473,8 @@ th-TH:
       suburb:
       telephone_number:
       time_in_care:
+      time_in_cps:
+      time_in_ngo:
       time_of_frequency:
       township:
       tracking:
@@ -686,7 +688,6 @@ th-TH:
         rd_party:
         type_options:
         visit:
-        other_option:
     form_with_assessment_domains:
       add_task:
       domain:
@@ -857,6 +858,7 @@ th-TH:
           move_out_within_international:
           no_meet_service_criteria:
           not_required_support:
+          other_option:
           other_reason:
         exit_reasons:
         exit_status:
@@ -1733,6 +1735,8 @@ th-TH:
       telephone_number:
       time_in_care:
       time_in_care_around:
+      time_in_cps:
+      time_in_ngo:
       view_assessments:
       view_case_notes:
       view_ec_history_btn_link:
@@ -2066,6 +2070,8 @@ th-TH:
         telephone_number:
         thailand:
         time_in_care:
+        time_in_cps:
+        time_in_ngo:
         time_of_frequency:
         total:
         township:
@@ -2187,6 +2193,8 @@ th-TH:
       support_amount:
       support_note:
       time_in_care:
+      time_in_cps:
+      time_in_ngo:
       trackings:
         action:
         frequency:
