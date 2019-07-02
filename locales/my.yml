@@ -444,6 +444,31 @@ my:
         year_7: Year 7
         year_8: Year 8
       school_name: ေက်ာင္းနာမည္
+      shcool_grade_list:
+        grade_1:
+        grade_10:
+        grade_11:
+        grade_12:
+        grade_2:
+        grade_3:
+        grade_4:
+        grade_5:
+        grade_6:
+        grade_7:
+        grade_8:
+        grade_9:
+        kindergarten_1:
+        kindergarten_2:
+        kindergarten_3:
+        kindergarten_4:
+        year_1:
+        year_2:
+        year_3:
+        year_4:
+        year_5:
+        year_6:
+        year_7:
+        year_8:
       slug: မွတ္ပံုတင္
       state: ပြည်နယ်
       status: အေနအထား
@@ -671,9 +696,10 @@ my:
       type: အမ်ိဳးအစား
       type_options:
         non_face_to_face: Non face to face
-        rd_party: 3rd Party
-        visit: Visit
         other_option: Other
+        rd_party: 3rd Party
+        type_options: Other
+        visit: Visit
     form_with_assessment_domains:
       add_task: လုပ္ငန္းေပါင္းထည့္ရန္
       domain: ဒိုမိန္း
@@ -849,6 +875,7 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
+          other_option:
           other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
@@ -876,6 +903,7 @@ my:
         exit_status: အေနအထား
         exiting: မထွက်...
         other_info_of_exit: အခြားအ - နောက်ထပ်သတင်းအချက်အလက်များ
+        other_option:
         reject_client: client ကိုငြင်းပယ်
         rejected_note: ျငင္းပယ္သည့္ မွတ္စု
       update:
@@ -1725,17 +1753,8 @@ my:
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
         few: ႏွစ္အနည္းငယ္
-        month:
-          one: "%{count} လ"
-          other: "%{count} လများ"
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
-        week:
-          one: "%{count} ရက်သတ္တပတ်"
-          other: "%{count} ရက်သတ္တပတ်"
-        year:
-          one: "%{count} ခုနှစ်"
-          other: "%{count} နှစ်ပေါင်း"
       time_in_cps: ထုံးစံအစီအစဉ်ကိုစီးအတွက်အချိန်
       time_in_ngo: Time in NGO
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
