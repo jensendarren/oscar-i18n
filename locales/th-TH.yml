@@ -439,11 +439,10 @@ th-TH:
         year_8:
       school_name:
       shcool_grade_list:
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
         grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
         grade_2: 2
         grade_3: 3
         grade_4: 4
@@ -452,9 +451,10 @@ th-TH:
         grade_7: 7
         grade_8: 8
         grade_9: 9
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
         year_1: Year 1
         year_2: Year 2
         year_3: Year 3
@@ -683,11 +683,9 @@ th-TH:
       tasks_arising:
       type:
       type_options:
-        non_face_to_face:
-        other_option:
-        rd_party:
-        type_options:
         visit:
+        non_face_to_face:
+        rd_party:
         other_option:
     form_with_assessment_domains:
       add_task:
@@ -859,6 +857,7 @@ th-TH:
           move_out_within_international:
           no_meet_service_criteria:
           not_required_support:
+          other_option:
           other_reason:
         exit_reasons:
         exit_status:
@@ -4899,4 +4898,3 @@ th-TH:
     next_label:
     page_gap:
     previous_label:
-

@@ -419,11 +419,10 @@ my:
       road: Road
       school_grade: ေက်ာင္းအဆင့္
       school_grade_list:
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
         grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
         grade_2: 2
         grade_3: 3
         grade_4: 4
@@ -432,9 +431,10 @@ my:
         grade_7: 7
         grade_8: 8
         grade_9: 9
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
         year_1: Year 1
         year_2: Year 2
         year_3: Year 3
@@ -695,11 +695,10 @@ my:
       tasks_arising: ေပၚေပါက္လာေသားလုပ္ငန္းမ်ား
       type: အမ်ိဳးအစား
       type_options:
-        non_face_to_face: Non face to face
-        other_option: Other
-        rd_party: 3rd Party
-        type_options: Other
         visit: Visit
+        non_face_to_face: Non face to face
+        rd_party: 3rd Party
+        other_option: Other
     form_with_assessment_domains:
       add_task: လုပ္ငန္းေပါင္းထည့္ရန္
       domain: ဒိုမိန္း
@@ -5006,4 +5005,3 @@ my:
     next_label: ေနာက္စာမ်က္ႏွာ
     page_gap: "..."
     previous_label: ေရွ႕စာမ်က္ႏွာ
-
