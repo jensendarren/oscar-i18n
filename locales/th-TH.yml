@@ -412,37 +412,12 @@ th-TH:
       relevant_referral_information:
       road:
       school_grade:
-      school_grade_list:
-        grade_1:
-        grade_10:
-        grade_11:
-        grade_12:
-        grade_2:
-        grade_3:
-        grade_4:
-        grade_5:
-        grade_6:
-        grade_7:
-        grade_8:
-        grade_9:
-        kindergarten_1:
-        kindergarten_2:
-        kindergarten_3:
-        kindergarten_4:
-        year_1:
-        year_2:
-        year_3:
-        year_4:
-        year_5:
-        year_6:
-        year_7:
-        year_8:
-      school_name:
       shcool_grade_list:
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
         grade_1: 1
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
         grade_2: 2
         grade_3: 3
         grade_4: 4
@@ -451,10 +426,9 @@ th-TH:
         grade_7: 7
         grade_8: 8
         grade_9: 9
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
         year_1: Year 1
         year_2: Year 2
         year_3: Year 3
@@ -463,6 +437,7 @@ th-TH:
         year_6: Year 6
         year_7: Year 7
         year_8: Year 8
+      school_name:
       slug:
       state:
       status:
@@ -857,7 +832,6 @@ th-TH:
           move_out_within_international:
           no_meet_service_criteria:
           not_required_support:
-          other_option:
           other_reason:
         exit_reasons:
         exit_status:
@@ -885,7 +859,6 @@ th-TH:
         exit_status:
         exiting:
         other_info_of_exit:
-        other_option:
         reject_client:
         rejected_note:
       update:
@@ -1558,6 +1531,10 @@ th-TH:
       start_date:
       support_amount:
       support_note:
+    level:
+      level_no: 'No'
+      level_1: Level 1
+      level_2: Level 2
     living_detail:
       case_worker_or_staff:
       contact_details:
@@ -1625,6 +1602,7 @@ th-TH:
       are_you_sure:
       birth_province:
       book:
+        book:
       cambodia:
       case_histories:
       case_history:

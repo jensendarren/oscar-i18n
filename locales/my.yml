@@ -419,10 +419,11 @@ my:
       road: Road
       school_grade: ေက်ာင္းအဆင့္
       school_grade_list:
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
         grade_1: 1
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
         grade_2: 2
         grade_3: 3
         grade_4: 4
@@ -431,10 +432,9 @@ my:
         grade_7: 7
         grade_8: 8
         grade_9: 9
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
         year_1: Year 1
         year_2: Year 2
         year_3: Year 3
@@ -444,31 +444,6 @@ my:
         year_7: Year 7
         year_8: Year 8
       school_name: ေက်ာင္းနာမည္
-      shcool_grade_list:
-        grade_1:
-        grade_10:
-        grade_11:
-        grade_12:
-        grade_2:
-        grade_3:
-        grade_4:
-        grade_5:
-        grade_6:
-        grade_7:
-        grade_8:
-        grade_9:
-        kindergarten_1:
-        kindergarten_2:
-        kindergarten_3:
-        kindergarten_4:
-        year_1:
-        year_2:
-        year_3:
-        year_4:
-        year_5:
-        year_6:
-        year_7:
-        year_8:
       slug: မွတ္ပံုတင္
       state: ပြည်နယ်
       status: အေနအထား
@@ -874,7 +849,6 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_option:
           other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
@@ -1575,6 +1549,10 @@ my:
       start_date: စသည့္ ရက္စြဲ
       support_amount: ေထာက္ပံ့သည့္ ပမာဏ
       support_note: ေထာက္ပံ့သည့္ မွတ္စု
+    level:
+      level_no: 'No'
+      level_1: Level 1
+      level_2: Level 2
     living_detail:
       case_worker_or_staff: အမႈျခင္းရာအတြက္ေဆာင္ရြက္ေပးသူ / ၀န္ထမ္း
       contact_details: အဆက်အသွယ်အသေးစိတ်
@@ -1752,8 +1730,17 @@ my:
       time_in_care: ေစာင့္ေရွာက္သည့္ကာလ
       time_in_care_around:
         few: ႏွစ္အနည္းငယ္
+        month:
+          one: "%{count} လ"
+          other: "%{count} လများ"
         one: "%{count} ႏွစ္၀န္းက်င္"
         other: "%{count} ႏွစ္မ်ား"
+        week:
+          one: "%{count} ရက်သတ္တပတ်"
+          other: "%{count} ရက်သတ္တပတ်"
+        year:
+          one: "%{count} ခုနှစ်"
+          other: "%{count} နှစ်ပေါင်း"
       time_in_cps: ထုံးစံအစီအစဉ်ကိုစီးအတွက်အချိန်
       time_in_ngo: Time in NGO
       view_assessments: စိစစ္အကဲျဖတ္ခ်က္မ်ား
@@ -5005,3 +4992,5 @@ my:
     next_label: ေနာက္စာမ်က္ႏွာ
     page_gap: "..."
     previous_label: ေရွ႕စာမ်က္ႏွာ
+
+
