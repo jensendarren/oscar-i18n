@@ -316,8 +316,8 @@ en:
             password_confirmation:
               confirmation: does not match
             pin_code:
-              not_an_integer:
-              wrong_length:
+              not_an_integer: 
+              wrong_length: 
             roles:
               blank: can't be blank
   add_event_success: Event has been added to calendar successfully.
@@ -421,11 +421,10 @@ en:
       road: Road
       school_grade: School Grade
       school_grade_list:
-        kindergarten_1: Kindergarten 1
-        kindergarten_2: Kindergarten 2
-        kindergarten_3: Kindergarten 3
-        kindergarten_4: Kindergarten 4
         grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
         grade_2: 2
         grade_3: 3
         grade_4: 4
@@ -434,9 +433,10 @@ en:
         grade_7: 7
         grade_8: 8
         grade_9: 9
-        grade_10: 10
-        grade_11: 11
-        grade_12: 12
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
         year_1: Year 1
         year_2: Year 2
         year_3: Year 3
@@ -446,6 +446,31 @@ en:
         year_7: Year 7
         year_8: Year 8
       school_name: School Name
+      shcool_grade_list:
+        grade_1: 1
+        grade_10: 10
+        grade_11: 11
+        grade_12: 12
+        grade_2: 2
+        grade_3: 3
+        grade_4: 4
+        grade_5: 5
+        grade_6: 6
+        grade_7: 7
+        grade_8: 8
+        grade_9: 9
+        kindergarten_1: Kindergarten 1
+        kindergarten_2: Kindergarten 2
+        kindergarten_3: Kindergarten 3
+        kindergarten_4: Kindergarten 4
+        year_1: Year 1
+        year_2: Year 2
+        year_3: Year 3
+        year_4: Year 4
+        year_5: Year 5
+        year_6: Year 6
+        year_7: Year 7
+        year_8: Year 8
       slug: ID
       state: State
       status: Status
@@ -666,10 +691,11 @@ en:
       tasks_arising: Tasks Arising
       type: 'Type (Note: Choose ''visit'' only if you met with the client.)'
       type_options:
-        visit: Visit
         non_face_to_face: Non face to face
-        rd_party: 3rd Party
         other_option: Other
+        rd_party: 3rd Party
+        type_options: 
+        visit: Visit
     form_with_assessment_domains:
       add_task: Add Task
       domain: Domain
@@ -844,7 +870,7 @@ en:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_option:
+          other_option: 
           other_reason: Other
         exit_reasons: Reason for Exit / Case Rejection
         exit_status: Status
@@ -872,7 +898,7 @@ en:
         exit_status: Status
         exiting: Exiting...
         other_info_of_exit: Other - More Information
-        other_option:
+        other_option: 
         reject_client: Reject Client
         rejected_note: Rejected Note
       update:
@@ -1192,7 +1218,7 @@ en:
       exit_program_date: Exit Program Date
       exit_reasons: Reason for Exit / Case Rejection
       external_referral: External Referral
-      initial_referral_date:
+      initial_referral_date: 
       internal_referral: Internal Referral
       name_of_referee: Name Of Referee
       other_info_of_exit: Other - More Information
@@ -1546,9 +1572,9 @@ en:
       support_amount: Support Amount
       support_note: Support Note
     level:
-      level_no: 'No'
       level_1: Level 1
       level_2: Level 2
+      level_no: 'No'
     living_detail:
       case_worker_or_staff: Case Worker / Staff
       contact_details: Contact Details
@@ -1702,18 +1728,13 @@ en:
       program_streams: Enroll Client to Program Streams
       progress_note: Progress Note
       province: Birth Province
-      province:
-        cambodia: Birth Province
-        lesotho: Birth Suburb
-        myanmar: Birth State
-        thailand: Birth Province
-        uganda: Birth Province
       received_by: Referral Received By
       refer_client: Refer Client
       referee_phone_number: Referee Phone Number
       referral_forms: Referral Forms
       referral_phone: Referee Phone Number
       referral_source: Referral Source
+      referral_source_category: 
       referred_from: Referred from External Organisation
       referred_to: Referred to External Organisation
       reject: Reject
@@ -1731,17 +1752,8 @@ en:
       telephone_number: Primary Carer Phone Number
       time_in_care: Time In Care
       time_in_care_around:
-        month:
-          one: "%{count} month"
-          other: "%{count} months"
         one: Around %{count} year
         other: Around %{count} years
-        week:
-          one: "%{count} week"
-          other: "%{count} weeks"
-        year:
-          one: "%{count} year"
-          other: "%{count} years"
       time_in_cps: Time in Custom Program Stream
       time_in_ngo: Time in NGO
       view_assessments: Assessments
