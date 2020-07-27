@@ -7,7 +7,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.8.4)
-    json (2.1.0)
+    json (2.3.1)
     localeapp (2.1.1)
       gli
       i18n (~> 0.4)
