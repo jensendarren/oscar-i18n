@@ -87,7 +87,7 @@ my:
           general_question: အေထြေထြေမးခြန္း
           new_general_question: အေထြေထြေမးခြန္းအသစ္
           new_stage_question: အဆင့္ေမးခြန္းအသစ္
-          question: 
+          question:
           stage: အဆင့္
           stage_question: အဆင့္ေမးခြန္း
           to: သို႔
@@ -268,7 +268,7 @@ my:
             name:
               blank: ကြက္လပ္ခ်ိန္ထား၍မရပါ။
               taken: ယူထားၿပီးျဖစ္ပါသည္။
-          blank: 
+          blank:
         setting:
           attributes:
             max_assessment:
@@ -445,30 +445,30 @@ my:
         year_8: Year 8
       school_name: ေက်ာင္းနာမည္
       shcool_grade_list:
-        grade_1: 
-        grade_10: 
-        grade_11: 
-        grade_12: 
-        grade_2: 
-        grade_3: 
-        grade_4: 
-        grade_5: 
-        grade_6: 
-        grade_7: 
-        grade_8: 
-        grade_9: 
-        kindergarten_1: 
-        kindergarten_2: 
-        kindergarten_3: 
-        kindergarten_4: 
-        year_1: 
-        year_2: 
-        year_3: 
-        year_4: 
-        year_5: 
-        year_6: 
-        year_7: 
-        year_8: 
+        grade_1:
+        grade_10:
+        grade_11:
+        grade_12:
+        grade_2:
+        grade_3:
+        grade_4:
+        grade_5:
+        grade_6:
+        grade_7:
+        grade_8:
+        grade_9:
+        kindergarten_1:
+        kindergarten_2:
+        kindergarten_3:
+        kindergarten_4:
+        year_1:
+        year_2:
+        year_3:
+        year_4:
+        year_5:
+        year_6:
+        year_7:
+        year_8:
       slug: မွတ္ပံုတင္
       state: ပြည်နယ်
       status: အေနအထား
@@ -875,7 +875,7 @@ my:
           move_out_within_international: Client is/moved outside NGO target area (International)
           no_meet_service_criteria: Client does not meet / no longer meets service criteria
           not_required_support: Client does not require / no longer requires support
-          other_option: 
+          other_option:
           other_reason: Other
         exit_reasons: ထွက်ပေါက်ဘို့အကြောင်းပြချက်
         exit_status: အေနအထား
@@ -903,7 +903,7 @@ my:
         exit_status: အေနအထား
         exiting: မထွက်...
         other_info_of_exit: အခြားအ - နောက်ထပ်သတင်းအချက်အလက်များ
-        other_option: 
+        other_option:
         reject_client: client ကိုငြင်းပယ်
         rejected_note: ျငင္းပယ္သည့္ မွတ္စု
       update:
@@ -1209,7 +1209,7 @@ my:
       close: ပိတ်
       export_to_xls: XLS အျဖစ္ ထုတ္ရန္
     book:
-      book: 
+      book:
     case_history_detail:
       accepted_date: လက်ခံခဲ့သည်နေ့စွဲ
       client: ကေလးနာမည္
@@ -1532,7 +1532,7 @@ my:
       custom_assessment: ထုံးစံအကဲဖြတ်
       custom_csi_domain_scores: ពិន្ទុកត្តាការប៉ាន់ប្រមាណផ្ទាល់ខ្លួន
       custom_csi_group: At
-      date_of_assessment: 
+      date_of_assessment:
       date_of_assessments: Date of Assessments
       domain_score: ဒိုမိန္း ရမွတ္မ်ား
       end: လုပ္ေဆာင္ၿပီး ၿပီးဆံုးၿပီ
@@ -1739,7 +1739,7 @@ my:
       referral_forms: ရည်ညွန်းပုံစံများ
       referral_phone: လႊဲရမည့္ ဖုန္းနံပါတ္
       referral_source: လႊဲရမည့္ ရင္းျမစ္
-      referral_source_category: 
+      referral_source_category:
       referred_from: ကနေရည်ညွှန်း
       referred_to: ရန်ရည်ညွှန်း
       reject: ျငင္းပယ္သည္
@@ -3468,8 +3468,8 @@ my:
       first_follow_date: Enter the date when a Case Worker/Staff followed up with the client for the first time.
     assessments:
       index:
-        custom_button: Add a new custom Assessment.
-        default_button: Add a new (CSI) Assessment.
+        custom_button: Add a new custom %{assessment}.
+        default_button: Add a new (CSI) %{assessment}.
       notes:
         lists:
           list1: |
@@ -3490,7 +3490,7 @@ my:
     clients:
       assessments:
         add_task: At least one task is mandatory for each domain. The task can be optional only when the client’s situation does not require any interventions.
-        button: Add a new (CSI) or custom Assessment.
+        button: Add a new (CSI) or custom %{assessment}.
         case_plan: Each domain is given a score from 1 to 4 and is color-coded. <strong>Red</strong> – Highly vulnerable. Need to act <strong>urgently<strong> and immediately. <strong>Yellow</strong> – Action needs to be taken soon, but not immediately. <strong>Blue</strong> – Observe the situation. If it gets worse or doesn’t improve on its own, action may be necessary. <strong>Green</strong> – No immediate concerns. The client is not vulnerable in this situation.
         goal: 'A goal should be <strong>SMART</strong>: <strong>S</strong>pecific, <strong>M</strong>easurable, <strong>A</strong>ttainable before the next assessment begins, <strong>R</strong>ealistic and <strong>T</strong>ime based (three or six months according to your organization assessment timeline). Discuss with your client’s family and/or caregiver to set a goal(s). Ensure you engage and involve the client in this discussion as much as you can. The goal can be optional if the client’s situation is not vulnerable.'
         observation: Read each option carefully. First, consider the client’s situation, ask questions and observe the situation. Choose an option based on these considerations.
@@ -3519,7 +3519,7 @@ my:
               list1: 'This section is specific to your organization. Any additional data that your organization needs to track should be recorded here. If the more data points need to be added here, contact your Administrator. Admin: Add the data points through <strong>Manage >> Custom Referral Data</strong>.'
       index:
         buttons:
-          assessment_data: View and compare the CSI assessment scores of all the clients that appear in your search. The pop-up window will show you the assessment scores only for clients whose assessment was completed.
+          assessment_data: View and compare the CSI %{assessment} scores of all the clients that appear in your search. The pop-up window will show you the %{assessment} scores only for clients whose %{assessment} was completed.
           export_to_xls: |
             Export your report in an MS Excel spreadsheet file(.xls). Follow the prompts in your browser to download and save the file on your computer.<br />
             All the headers are the same as the column selection you made while building the report.<br />
@@ -3593,7 +3593,7 @@ my:
       organization_type: 'Select what type of organization the partner belongs to. [For example, Church, NGO, Government agency, etc.] Admin/Manager: If the type doesn’t exist, add a new organization type through <strong>Manage >> Organization Types</strong>.'
     referee:
       email: N/A
-      gender: Other - if the referee’s gender is something other than male or female. Unknown - if the client’s gender is not known. This can be edited later after you find out the gender.
+      gender: Other - if the client’s gender is something other than male or female. Unknown - if the client’s gender is not known. This can be edited later after you find out the gender.
       name: Referee means the person who called or informed your organization about the client. If the referee does not want to give their name, you can enter the name as “Anonymous”.
       phone: N/A
       referral_address_name: N/A
@@ -3624,6 +3624,8 @@ my:
       school_contact: The main contact can be either the class teacher or anyone who can monitor the client’s progress at school.
       school_grade: N/A
       school_info: N/A
+    setting:
+      external_system_integration: This creates a connection between your organisation’s instance of OSCaR, and the Cambodian Government’s Primero Case Management System. The connection allows for cross-referral between the systems; it does not copy records from one system to the other without a referral being explicitly made.
   interventions:
     create:
       failed_create: ၾကားျဖတ္အစိအမံကို ျပဳလုပ္ျခင္း မေအာင္ျမင္ပါ။
@@ -4597,8 +4599,8 @@ my:
     navigation:
       country: ႏုိင္ငံ
     research_module:
-      research_module_label: 
-      title: 
+      research_module_label:
+      title:
     update:
       successfully_updated: အောင်မြင်စွာဖြည့်ပါ
   shared:
@@ -4642,7 +4644,7 @@ my:
         date_deleted: ရက္စြဲ
         no_modification: ေျပာင္းလဲမႈ မွတ္တမ္းမရွိပါ
         'on': ေပၚတြင္
-        organisation_type: 
+        organisation_type:
         value_of: "၏ တန္ဖိုး"
       common:
         able_screening_question: Able Screening ေမးခြန္း
